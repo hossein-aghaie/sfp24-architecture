@@ -14,3 +14,6 @@
 | کد و اسناد اولیه Work 11/12 | [Sources](sources/README.md) |
 
 **وضعیت‌ها:** Observed=مشاهده مستند؛ Open=حل‌نشده؛ Proposed=پیشنهادی؛ Approved=تأیید صریح؛ Implemented=اجرای راستی‌آزمایی‌شده؛ Rejected=رد با علت؛ Superseded=جایگزین‌شده با لینک.
+
+## Original material migration
+[Read the verified historical source index](source-material/README.md) before treating newly summarized architecture or module proposals as settled decisions.
