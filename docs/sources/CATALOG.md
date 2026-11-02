@@ -234,17 +234,20 @@
 
 ## تمام سندهای جاری و مسیریاب‌ها
 
-| مسیر | عنوان |
+این فهرست برای جست‌وجوی نام فایل است؛ مسیر خواندن از [راهنمای شروع](../START-HERE.md) آغاز می‌شود.
+
+| فایل | موضوع |
 |---|---|
 | [AGENTS.md](../../AGENTS.md) | AGENTS.md — دستور واحد ایجنت‌ها |
 | [docs/audits/2026-11-02-production-recording/DOCUMENT-DRIFT.fa.md](../audits/2026-11-02-production-recording/DOCUMENT-DRIFT.fa.md) | اختلاف‌های اسناد و تقدم مرجع — شرح مستند |
 | [docs/audits/2026-11-02-production-recording/LINK-REPORT.fa.md](../audits/2026-11-02-production-recording/LINK-REPORT.fa.md) | ممیزی لینک‌های اسناد |
 | [docs/audits/2026-11-02-production-recording/MIGRATION-COVERAGE.fa.md](../audits/2026-11-02-production-recording/MIGRATION-COVERAGE.fa.md) | پوشش انتقال منابع به معماری |
 | [docs/audits/2026-11-02-production-recording/README.fa.md](../audits/2026-11-02-production-recording/README.fa.md) | ممیزی مستقل اسناد اجرایی SFP24 |
+| [docs/audits/READER-CHECK.fa.md](../audits/READER-CHECK.fa.md) | بررسی مسیر خوانندهٔ تازه و نویسندهٔ OEE |
 | [docs/audits/README.md](../audits/README.md) | ممیزی اسناد و تصمیم‌ها |
 | [docs/contracts/DATA-CONTRACT-DRAFT.md](../contracts/DATA-CONTRACT-DRAFT.md) | Data Contract — Draft |
 | [docs/contracts/MODULE-CONTRACT-DRAFT.md](../contracts/MODULE-CONTRACT-DRAFT.md) | Module & Capability Contract — Draft |
-| [docs/contracts/README.md](../contracts/README.md) | قراردادها — موجود در برابر پیشنهادی |
+| [docs/contracts/README.md](../contracts/README.md) | قواعد ارتباط بخش‌های برنامه |
 | [docs/contracts/TELEMETRY.fa.md](../contracts/TELEMETRY.fa.md) | تله‌متری — مرجع امضاشده و Runtime جاری |
 | [docs/contracts/UI-CONTRIBUTIONS-DRAFT.md](../contracts/UI-CONTRIBUTIONS-DRAFT.md) | UI Contributions — Draft |
 | [docs/core/ARCHITECTURE.fa.md](../core/ARCHITECTURE.fa.md) | معماری موجود و مرزهای پلتفرم |
@@ -258,7 +261,8 @@
 | [docs/core/OPEN-QUESTIONS.md](../core/OPEN-QUESTIONS.md) | Core — Open Questions |
 | [docs/core/PLATFORM-MAP.md](../core/PLATFORM-MAP.md) | نقشه مفهومی SFP24 |
 | [docs/core/POSITION-TEMPLATES.fa.md](../core/POSITION-TEMPLATES.fa.md) | الگوهای پوزیشن و فهرست ماژول‌ها |
-| [docs/core/README.md](../core/README.md) | هسته — هر موضوع را کجا بخوانیم |
+| [docs/core/README.md](../core/README.md) | هستهٔ مشترک برنامه |
+| [docs/core/RECORDS.md](../core/RECORDS.md) | سوابق کار و اتاق فکر هسته |
 | [docs/core/THREED-LAYERS.fa.md](../core/THREED-LAYERS.fa.md) | تفکیک تنظیمات، پایش و جزئیات دستگاه |
 | [docs/core/WORKSPACES.fa.md](../core/WORKSPACES.fa.md) | اتاق کاری، میز، داشبورد و محیط سه‌بعدی |
 | [docs/decisions/ADR-0001-DOCUMENTATION-REPOSITORY.md](../decisions/ADR-0001-DOCUMENTATION-REPOSITORY.md) | ADR-0001 — ریپازیتوری مستقل اسناد SFP24 |
@@ -268,8 +272,10 @@
 | [docs/governance/DECISION-RECORDS.md](../governance/DECISION-RECORDS.md) | Architecture Decision Records |
 | [docs/governance/DOCUMENTATION-POLICY.md](../governance/DOCUMENTATION-POLICY.md) | سیاست مستندسازی |
 | [docs/governance/README.md](../governance/README.md) | Documentation Governance |
+| [docs/governance/REQUESTS.md](../governance/REQUESTS.md) | درخواست‌های هسته و ارتباط بین ماژول‌ها |
 | [docs/implementation/DEVELOPER-GUIDE.fa.md](../implementation/DEVELOPER-GUIDE.fa.md) | راهنمای توسعهٔ جاری — ۲۰۲۶-۱۰-۲۸ |
 | [docs/implementation/README.md](../implementation/README.md) | Implementation Specs for Codex |
+| [docs/journal/2026-11-02/DOCUMENTATION-READABILITY.fa.md](../journal/2026-11-02/DOCUMENTATION-READABILITY.fa.md) | بازخورد صاحب محصول دربارهٔ پیدا کردن و ادامهٔ اسناد |
 | [docs/journal/2026-11-02/OWNER-AUTHORIZATION.raw.fa.md](../journal/2026-11-02/OWNER-AUTHORIZATION.raw.fa.md) | پیام‌های مالک دربارهٔ مرجع واحد و مرتب‌سازی |
 | [docs/journal/2026-11-02/README.md](../journal/2026-11-02/README.md) | ۲۰۲۶-۱۱-۰۲ — شروع مخزن معماری |
 | [docs/journal/pre-repository/01-MODULE-LANDSCAPE-THINKING.fa.md](../journal/pre-repository/01-MODULE-LANDSCAPE-THINKING.fa.md) | فکر بلند ۱ — چرا این همه نوع ماژول مطرح شد؟ |
@@ -277,11 +283,17 @@
 | [docs/journal/pre-repository/03-REPOSITORIES-AND-SEQUENCING.fa.md](../journal/pre-repository/03-REPOSITORIES-AND-SEQUENCING.fa.md) | فکر بلند ۳ — از برنچ‌های متعدد به مخزن اسناد و آزمون مستقل هسته |
 | [docs/journal/pre-repository/README.md](../journal/pre-repository/README.md) | گفتگوهای مبنایی پیش از ایجاد مخزن معماری — نقشه مطالعه |
 | [docs/journal/README.md](../journal/README.md) | Journal — تاریخچه گفتگو و مسیر تفکر |
-| [docs/modules/maintenance/README.md](../modules/maintenance/README.md) | Maintenance / CMMS |
-| [docs/modules/mrp/README.md](../modules/mrp/README.md) | MRP |
-| [docs/modules/oee/README.md](../modules/oee/README.md) | OEE |
-| [docs/modules/planning/README.md](../modules/planning/README.md) | Planning |
+| [docs/modules/maintenance/README.md](../modules/maintenance/README.md) | نگهداری و تعمیرات |
+| [docs/modules/maintenance/RECORDS.md](../modules/maintenance/RECORDS.md) | سوابق کار و اتاق فکر نگهداری و تعمیرات |
+| [docs/modules/mrp/README.md](../modules/mrp/README.md) | برنامه‌ریزی نیاز مواد — MRP |
+| [docs/modules/mrp/RECORDS.md](../modules/mrp/RECORDS.md) | سوابق کار و اتاق فکر نیاز مواد |
+| [docs/modules/oee/README.md](../modules/oee/README.md) | OEE — راهنمای شروع نویسندهٔ ماژول |
+| [docs/modules/oee/RECORDS.md](../modules/oee/RECORDS.md) | سوابق کار و اتاق فکر OEE |
+| [docs/modules/oee/requests/REQ-oee-0001-data-and-output.md](../modules/oee/requests/REQ-oee-0001-data-and-output.md) | REQ-oee-0001 — روشن‌کردن اتصال پارامتر و خروجی برای مصرف‌کنندهٔ مستقل |
+| [docs/modules/planning/README.md](../modules/planning/README.md) | برنامه‌ریزی تولید |
+| [docs/modules/planning/RECORDS.md](../modules/planning/RECORDS.md) | سوابق کار و اتاق فکر برنامه‌ریزی |
 | [docs/modules/production/README.md](../modules/production/README.md) | ثبت و گزارش تولید |
+| [docs/modules/production/RECORDS.md](../modules/production/RECORDS.md) | سوابق کار و اتاق فکر ثبت و گزارش تولید |
 | [docs/modules/README.md](../modules/README.md) | ماژول‌ها — کارکرد و وضعیت |
 | [docs/modules/training/AI-KNOWLEDGE.fa.md](../modules/training/AI-KNOWLEDGE.fa.md) | دستیار تألیف آموزش |
 | [docs/modules/training/DECISIONS.md](../modules/training/DECISIONS.md) | تصمیم‌ها و پرسش‌های آموزش |
@@ -290,6 +302,7 @@
 | [docs/modules/training/OPERATIONS-AND-INTEGRATION.fa.md](../modules/training/OPERATIONS-AND-INTEGRATION.fa.md) | گردش عملیات و سازگاری هسته |
 | [docs/modules/training/PRODUCT.fa.md](../modules/training/PRODUCT.fa.md) | Work 11 — مدیریت آموزش و شایستگی کارکنان |
 | [docs/modules/training/README.md](../modules/training/README.md) | آموزش، شایستگی و ورود کارکنان |
+| [docs/modules/training/RECORDS.md](../modules/training/RECORDS.md) | سوابق کار و اتاق فکر آموزش و شایستگی |
 | [docs/modules/training/SKILL-GAP-LMS.fa.md](../modules/training/SKILL-GAP-LMS.fa.md) | موتور شایستگی و LMS |
 | [docs/modules/training/STANDARDS-AND-RESEARCH.fa.md](../modules/training/STANDARDS-AND-RESEARCH.fa.md) | منابع استاندارد و مقایسهٔ بازار |
 | [docs/modules/training/WORKSTREAM.md](../modules/training/WORKSTREAM.md) | وضعیت اجرا و ادغام ماژول آموزش |
@@ -307,10 +320,10 @@
 | [docs/reference/HALL-01-LAYOUT.fa.md](../reference/HALL-01-LAYOUT.fa.md) | سالن نمونهٔ ۱ — چیدمان موجود |
 | [docs/research/README.md](../research/README.md) | Research & Standards |
 | [docs/research/TRAINING-STANDARDS.fa.md](../research/TRAINING-STANDARDS.fa.md) | مطالعات بازار و استانداردهای آموزش |
-| [docs/source-material/README.md](../source-material/README.md) | آرشیو متن‌های اصلی |
+| [docs/sources/CATALOG.md](CATALOG.md) | کاتالوگ کامل اسناد و منابع |
 | [docs/sources/README.md](README.md) | منابع و نسخهٔ شواهد |
-| [docs/START-HERE.md](../START-HERE.md) | از اینجا شروع کنید |
+| [docs/START-HERE.md](../START-HERE.md) | راهنمای خواندن و استفاده از اسناد SFP24 |
 | [docs/STATUS.fa.md](../STATUS.fa.md) | وضعیت واقعی محصول |
 | [docs/TECHNOLOGY.fa.md](../TECHNOLOGY.fa.md) | فناوری‌های استفاده‌شده در SFP24 |
-| [README.md](../../README.md) | SFP24 — محصول، فناوری و معماری |
+| [README.md](../../README.md) | SFP24 — Architecture Knowledge Base |
 | [tools/README.md](../../tools/README.md) | کنترل اسناد |
