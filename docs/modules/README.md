@@ -1,19 +1,16 @@
-# Domain Module Registry
+# ماژول‌ها — کارکرد و وضعیت
 
-> **Status:** نقشه مطالعاتی؛ فهرست تعهد توسعه یا فروش نیست.
+| بخش | چه می‌گیرد و چه می‌دهد؟ | وضعیت |
+|---|---|---|
+| [ثبت و گزارش تولید](production/README.md) | کار، شخص، تجهیز/قطعه/OP و ورودی دستی/دستگاه → گزارش تولید | برش عملیاتی موجود، در حال تکمیل |
+| [آموزش و شایستگی](training/README.md) | فعالیت، الزام و شواهد فرد → مسیر یادگیری، ارزیابی و Gap | طراحی تفصیلی + پیش‌نمایش تألیف؛ LMS اجرا نشده |
+| [OEE](oee/README.md) | زمان/سیکل/تعداد/کیفیت معتبر → اجزای اثربخشی | نامزد طراحی، نه موتور عمومی آماده |
+| [نگهداری](maintenance/README.md) | دارایی و درخواست/شواهد → کار تخصصی تعمیر | نامزد طراحی |
+| [برنامه‌ریزی](planning/README.md) | تقاضا/سفارش/Forecast و منابع → برنامه | نامزد طراحی |
+| [MRP](mrp/README.md) | تقاضا، BOM، موجودی و lead time → نیاز مواد | نامزد طراحی |
 
-| ماژول | ورود |
-|---|---|
-| Production | [production](production/README.md) |
-| Skill Gap / LMS | [training](training/README.md) |
-| OEE | [oee](oee/README.md) |
-| Maintenance | [maintenance](maintenance/README.md) |
-| Planning (Forecast/Order) | [planning](planning/README.md) |
-| MRP | [mrp](mrp/README.md) |
+خرید و بسته‌بندی نهایی این حوزه‌ها از وجود نامشان نتیجه نمی‌شود. [وضعیت دقیق](../STATUS.fa.md) و [چرایی خانواده‌ها](../journal/pre-repository/01-MODULE-LANDSCAPE-THINKING.fa.md).
 
-حوزه‌های پژوهشی دیگر: Monitoring، Historian، Energy، Alarm، Quality، SPC، NCR، HSE، Traceability، Workforce، WIP، Warehouse، Intercompany، AI. هیچ‌کدام بدون تصمیم مستقل، feature تصویب‌شده نیستند.
+## نیاز یک ماژول به هسته
 
-قالب مطالعه هر ماژول: دامنه، مالکیت داده، ورودی/خروجی، وابستگی ضروری/اختیاری، قسمت‌های Profile/Workspace، استانداردها، ریسک و پرسش باز. قواعد مشترک به [قرارداد مرجع](../contracts/README.md) لینک شوند.
-
-## علت مطرح‌شدن این دسته‌ها
-[فکر بلند درباره خانواده ماژول‌ها، مرزها و گزینه‌های ردشده](../journal/pre-repository/01-MODULE-LANDSCAPE-THINKING.fa.md). این تاریخچه برای فهم «چرا» است؛ برای قرارداد جاری از همین README و سند تخصصی ماژول استفاده شود.
+ابتدا [مالک موضوع مشترک](../core/README.md) مشخص شود. نیاز آموزش به Login جدید، تعریف هویت دوم نیست؛ نیاز OEE به مقدار، اجازهٔ محاسبهٔ KPI در Widget نیست. [قرارداد موجود/پیشنهادی](../contracts/README.md).

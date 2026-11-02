@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "sourceRevision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+  "destinations": {
+    "docs/ARCHITECTURE.md": "docs/core/ARCHITECTURE.fa.md",
+    "docs/CURRENT-STATE.md": "docs/STATUS.fa.md",
+    "docs/PRODUCT-BLUEPRINT.md": "docs/PRODUCT.fa.md",
+    "docs/START-HERE.md": "docs/START-HERE.md",
+    "docs/UI-UX-SPEC.md": "docs/core/WORKSPACES.fa.md",
+    "docs/TENANCY-IDENTITY-DESIGN.md": "docs/core/IDENTITY-AND-ACCESS.fa.md",
+    "docs/PHASE3-COMPANY-ACCOUNTS-CONTRACT.md": "docs/core/IDENTITY-AND-ACCESS.fa.md",
+    "docs/DECISIONS.md": "docs/decisions/README.md",
+    "docs/CODEX-SMART-FACTORY-HANDOFF.md": "docs/core/ARCHITECTURE.fa.md",
+    "docs/product-notes/DATA-POINTS-AND-CONSUMERS.fa.md": "docs/core/DATA-AND-PARAMETERS.fa.md",
+    "docs/RUNBOOK.md": "docs/operations/RUNBOOK.fa.md",
+    "docs/DEVELOPER-GUIDE.md": "docs/implementation/DEVELOPER-GUIDE.fa.md",
+    "docs/dashboard-layers.md": "docs/core/THREED-LAYERS.fa.md",
+    "docs/hall-01-layout.md": "docs/reference/HALL-01-LAYOUT.fa.md",
+    "docs/guides/COMPANY-ADMIN-QUICKSTART.md": "docs/operations/guides/COMPANY-ADMIN-QUICKSTART.md",
+    "docs/guides/DATA-HUB-WORKFLOW.fa.md": "docs/operations/guides/DATA-HUB-WORKFLOW.fa.md",
+    "docs/guides/DEFINITION-EXTENSIONS.md": "docs/core/EXTENSIONS.fa.md",
+    "docs/guides/DEVICE-CONNECTION-QUICKSTART.md": "docs/operations/guides/DEVICE-CONNECTION-QUICKSTART.md",
+    "docs/guides/LOCAL-FOLDERS.fa.md": "docs/operations/guides/LOCAL-FOLDERS.fa.md",
+    "docs/guides/PHASE3B-OPERATIONS.md": "docs/operations/guides/PHASE3B-OPERATIONS.md",
+    "docs/guides/POSITION-TEMPLATES-AND-MODULES.md": "docs/core/POSITION-TEMPLATES.fa.md",
+    "docs/guides/POUYESHGAR1-DEMO.md": "docs/operations/guides/POUYESHGAR1-DEMO.md",
+    "docs/guides/PRODUCTION-DATA-SOURCES.md": "docs/operations/guides/PRODUCTION-DATA-SOURCES.md"
+  }
+}

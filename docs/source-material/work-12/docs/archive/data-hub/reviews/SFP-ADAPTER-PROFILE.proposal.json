@@ -1,0 +1,145 @@
+{
+  "handoff": "HUB-C01/SFP-01",
+  "status": "proposal-for-central-package-integration-not-installed-not-tested",
+  "centralPackage": "telemetry-execution-v2/2.0.0-rc.1",
+  "profile": {
+    "profileId": "sfp.legacy-v1",
+    "version": "1.0.0",
+    "capabilities": ["http.count.observed_delta", "http.status.received_time", "mqtt.custom.birth", "mqtt.custom.settings", "mqtt.custom.commands", "receipt.atomic_batch", "sender_replay.limited_identity"],
+    "configSchema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["http", "mqtt"],
+      "properties": {
+        "http": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["enabled", "authorizationScheme", "countChannels", "statusSignalId"],
+          "properties": {
+            "enabled": {"type": "boolean"},
+            "authorizationScheme": {"type": "string", "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,31}$"},
+            "countChannels": {
+              "type": "array", "maxItems": 64,
+              "items": {
+                "type": "object", "additionalProperties": false,
+                "required": ["nodeId", "signalId"],
+                "properties": {
+                  "nodeId": {"type": "integer", "minimum": 0, "maximum": 255},
+                  "signalId": {"type": "string", "format": "uuid"}
+                }
+              }
+            },
+            "statusSignalId": {"anyOf": [{"type": "string", "format": "uuid"}, {"type": "null"}]}
+          }
+        },
+        "mqtt": {
+          "type": "object", "additionalProperties": false,
+          "required": ["enabled", "topicNamespace", "hardwareSerial"],
+          "properties": {
+            "enabled": {"type": "boolean"},
+            "topicNamespace": {"type": "string", "pattern": "^[^/+#\u0000]{1,64}$"},
+            "hardwareSerial": {"type": "string", "pattern": "^[A-Za-z0-9_.:-]{1,80}$"}
+          }
+        }
+      }
+    },
+    "commandSchemas": {
+      "get_status": {"type": "object", "additionalProperties": false, "properties": {}},
+      "get_identity": {"type": "object", "additionalProperties": false, "properties": {}},
+      "read_settings": {"type": "object", "additionalProperties": false, "properties": {}},
+      "save_settings": {
+        "type": "object", "additionalProperties": false, "required": ["changes"],
+        "properties": {
+          "changes": {
+            "type": "array", "minItems": 1, "maxItems": 16,
+            "items": {
+              "type": "object", "additionalProperties": false, "required": ["name", "value"],
+              "properties": {
+                "name": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,79}$"},
+                "value": {"type": ["string", "number", "boolean"], "maxLength": 256}
+              }
+            }
+          }
+        }
+      },
+      "restart": {"type": "object", "additionalProperties": false, "properties": {}}
+    }
+  },
+  "privateSecretSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object", "additionalProperties": false,
+    "properties": {
+      "httpToken": {"type": "string", "minLength": 1, "maxLength": 512},
+      "mqttUsername": {"type": "string", "minLength": 1, "maxLength": 128},
+      "mqttPassword": {"type": "string", "minLength": 1, "maxLength": 512}
+    }
+  },
+  "decoder": {
+    "countRoute": "/ingest/adapters/sfp-http-count/v1",
+    "statusRoute": "/ingest/adapters/sfp-http-status/v1",
+    "binding": "loopback-only-in-lab",
+    "countContentType": "application/x-www-form-urlencoded",
+    "countFormKeys": ["node_id", "data"],
+    "countRowKeys": ["t", "q"],
+    "maxCountRows": 700,
+    "maxCountBodyBytes": 1048576,
+    "compressedBody": false,
+    "acceptanceMode": "atomic_batch",
+    "successStatus": 200,
+    "successBodyUtf8": "{\"code\":0}",
+    "successBodyBytes": 10,
+    "t": {"encoding": "uint32_epoch_seconds", "zeroAllowed": false},
+    "q": {"encoding": "uint16", "zeroAllowed": true},
+    "normalization": {"measurement": "observed_delta", "eventTime": "t * 1000", "period": null, "nominalIntervalMs": 60000, "valueStatus": "uncertain", "clockStatus": "unverified", "coverage": "unknown", "flags": ["sender_period_unknown", "measurement_not_independently_verified"], "delivery": "unknown"},
+    "batchId": "sfp1: + lowercase SHA256(canonicalJSON([observationDomainId,orderedPairsOfTAndQ]))",
+    "statusNormalization": "state/string; eventTime=receivedTime, clockStatus=unverified, coverage=unknown, quality flag event_time_is_receive_time, senderEventId=null; no historical sender-time assertion"
+  },
+  "commands": {
+    "requestTopic": "spBv2.1/{topicNamespace}/ConfigCMD/{hardwareSerial}",
+    "responseTopic": "spBv2.1/{topicNamespace}/ConfigDATA/{hardwareSerial}",
+    "wireShape": {"command": "<mapped name>", "data": "<mapped data>", "sequenceId": "<operation UUID>"},
+    "requestQos": 0,
+    "requestRetain": false,
+    "responseMayBeRetained": true,
+    "maxEncodedCommandBytes": 512,
+    "defaultResponseTimeoutMs": 10000,
+    "get_status": {"wireCommand": "GiveState", "wireData": {}, "readOnly": true, "correlation": "seqId and response_to required", "result": "observed-state-only"},
+    "get_identity": {"wireCommand": "GiveIdentify", "wireData": {}, "readOnly": true, "correlation": "seqId and response_to required", "result": "observed-identity-only"},
+    "read_settings": {"wireCommand": "VerifySettings", "wireData": {}, "readOnly": true, "correlation": "not-reliably-echoed-in-source; uncorrelated snapshot only", "result": "unknown-command-outcome; sanitized discovery snapshot may be retained separately"},
+    "save_settings": {"wireCommand": "SaveSettings", "wireData": "parameters.changes", "readOnly": false, "automaticRetry": false, "correlation": "seqId and response_to required", "successEvidence": "SaveOK proves save/readback only; requiresRestart remains pending"},
+    "restart": {"wireCommand": "Restart", "wireData": {}, "readOnly": false, "automaticRetry": false, "successEvidence": "Restarting is response only; no proof of completed reboot; timeout/disconnect ambiguous"}
+  },
+  "runtimeInvariants": [
+    "Capabilities declare adapter design, never proof of installed runtime or hardware conformance.",
+    "Both HTTP and MQTT share this composite profile; MQTT does not carry count in the inspected firmware.",
+    "HTTP enabled requires countChannels nonempty and httpToken; MQTT enabled requires credentials; all-disabled is invalid.",
+    "Unique nodeId and signalId bindings, source ownership, definition observed_delta numeric, and immutable mapping are checked by RegistryManagement and writer.",
+    "Namespace/hardwareSerial are routing aliases under authenticated ACL, never company authorization.",
+    "Same namespace+serial may not bind multiple authenticated sources; enrollment verifies registry credential, not serial-derived password as trust proof.",
+    "Status has no sender event ID/time: no exactly-once historical status guarantee; do not invent one using receive UUID.",
+    "Reject duplicate form/JSON keys, contradictory aliases, unbound node_id and invalid types; decode form once.",
+    "Setting names, scalar types, ranges, editability, dependencies and secret flags require validated firmware metadata; JSON schema alone does not authorize writes.",
+    "Never log full settings responses; redact secret values before runtime observation, public API, receipt and audit persistence. Private values are vaulted separately.",
+    "Generic command parameters must not contain a secret setting; secret updates use a separately scoped private reference/config workflow before command dispatch.",
+    "save_settings rejects duplicate setting names, unknown/unvalidated metadata and oversized complete encoded frames before publish.",
+    "Fragment assembly limitation in current firmware remains: no response or a truncated response is not success. Discovery/write capability remains unverified until isolated conformance tests.",
+    "Retained replies and unsolicited snapshots do not confirm a fresh request. Matching seqId/response_to is necessary where available; no durable firmware command dedup is claimed.",
+    "A stale executor may not publish mutation after losing its lease; physical exactly-once cannot be guaranteed by database fencing alone. Ambiguous mutations are unknown without blind retry.",
+    "Profile export is a manual firmware configuration checklist and validated values, not a claim that unchanged firmware accepts a new generic JSON config import.",
+    "Firmware buffer retention, loss on full queue, sample interval and binary version remain hardware capabilities requiring tests; no unconditional three-day durability claim."
+  ],
+  "errorMapping": {
+    "invalid_input": [400, 413],
+    "unauthorized": 401,
+    "permission_denied": 403,
+    "source_deleted": 403,
+    "signal_deleted": 403,
+    "receipt_conflict": 409,
+    "stale_revision": 409,
+    "idempotency_conflict": 409,
+    "rate_limited": 429,
+    "storage_unavailable": 503,
+    "schema_not_ready": 503
+  }
+}

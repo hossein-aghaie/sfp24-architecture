@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-19",
+  "status": "complete",
+  "productBranch": "codex/telemetry-monorepo",
+  "productPath": "D:/git/pouyeshgar-workshop",
+  "presentationDemos": [
+    {
+      "path": "D:/git/pouyeshgar-demo-phase2",
+      "branch": "demo/phase2",
+      "baseline": "4bad5f8",
+      "webPort": 5240,
+      "apiPort": 5184,
+      "commit": "9983ece"
+    },
+    {
+      "path": "D:/git/pouyeshgar-industrial-platform",
+      "branch": "main",
+      "webPort": 5220,
+      "mqttPort": 5221,
+      "simulatorPort": 5223,
+      "commit": "e835a92",
+      "privateAndRuntimeFilesPreserved": true
+    }
+  ],
+  "retiredWorktreesRemoved": [
+    "industrial-data-hub",
+    "integrated-telemetry-v1",
+    "telemetry-monorepo"
+  ],
+  "protectedIgnoredFilesInLocalArchive": 201,
+  "regenerableCodeCacheCopiesRemoved": 1138,
+  "unsavedWebFilesVerifiedInCheckpoint": 32,
+  "checkpoint": "2dd5d45",
+  "docsRootBefore": 48,
+  "docsRootAfter": 14,
+  "oldBranchesPreservedAsRemoteTags": true,
+  "databaseFilesMovedOrDeleted": false,
+  "secretsCommitted": false,
+  "rc4RuntimeAcceptance": "NOT RUN",
+  "simulatorWindowsPackage": "future-independent-client-allowed",
+  "diskFreeBytesBefore": 19841982464,
+  "docsMovedToCategories": 34,
+  "documentationRelativeLinks": {
+    "checked": 49,
+    "missing": 0
+  },
+  "validation": {
+    "productWeb": {
+      "pass": 74,
+      "skip": 1
+    },
+    "importedHub": {
+      "pass": 9
+    },
+    "simulatorEntry": {
+      "pass": 1
+    },
+    "phase2Demo": {
+      "unitPass": 26,
+      "browserFullQa": "PASS after explicit synthetic-date refresh",
+      "initialBrowserFailure": "Old synthetic anchor 2026-10-14 left current-shift chart empty; no app logic changed"
+    },
+    "buildAllProduct": "PASS",
+    "buildPhase2": "PASS",
+    "productBrowserSmoke": "PASS; ephemeral synthetic fixture",
+    "launcherCheck": "PASS; no DB connection or service started",
+    "standaloneHubDemo": "Source/private/dependencies/build outputs preserved; documentation-only commit"
+  },
+  "branchCleanup": {
+    "status": "complete-after-explicit-owner-approval",
+    "automaticReviewRejected": true,
+    "reason": "Initial automatic review required explicit approval for previously protected names; owner subsequently approved the exact list with archive tags preserved.",
+    "branchesDeleted": true,
+    "explicitOwnerApprovalReceived": true,
+    "remoteBranchesDeleted": 8,
+    "localBranchesDeleted": 6,
+    "remainingBranches": [
+      "main",
+      "codex/telemetry-monorepo",
+      "demo/phase2"
+    ],
+    "remoteArchiveTagTargetsVerifiedBeforeDeletion": true
+  },
+  "productionDatabaseOrFirmwareChanged": false,
+  "demoSyntheticDataRefreshedOnly": true,
+  "currentProductPathVerified": true,
+  "diskFreeBytesAfter": 20871573504,
+  "approximateDiskFreeIncreaseBytes": 1029591040,
+  "approximateDiskFreeIncreaseDecimalGB": 1.03,
+  "privateArchiveRestorable": true,
+  "github": {
+    "productBranchPushed": true,
+    "phase2DemoBranchPushed": true,
+    "standaloneHubDemoPushed": true,
+    "archiveTagsPushed": true,
+    "oldBranchNamesDeleted": true
+  },
+  "paths": {
+    "product": "D:/git/pouyeshgar-workshop",
+    "phase2Demo": "D:/git/pouyeshgar-demo-phase2",
+    "hubDemo": "D:/git/pouyeshgar-industrial-platform"
+  },
+  "followupSizeAndLauncherReview": {
+    "date": "2026-10-19",
+    "installerZipRemovedBytes": 94970049,
+    "installerHashVerified": true,
+    "databaseFilesChanged": false,
+    "installedMariaDbRuntimePreserved": true,
+    "phase2UserStartedWebAndApi": "RESPONDING",
+    "productLauncherCheck": "PASS; no services started",
+    "productLauncherStatus": "all stopped; MariaDB stopped",
+    "remainingMajorSize": "MariaDB data, installed runtime and dependencies",
+    "notes": "docs/guides/LOCAL-FOLDERS.fa.md",
+    "phase2Dependencies": "installed locally; shared pnpm install store",
+    "portableDemoPackageBuilt": false
+  }
+}

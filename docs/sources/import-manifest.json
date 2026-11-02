@@ -1,0 +1,1007 @@
+{
+  "schemaVersion": 1,
+  "kind": "immutable-selected-source-material",
+  "records": [
+    {
+      "path": "docs/source-material/work-11/docs/core/DATA-POINTS-AND-CONSUMERS.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "243aa9b8b161ed1e9b91285068425386f86c5c5c",
+      "sourcePath": "docs/core/DATA-POINTS-AND-CONSUMERS.fa.md",
+      "gitBlob": "0cdec036d68cd59cc4a34e222386850141a8faf1"
+    },
+    {
+      "path": "docs/source-material/work-11/docs/core/DEFINITION-EXTENSIONS.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "243aa9b8b161ed1e9b91285068425386f86c5c5c",
+      "sourcePath": "docs/core/DEFINITION-EXTENSIONS.md",
+      "gitBlob": "7d40e164bfef55aa196c8c4f013d2585c1aaa2a3"
+    },
+    {
+      "path": "docs/source-material/work-11/docs/core/POSITION-TEMPLATES-AND-MODULES.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "243aa9b8b161ed1e9b91285068425386f86c5c5c",
+      "sourcePath": "docs/core/POSITION-TEMPLATES-AND-MODULES.md",
+      "gitBlob": "6cc2062d421a0e7a70ddaf6f385816679a00a1c6"
+    },
+    {
+      "path": "docs/source-material/work-11/docs/core/README.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "243aa9b8b161ed1e9b91285068425386f86c5c5c",
+      "sourcePath": "docs/core/README.md",
+      "gitBlob": "768dc083badc97c52c0c7577de54e348a6b9fb70"
+    },
+    {
+      "path": "docs/source-material/work-11/docs/modules/training/AI-KNOWLEDGE.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "243aa9b8b161ed1e9b91285068425386f86c5c5c",
+      "sourcePath": "docs/modules/training/AI-KNOWLEDGE.fa.md",
+      "gitBlob": "bd4befa38701d894aa17ec3dddcbec8aba207c50"
+    },
+    {
+      "path": "docs/source-material/work-11/docs/modules/training/DECISIONS.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "243aa9b8b161ed1e9b91285068425386f86c5c5c",
+      "sourcePath": "docs/modules/training/DECISIONS.md",
+      "gitBlob": "1bb8aa47ebe0c915fc44021085d499fa58c1f701"
+    },
+    {
+      "path": "docs/source-material/work-11/docs/modules/training/LEARNER-AND-POLICY.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "243aa9b8b161ed1e9b91285068425386f86c5c5c",
+      "sourcePath": "docs/modules/training/LEARNER-AND-POLICY.fa.md",
+      "gitBlob": "587481609357d15abac1b22a85116dceee0ea037"
+    },
+    {
+      "path": "docs/source-material/work-11/docs/modules/training/ONBOARDING.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "243aa9b8b161ed1e9b91285068425386f86c5c5c",
+      "sourcePath": "docs/modules/training/ONBOARDING.fa.md",
+      "gitBlob": "c1560439ef1e9c4bbcd1ec57313627ab2dbf93e9"
+    },
+    {
+      "path": "docs/source-material/work-11/docs/modules/training/OPERATIONS-AND-INTEGRATION.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "243aa9b8b161ed1e9b91285068425386f86c5c5c",
+      "sourcePath": "docs/modules/training/OPERATIONS-AND-INTEGRATION.fa.md",
+      "gitBlob": "c5fb7d97bb381f43e3e074a4fe1a0bfaeaeae726"
+    },
+    {
+      "path": "docs/source-material/work-11/docs/modules/training/PRODUCT.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "243aa9b8b161ed1e9b91285068425386f86c5c5c",
+      "sourcePath": "docs/modules/training/PRODUCT.fa.md",
+      "gitBlob": "ba5cb7ff115d15376e0d9c0d707523854639e7fc"
+    },
+    {
+      "path": "docs/source-material/work-11/docs/modules/training/README.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "243aa9b8b161ed1e9b91285068425386f86c5c5c",
+      "sourcePath": "docs/modules/training/README.md",
+      "gitBlob": "f49aba4f90d9076ca671882853dffc655c027cf2"
+    },
+    {
+      "path": "docs/source-material/work-11/docs/modules/training/SKILL-GAP-LMS.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "243aa9b8b161ed1e9b91285068425386f86c5c5c",
+      "sourcePath": "docs/modules/training/SKILL-GAP-LMS.fa.md",
+      "gitBlob": "d0f0f9dc8b8d13cd3b7c8c3e7d6eade4ab0f41fc"
+    },
+    {
+      "path": "docs/source-material/work-11/docs/modules/training/STANDARDS-AND-RESEARCH.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "243aa9b8b161ed1e9b91285068425386f86c5c5c",
+      "sourcePath": "docs/modules/training/STANDARDS-AND-RESEARCH.fa.md",
+      "gitBlob": "45926152042323a8c0bcf9936d7e7efe8b362881"
+    },
+    {
+      "path": "docs/source-material/work-11/docs/modules/training/WORKSTREAM.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "243aa9b8b161ed1e9b91285068425386f86c5c5c",
+      "sourcePath": "docs/modules/training/WORKSTREAM.md",
+      "gitBlob": "af85d64f04485a4449104af060248a40ed7938fa"
+    },
+    {
+      "path": "docs/source-material/work-12/AGENTS.source.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "AGENTS.md",
+      "gitBlob": "192bfda85e4a318f694e352560cdb734d9a9f207"
+    },
+    {
+      "path": "docs/source-material/work-12/CHANGELOG.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "CHANGELOG.md",
+      "gitBlob": "a5761b733462d3b09b5acd2c2cc6a4c09aa840c1"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/ARCHITECTURE.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/ARCHITECTURE.md",
+      "gitBlob": "79cdd000b8c115b7c6a0d6e05895eefce02d64c9"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/.prettierrc.json",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/.prettierrc.json",
+      "gitBlob": "2c1e0bf818239c56ac4ea3191e38934b89b04b24"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/AGENTS.source.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/AGENTS.md",
+      "gitBlob": "55d2fc4519bfb0be5657d9d8deb81816cbc4d075"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/docs/ADR-001-COMPANY-OWNERSHIP.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/docs/ADR-001-COMPANY-OWNERSHIP.md",
+      "gitBlob": "708fc0aac1dd286e645a1f2828fd51a717cadd8d"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/docs/API.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/docs/API.md",
+      "gitBlob": "72d681c819cf8a1c6f59521ad4d4badb27d145a5"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/docs/ARCHITECTURE.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/docs/ARCHITECTURE.md",
+      "gitBlob": "0586340ecb64a9943318a901ee726236d8fcf45a"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/docs/DEPENDENCIES.json",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/docs/DEPENDENCIES.json",
+      "gitBlob": "a9f5169d092bb7e9803b1e1d510ae41557cd758d"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/docs/INTEGRATION-HANDOFF.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/docs/INTEGRATION-HANDOFF.fa.md",
+      "gitBlob": "e00ccbed43876bb931e3963b7b6bf1c2a9188bb4"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/docs/LICENSING.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/docs/LICENSING.md",
+      "gitBlob": "81c9fcd7cc4146e3d79915a8a44536f1c044eba2"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/docs/RESOURCE-SAMPLES.json",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/docs/RESOURCE-SAMPLES.json",
+      "gitBlob": "a25f3e534083e0a91a4a851a30eadb2b590e68f6"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/docs/RUNBOOK.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/docs/RUNBOOK.fa.md",
+      "gitBlob": "4052acc21bb41788accd4e4f8f29aca4198e3c19"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/docs/THIRD-PARTY-NOTICES.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/docs/THIRD-PARTY-NOTICES.md",
+      "gitBlob": "14025baadac082475e347bcdfc1c2b1df8c55a51"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/docs/VALIDATION.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/docs/VALIDATION.md",
+      "gitBlob": "43887a8b0d469ce2a5e79807eb8c9b4fad4a15db"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/package.original.json",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/package.original.json",
+      "gitBlob": "fe4aa58382c588f9a3d57b58cccec91447533d01"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/pnpm-lock.yaml",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/pnpm-lock.yaml",
+      "gitBlob": "d78fb65bba2195c476c004927e24a372d1300649"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/pnpm-workspace.yaml",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/pnpm-workspace.yaml",
+      "gitBlob": "5ed0b5af0d45919f64c66edfb16a5f4512461fa1"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/README-MIGRATION.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/README-MIGRATION.md",
+      "gitBlob": "6ddf12fb33f83c05e4d0bc2f022cd2cffb42d551"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/README.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/README.md",
+      "gitBlob": "f6d52d6c0bb2eba94e33577d7bb5fdebe8a8d509"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/reviews/EDGEBOX-SFP-READONLY-REVIEW.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/reviews/EDGEBOX-SFP-READONLY-REVIEW.fa.md",
+      "gitBlob": "dfd32b36b7246273faf5c582b3d84971b0569506"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/reviews/HUB-EXECUTION-CONTRIBUTION.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/reviews/HUB-EXECUTION-CONTRIBUTION.fa.md",
+      "gitBlob": "b8efbc39302156cf45a2aedf8038cd7a9fb742f6"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/reviews/HUB-TAG-PUBLICATION-AUDIT-1.0.1.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/reviews/HUB-TAG-PUBLICATION-AUDIT-1.0.1.fa.md",
+      "gitBlob": "b1edcd6036d21751c948527413ed4243da7a1900"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/reviews/HUB-TAG-PUBLICATION-REVIEW.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/reviews/HUB-TAG-PUBLICATION-REVIEW.fa.md",
+      "gitBlob": "4701afef5a9e870e49785c9fda3e480141350037"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/reviews/INTEGRATION-WORKING-DRAFT.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/reviews/INTEGRATION-WORKING-DRAFT.fa.md",
+      "gitBlob": "2b536fdcf339a649a4f2bbd43bf0bfa909de41d5"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/reviews/SFP-ADAPTER-PROFILE.proposal.json",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/reviews/SFP-ADAPTER-PROFILE.proposal.json",
+      "gitBlob": "664386a41feed9699aebbebbc83b71869ad12034"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/scripts/Clean-AcceptanceFixtures.mjs",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/scripts/Clean-AcceptanceFixtures.mjs",
+      "gitBlob": "c62a3f1d8bb15b916cb3f69fa61a6589f58d4229"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/scripts/Inventory-Licenses.mjs",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/scripts/Inventory-Licenses.mjs",
+      "gitBlob": "2ed6502a40d02fa56587703642da0e89b0942f16"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/scripts/Measure-Lab.ps1",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/scripts/Measure-Lab.ps1",
+      "gitBlob": "9d8c73979e21a75b34e5d52702fc1d26484eeb7e"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/scripts/Measure-Startup.ps1",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/scripts/Measure-Startup.ps1",
+      "gitBlob": "86d22ed9913c93d0b5e863bf08e1926ad6f488d1"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/scripts/Start-Lab.ps1",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/scripts/Start-Lab.ps1",
+      "gitBlob": "3f2ae0b8dac8df814ac2f82c67130243c4968979"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/scripts/Stop-Lab.ps1",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/scripts/Stop-Lab.ps1",
+      "gitBlob": "53492342a577b4374f45b4ba17874b681736b2c4"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/Start.cmd",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/Start.cmd",
+      "gitBlob": "5595744860fd3e6ae40dbc858f8e7723dbf824ee"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/data-hub/Stop.cmd",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/data-hub/Stop.cmd",
+      "gitBlob": "a18eed0d434ff4387502207870e78c156df57319"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/DECISIONS-EARLY-PILOT.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/DECISIONS-EARLY-PILOT.md",
+      "gitBlob": "0aa7d7a49abd1280fa6a36e61153be96ed1f0ad0"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/deliveries/DATA-SOURCES-INTEGRATION-PROGRESS.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/deliveries/DATA-SOURCES-INTEGRATION-PROGRESS.md",
+      "gitBlob": "08f9bd30d9c1fe0b51acb83dbf239f39c2ee1438"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/deliveries/DEVICE-CONNECTION-SETUP-PROGRESS.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/deliveries/DEVICE-CONNECTION-SETUP-PROGRESS.md",
+      "gitBlob": "fddf724ec2d3deef5119e6c1bbd5ad23a4c21b6a"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/deliveries/DYNAMIC-WORKSPACES-PROGRESS.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/deliveries/DYNAMIC-WORKSPACES-PROGRESS.md",
+      "gitBlob": "fa047b51426ccfa43b9f91177bd48ac1f721d300"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/deliveries/INDUSTRIAL-DATA-HUB-DELIVERY.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/deliveries/INDUSTRIAL-DATA-HUB-DELIVERY.md",
+      "gitBlob": "582ec8f464b16028a94a008684b6f53e85073fc6"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/deliveries/INDUSTRIAL-DATA-HUB-PROGRESS.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/deliveries/INDUSTRIAL-DATA-HUB-PROGRESS.md",
+      "gitBlob": "7daf9a5877cd1ec3ba2053022f79f194eca76300"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/deliveries/LOCAL-LAUNCHER-NOTES.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/deliveries/LOCAL-LAUNCHER-NOTES.md",
+      "gitBlob": "730a13fea127a0bb2931e36f53ebf550c1561da1"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/deliveries/PHASE2-DELIVERY.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/deliveries/PHASE2-DELIVERY.md",
+      "gitBlob": "eefcf9986a3ac6468f67c94de340ba5b4e76c3a8"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/deliveries/PHASE2-PROGRESS.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/deliveries/PHASE2-PROGRESS.md",
+      "gitBlob": "72d80f2ff5473bea3a1e07f1d0d14e629b389b06"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/deliveries/PHASE3-DELIVERY.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/deliveries/PHASE3-DELIVERY.md",
+      "gitBlob": "01efa5f3ba78f58cadc2261af21d883d5f809c6b"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/deliveries/PHASE3-LOCAL-VERIFICATION.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/deliveries/PHASE3-LOCAL-VERIFICATION.md",
+      "gitBlob": "82cf0e629d739f2e288a8f9e6cfd5afef0b400d7"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/deliveries/PHASE3-PROGRESS.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/deliveries/PHASE3-PROGRESS.md",
+      "gitBlob": "e4ad4b06bcec2e5d77bdbc2e4d6ca9087ad70192"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/deliveries/PHASE3-USABILITY-PROGRESS.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/deliveries/PHASE3-USABILITY-PROGRESS.md",
+      "gitBlob": "b9bde7e6fadd96a35ca08e28ee37ae1c995e9593"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/deliveries/PHASE3B-DELIVERY.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/deliveries/PHASE3B-DELIVERY.md",
+      "gitBlob": "50b91e199edcb1988961720b0d9729ee051f6ede"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/deliveries/PHASE3B-PROGRESS.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/deliveries/PHASE3B-PROGRESS.md",
+      "gitBlob": "0bf91ccd900a15fcaab80632fdf87c881cdbcd74"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/deliveries/PILOT-QA.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/deliveries/PILOT-QA.md",
+      "gitBlob": "f91136f036a85250093dce6d79ef27ab1093af41"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/deliveries/PRODUCTION-DATA-SOURCES-DELIVERY.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/deliveries/PRODUCTION-DATA-SOURCES-DELIVERY.md",
+      "gitBlob": "b26aa23f391c02554d0268b70828586372fefdf1"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/deliveries/UNIFIED-SHELL-DELIVERY.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/deliveries/UNIFIED-SHELL-DELIVERY.md",
+      "gitBlob": "f4a6ddaef01b819010bf20429d51f44e9840e2e6"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/deliveries/UNIFIED-SHELL-PROGRESS.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/deliveries/UNIFIED-SHELL-PROGRESS.md",
+      "gitBlob": "474fc29a3e29ee3092578be4f4e16609b71c4098"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/deliveries/WORK-PERIODS-PROGRESS.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/deliveries/WORK-PERIODS-PROGRESS.md",
+      "gitBlob": "9b809b987eaf1ec26274ff3e252da3c22016f136"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/README.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/README.md",
+      "gitBlob": "454804730827630bf9c753a9f9abc5a22def17fc"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/research/3d-operational-visualization.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/research/3d-operational-visualization.md",
+      "gitBlob": "a9b3477b83c698fdbdfaf618966a251f265f146b"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/research/first-milestone.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/research/first-milestone.md",
+      "gitBlob": "1a148930a35ffd2a5bab1faa9b7452123f5fd7bb"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/research/idea-inbox.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/research/idea-inbox.md",
+      "gitBlob": "9010e1f7db0bea95bb3b231a82c171d017be2e2b"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/research/peer-layer-comparison.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/research/peer-layer-comparison.md",
+      "gitBlob": "51ddbeeb350bd7f2bfcab912c8a369b6b0a09250"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/research/PILOT-RUNBOOK.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/research/PILOT-RUNBOOK.md",
+      "gitBlob": "6df6ae1451793ffec608dec41d70ec7bd5e5601d"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/research/UI-VISUAL-IMPLEMENTATION-CONTRACT.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/research/UI-VISUAL-IMPLEMENTATION-CONTRACT.md",
+      "gitBlob": "f942fafa6b8b30e9786fe89ea46355d1ee7f89c8"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/research/workshop-brief.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/research/workshop-brief.md",
+      "gitBlob": "b2518cc20909911408c5cc7e7af67a18ba85a2d9"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/state-2026-10-19/ARCHITECTURE.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/state-2026-10-19/ARCHITECTURE.md",
+      "gitBlob": "180eb776b67160af39d56cd44015552433400670"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/state-2026-10-19/CURRENT-STATE.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/state-2026-10-19/CURRENT-STATE.md",
+      "gitBlob": "10568dd2c94be1d8f26de576b8e0624e7b6173ef"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/state-2026-10-19/RUNBOOK.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/state-2026-10-19/RUNBOOK.md",
+      "gitBlob": "c3b532a3a2b1f3a93634e62d4d95b604baf2f35b"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/state-2026-10-19/START-HERE.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/state-2026-10-19/START-HERE.md",
+      "gitBlob": "3081629dd833a6aa6b5888765b4584307152b66a"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "gitBlob": "e6b04c80948904de485e01c39de51f9205a3554d"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "gitBlob": "7dec059d2ee60967178dd81b504aa56965c35dbd"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/state-2026-10-28/DECISIONS.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/state-2026-10-28/DECISIONS.md",
+      "gitBlob": "b4606ad41cbf43a850470f3b09c9b3f52bd10372"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/state-2026-10-28/DEVELOPER-GUIDE.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/state-2026-10-28/DEVELOPER-GUIDE.md",
+      "gitBlob": "0121b4c0624a054bc9cb0ec12ca812cbf0d5db03"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/state-2026-10-28/guides/DATA-HUB-WORKFLOW.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/state-2026-10-28/guides/DATA-HUB-WORKFLOW.fa.md",
+      "gitBlob": "e15a3a9daca20a2971fc1ecd1a9715a32884209f"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/state-2026-10-28/guides/LOCAL-FOLDERS.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/state-2026-10-28/guides/LOCAL-FOLDERS.fa.md",
+      "gitBlob": "71d79ba34a8013007e6745c03ca723e474e53173"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/state-2026-10-28/manifest.json",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/state-2026-10-28/manifest.json",
+      "gitBlob": "0344caebdffebc88f8042e2d70b1ec68888157f5"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "gitBlob": "80e82c49fcd707745e29da900af3035f7865421f"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/state-2026-10-28/RUNBOOK.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/state-2026-10-28/RUNBOOK.md",
+      "gitBlob": "80087be2de157ee20e8e3b471b6451dbcab2ecd1"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "gitBlob": "128bacd552f4ade66b64c425e7eb4a7b8eb7b72f"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/archive/telemetry-v1/INDUSTRIAL-DATA-HUB.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/archive/telemetry-v1/INDUSTRIAL-DATA-HUB.md",
+      "gitBlob": "2c30e49757166e8b687eb452636bffd1661d9461"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/CODEX-SMART-FACTORY-HANDOFF.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/CODEX-SMART-FACTORY-HANDOFF.md",
+      "gitBlob": "7af8f1646cd810321f17647162a76c6f87e53911"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/CURRENT-STATE.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/CURRENT-STATE.md",
+      "gitBlob": "ff3fac1b2717cbb5ecfcb0a5885fce6d7f9e98fd"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/dashboard-layers.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/dashboard-layers.md",
+      "gitBlob": "eae561243c34b944daba1cc45d4558f9321ed2ce"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/DECISIONS.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/DECISIONS.md",
+      "gitBlob": "62721c590f36eebbd98dfd3d84361c9ea07be51c"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/design/product-guide/generate.py",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/design/product-guide/generate.py",
+      "gitBlob": "310da00173fe6b6005bbdcce556b9aad20ceef42"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/design/reference/README.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/design/reference/README.md",
+      "gitBlob": "92282d52f3b2d92547ffec7cffa3f5209126b9e3"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/DEVELOPER-GUIDE.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/DEVELOPER-GUIDE.md",
+      "gitBlob": "6e453765747dd4e2283a1c92a353e7a9e3083506"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/guides/COMPANY-ADMIN-QUICKSTART.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/guides/COMPANY-ADMIN-QUICKSTART.md",
+      "gitBlob": "5421f389a7b9c01fa00a3ebc53d04f15796bd479"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/guides/DATA-HUB-VALIDATION-2026-10-20.json",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/guides/DATA-HUB-VALIDATION-2026-10-20.json",
+      "gitBlob": "4a0fe105041348461f903067d3712d6795fd655b"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "gitBlob": "db355105497d37d2a978f5cdad0b39e9771e9b68"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/guides/DEFINITION-EXTENSIONS.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/guides/DEFINITION-EXTENSIONS.md",
+      "gitBlob": "7cfa661b80eb952c6d888fe53485ef40288e11d3"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/guides/DEVICE-CONNECTION-QUICKSTART.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/guides/DEVICE-CONNECTION-QUICKSTART.md",
+      "gitBlob": "e1e38b3cb725762ad22a8c32f68da76d3557a3e7"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/guides/LOCAL-FOLDERS.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/guides/LOCAL-FOLDERS.fa.md",
+      "gitBlob": "b8b584464879f893429ad34b332e22b804f61f1f"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/guides/PHASE3B-OPERATIONS.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/guides/PHASE3B-OPERATIONS.md",
+      "gitBlob": "18562eab2028edf9a1402da92d38764db8bb2d21"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/guides/POSITION-TEMPLATES-AND-MODULES.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/guides/POSITION-TEMPLATES-AND-MODULES.md",
+      "gitBlob": "6cc2062d421a0e7a70ddaf6f385816679a00a1c6"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/guides/POUYESHGAR1-DEMO.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/guides/POUYESHGAR1-DEMO.md",
+      "gitBlob": "716af2232657bc5522fc1c2efabde7ad1016806b"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/guides/PRODUCTION-DATA-SOURCES.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/guides/PRODUCTION-DATA-SOURCES.md",
+      "gitBlob": "b5b8ce46dc363afa7fdb8075e4c8e7ab27f8f3a1"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/hall-01-layout.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/hall-01-layout.md",
+      "gitBlob": "7ef40364b42f0b80493a1a01515b6787f4ff1682"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/integration/HUB-TAG-PUBLICATION-DESIGN.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/integration/HUB-TAG-PUBLICATION-DESIGN.fa.md",
+      "gitBlob": "461d101d1cf4f278352b9c49923c4e965d8f6dc2"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/integration/method4/CHANGELOG.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/integration/method4/CHANGELOG.fa.md",
+      "gitBlob": "12ed6e94587753326029877d468fdd267839a3d1"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/integration/method4/device-batch.example.json",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/integration/method4/device-batch.example.json",
+      "gitBlob": "a478a005d8106f865001ff74a179d4bb9714435f"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/integration/method4/HUB-SESSION-PROMPT.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/integration/method4/HUB-SESSION-PROMPT.fa.md",
+      "gitBlob": "0867b5ca418fd8f947a88b9b1e0879fa81bd1b22"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/integration/method4/IMPLEMENTATION-STATUS.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/integration/method4/IMPLEMENTATION-STATUS.fa.md",
+      "gitBlob": "d7d487005af502801c38f06c1a296ca928f00f13"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/integration/method4/package-manifest.json",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/integration/method4/package-manifest.json",
+      "gitBlob": "7025042e1a3c2b3b8cf4bceee86d3b16746069e6"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/integration/method4/README.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/integration/method4/README.fa.md",
+      "gitBlob": "a89159ca4804d94b2bef96e28ebbc65daabcfcce"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/integration/method4/receipt.example.json",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/integration/method4/receipt.example.json",
+      "gitBlob": "95f7d3b82b274caa8d9d55689241182180934e52"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/integration/method4/RUNBOOK.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/integration/method4/RUNBOOK.fa.md",
+      "gitBlob": "f27925e9f96dba96865dc8fcf26f056f5f6bebed"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/integration/method4/SCENARIO.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/integration/method4/SCENARIO.fa.md",
+      "gitBlob": "145d1c81916a9c5a72706ee333495849ad399284"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/integration/method4/STORAGE-CONTRACT.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/integration/method4/STORAGE-CONTRACT.fa.md",
+      "gitBlob": "1280e0899759e9e28c600b77414adf4d930acac8"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/integration/method4/storage-v1.json",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/integration/method4/storage-v1.json",
+      "gitBlob": "7e4c1e52a3ed3c0946012604fa7c9d6e30b01252"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/integration/method4/Verify-Package.ps1",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/integration/method4/Verify-Package.ps1",
+      "gitBlob": "2f4576aa2f83eb664ece73cef37f70a84e40d0ff"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/integration/telemetry-execution-v2-approvals.json",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/integration/telemetry-execution-v2-approvals.json",
+      "gitBlob": "f27f410a19c82ddc25ebd3dc90ab75c27f37a883"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/LOCAL-USER-GUIDE-FA.html",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/LOCAL-USER-GUIDE-FA.html",
+      "gitBlob": "a1f7db7795b035202d44177739d183235d576120"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/migrations/DOCUMENT-CONSOLIDATION-2026-10-28.json",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/migrations/DOCUMENT-CONSOLIDATION-2026-10-28.json",
+      "gitBlob": "a7762178ac95c31458b45cd7361587197aaf259b"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/migrations/RETIRED-WEB-SENDER-2026-10-20.json",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/migrations/RETIRED-WEB-SENDER-2026-10-20.json",
+      "gitBlob": "24def3926a47be8bde03b9de487e38b44b0fef18"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/migrations/STRUCTURE-AUDIT-2026-10-28.json",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/migrations/STRUCTURE-AUDIT-2026-10-28.json",
+      "gitBlob": "b6dda333d9430250f206c77308ce517a9205db6b"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/migrations/TELEMETRY-MONOREPO-REVIEW.json",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/migrations/TELEMETRY-MONOREPO-REVIEW.json",
+      "gitBlob": "a7620e7a3ef770bd7bab4065646c5bd2ca10b259"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/migrations/TELEMETRY-MONOREPO-SOURCE-MAP.json",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/migrations/TELEMETRY-MONOREPO-SOURCE-MAP.json",
+      "gitBlob": "55babdef497bb1e9bacfa385d0f07a6e56bbfcd2"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/migrations/TELEMETRY-MONOREPO-VALIDATION.json",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/migrations/TELEMETRY-MONOREPO-VALIDATION.json",
+      "gitBlob": "42b9372944add800f918ea5d6f2d4fd3e8c16ceb"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/migrations/TELEMETRY-MONOREPO.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/migrations/TELEMETRY-MONOREPO.fa.md",
+      "gitBlob": "9547244285db523846885927540ee0fe4dc26c62"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/migrations/WORKSPACE-CLEANUP-2026-10-19.json",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/migrations/WORKSPACE-CLEANUP-2026-10-19.json",
+      "gitBlob": "dc78890bd7a9ccd7719bfd9296a66d6f95b8544b"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/PHASE3-COMPANY-ACCOUNTS-CONTRACT.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/PHASE3-COMPANY-ACCOUNTS-CONTRACT.md",
+      "gitBlob": "900c8a570bd6658eae67b00a81a0730d159a4cf2"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/PRODUCT-BLUEPRINT.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/PRODUCT-BLUEPRINT.md",
+      "gitBlob": "941278f09a5e22e0fc994b1c6ce5069dd7d78e73"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/product-notes/DATA-POINTS-AND-CONSUMERS.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/product-notes/DATA-POINTS-AND-CONSUMERS.fa.md",
+      "gitBlob": "0cdec036d68cd59cc4a34e222386850141a8faf1"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/product-notes/PRODUCTION-FORM-FEEDBACK.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/product-notes/PRODUCTION-FORM-FEEDBACK.md",
+      "gitBlob": "356408996910215fe9e16858fa9052b55f283ad1"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/RUNBOOK.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/RUNBOOK.md",
+      "gitBlob": "cd06b26d9c14aab41d0bfa7d58cfcc3449d8040b"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/START-HERE.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/START-HERE.md",
+      "gitBlob": "ddc7ef8e6607c5df4eecf2157a7b2bde038f38b0"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/TENANCY-IDENTITY-DESIGN.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/TENANCY-IDENTITY-DESIGN.md",
+      "gitBlob": "557a3d2bbe8efc23cd5d737ad2b7d6d0762d5094"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/UI-UX-SPEC.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/UI-UX-SPEC.md",
+      "gitBlob": "8834b0aacfac7c64bba26730967ff46041d1ed4f"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/workstreams/work-12/PRODUCT-AND-UX.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/workstreams/work-12/PRODUCT-AND-UX.fa.md",
+      "gitBlob": "7bb058360a49fc9b7c48dc0d113cabaee2502572"
+    },
+    {
+      "path": "docs/source-material/work-12/docs/workstreams/work-12/THINKING-ALOUD.fa.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "docs/workstreams/work-12/THINKING-ALOUD.fa.md",
+      "gitBlob": "67dd9ed3576bd1fa0fdf967877e24c0a557e29f9"
+    },
+    {
+      "path": "docs/source-material/work-12/README.md",
+      "repository": "hossein-aghaie/pouyeshgar-workshop",
+      "revision": "19b644c791ab3c228513db3aeb6e53b3e7389bd8",
+      "sourcePath": "README.md",
+      "gitBlob": "50385bb6c95ddc5cdc00e85d1e4c81604e4f5b64"
+    }
+  ]
+}

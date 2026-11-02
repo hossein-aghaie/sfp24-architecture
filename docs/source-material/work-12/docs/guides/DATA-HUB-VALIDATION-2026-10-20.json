@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-20",
+  "branch": "codex/telemetry-monorepo",
+  "scope": "Integrated company Data Hub UI using current v1 API; separate machine input assignment",
+  "checks": {
+    "test_all_with_isolated_mariadb_and_browser": { "web_pass": 129, "ingest_lab_pass": 9, "simulator_entry_pass": 1, "failed": 0, "skipped": 0 },
+    "build_all": "pass: WEB, INGEST lab and hub lab",
+    "typecheck": "pass",
+    "browser_real_vue_fastify_isolated_mariadb": ["nine sections", "source without machine", "separate tag", "private export includes tag", "config revision follows tag creation", "settings save", "typing during refresh preserved", "agent queue", "unsupported imports truthful", "FA/EN mobile without document overflow"],
+    "machine_inputs_component_browser": ["compatible signal only", "review before mutation", "confirmed assignment", "mobile without overflow"],
+    "review": { "hub": "read-only findings corrected and confirmed", "ux": "read-only findings corrected and confirmed" },
+    "contract_manifest_sha256": "e5e1dfe4c5b0d6cf97882b0acdd7f8ecb32eb18fcdbc76d331622ff71a5d250d"
+  },
+  "local_evidence": [".local/cleanup/product-hub-final-tests.log", ".local/cleanup/product-hub-build.log", ".local/qa/telemetry-browser/result.json", ".local/qa/product-hub/inputs-result.json"],
+  "limitations": ["No industrial hardware or firmware acceptance", "No rc.4 runtime, publication or recovery implementation", "No current customer account or runtime configuration changed", "Machine input browser used in-memory API; binding rules tested separately in MariaDB acceptance", "Full authenticated shell navigation inspected in code, not end-to-end browser tested"]
+}

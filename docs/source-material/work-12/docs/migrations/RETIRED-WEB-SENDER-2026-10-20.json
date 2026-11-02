@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-20",
+  "scope": "Retire the pre-hub WEB-side fictional sender and its UI",
+  "branch": "codex/telemetry-monorepo",
+  "removed": [
+    "tools/edgebox-simulator",
+    "package command and Vite console URL injection",
+    "local launcher sender and synthetic API services on 5210/5208",
+    "sender-specific UI instructions and current guide steps",
+    "sender-specific test suite, sender unit case and old sender-dependent browser QA scripts"
+  ],
+  "preserved": [
+    "WEB HTTP receiver and connection setup credentials/export",
+    "adapter validation and receiver/consumer acceptance tests",
+    "hub lab simulator and its tests",
+    "production history and databases",
+    "separate presentation demos",
+    "Git history and explicitly historical archived evidence"
+  ],
+  "localState": "Retired sender private queue/settings moved from active path to ignored .local/archive/retired-web-sender-2026-10-20; no active sender launcher metadata remains",
+  "processes": "Only the two retired sender services were stopped after matching process ownership; WEB/API/worker/demo/MariaDB remained running",
+  "validation": {
+    "contract": "PASS; signed rc.4 manifest unchanged",
+    "webTests": {"pass": 68, "skip": 1, "fail": 0},
+    "hubTests": {"pass": 9, "fail": 0},
+    "hubSimulatorEntryTests": {"pass": 1, "fail": 0},
+    "buildAll": "PASS",
+    "launcherPowerShellParse": "PASS",
+    "launcherCheckAndStatus": "PASS; surviving services retain ownership",
+    "browserSmoke": "PASS; WEB owner login and synthetic hub login, ephemeral ports/temp database, no page errors",
+    "initialRestrictedNetworkRun": "Hub network tests could not connect to loopback under sandbox (EACCES); rerun with local network permission passed",
+    "rc4RuntimeAcceptance": "NOT RUN",
+    "newIndustrialIntegration": "NOT RUN"
+  }
+}

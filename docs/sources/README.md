@@ -1,12 +1,17 @@
-# Source Provenance
+# منابع و نسخهٔ شواهد
 
-> **Navigation:** [full imported material index](../source-material/README.md).
+برای پیدا کردن فایل با اسم یا موضوع، [کاتالوگ کامل قابل جست‌وجو](CATALOG.md) را باز کنید. برای قواعد جاری از [هسته](../core/README.md) یا [ماژول‌ها](../modules/README.md) شروع کنید، نه از snapshot.
 
-**Canonical executable repo:** [pouyeshgar-workshop](https://github.com/hossein-aghaie/pouyeshgar-workshop). This architecture repo keeps exact historic copies separate from proposed contracts. Do not confuse a document's historical “approved” statements with newly approved platform-wide contracts.
-
-| Branch | Revision | Important starting point |
+| منبع | revision ثابت | کاربرد |
 |---|---|---|
-| Work 11 | [243aa9b8](https://github.com/hossein-aghaie/pouyeshgar-workshop/tree/243aa9b8b161ed1e9b91285068425386f86c5c5c) | [Training overview](../source-material/work-11/docs/modules/training/README.md), [Core overview](../source-material/work-11/docs/core/README.md) |
-| Work 12 | [19b644c7](https://github.com/hossein-aghaie/pouyeshgar-workshop/tree/19b644c791ab3c228513db3aeb6e53b3e7389bd8) | [Core architecture](../source-material/work-12/docs/ARCHITECTURE.md), [Thinking Aloud](../source-material/work-12/docs/workstreams/work-12/THINKING-ALOUD.fa.md) |
+| کد اصلی محصول | b3f203bc74fe9ef92f6d0ef290fee44fb6a1932f | رفتار موجود، فناوری و گزارش تحویل |
+| طراحی مستقل آموزش | 243aa9b8b161ed1e9b91285068425386f86c5c5c | مبنای طراحی و پیش‌نمایش Work 11 |
+| Work 12 / سوابق کد | 19b644c791ab3c228513db3aeb6e53b3e7389bd8 | ب3f203b به‌علاوهٔ دو سند اتاق فکر |
 
-**28 selected originals have been copied unchanged and blob-SHA checked; not all historical files are migrated.** Refer to [the index](../source-material/README.md) for the list and caveats.
+[import-manifest.json](import-manifest.json) مسیر، revision و Git blob هر فایل تاریخیِ منتقل‌شده را ثبت می‌کند؛ شمار آن از manifest محاسبه شود، نه عدد دستی در چند سند. متن فایل‌های تاریخی عوض نمی‌شود. راهنمای فعلی از آن‌ها مشتق شده و در مسیر موضوعی و با وضعیت روشن نگهداری می‌شود.
+
+[فهرست بازیابی لینک‌های تاریخی](historical-link-resolver.json) برای مقصدهای خارج از کپی یا ناموجود است؛ unavailable یعنی واقعاً در snapshot منبع هم مسیر قابل اثبات پیدا نشده است. [نقشهٔ انتقال موضوع‌ها](current-owner-map.json).
+
+تست‌های گزارش‌شده در منبع، تست تازهٔ این انتقال نیستند. کد عملیاتی، کلیدها، دیتابیس یا فایل‌های خصوصی به این مخزن منتقل نمی‌شوند.
+
+[ورودی آرشیو متن‌های اصلی](../source-material/README.md).

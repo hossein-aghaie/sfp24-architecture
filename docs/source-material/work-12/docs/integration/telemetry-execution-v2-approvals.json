@@ -1,0 +1,39 @@
+{
+  "packageVersion": "2.0.0-rc.4",
+  "manifestSha256": "e5e1dfe4c5b0d6cf97882b0acdd7f8ecb32eb18fcdbc76d331622ff71a5d250d",
+  "status": "design-approved-awaiting-owner-implementation-instruction",
+  "webReview": "design-approved",
+  "hubReview": "approved-with-runtime-gates-not-run",
+  "ownerImplementationAuthorization": false,
+  "runtimeEvidence": "not-run-not-authorized",
+  "reviewRecord": "../../packages/telemetry-contract/contract/REVIEW.fa.md",
+  "webReviewEvidence": {
+    "reviewer": "program-session",
+    "date": "2026-10-19",
+    "manifestSha256": "e5e1dfe4c5b0d6cf97882b0acdd7f8ecb32eb18fcdbc76d331622ff71a5d250d",
+    "scope": "WEB API/schema/permissions; persistence/migration; transaction/delete/recovery/read boundaries; restart and acceptance design, including H-R14 schema erratum",
+    "checks": "VALIDATION.json structural PASS; no remaining identified design blocker. B02/B07 lock/grant/migration proof requires future authorized runtime fixture.",
+    "runtimeAcceptance": "NOT RUN",
+    "implementationAuthorization": false
+  },
+  "hubReviewEvidence": {
+    "reviewer": "hub-session",
+    "threadId": "01a14a04-3473-7ca2-b5a8-4e73c9d34288",
+    "date": "2026-10-19",
+    "manifestSha256": "e5e1dfe4c5b0d6cf97882b0acdd7f8ecb32eb18fcdbc76d331622ff71a5d250d",
+    "reportPath": "D:/git/pouyeshgar-industrial-platform/docs/HUB-EXECUTION-CONTRIBUTION.fa.md",
+    "reportSection": "19",
+    "reportSha256AtReview": "c1525bbd23e5b564d672f1b200a9f5f5a9e47fbf5074d8211e01f4d016cedf42",
+    "openIdentifiedDesignBlockers": 0,
+    "runtimeAcceptance": "NOT RUN",
+    "implementationAuthorization": false
+  },
+  "canonicalPackagePath": "packages/telemetry-contract/contract",
+  "relocation": {
+    "date": "2026-10-19",
+    "semanticsChanged": false,
+    "approvedManifestBytesChanged": false,
+    "previousPath": "docs/integration/telemetry-execution-v2",
+    "oldRedirectRemovedDuringCleanup": true
+  }
+}

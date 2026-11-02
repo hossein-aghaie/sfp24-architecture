@@ -1,0 +1,52 @@
+{
+  "package": "pouyeshgar.method4-handoff",
+  "version": "1.1.0",
+  "status": "web-implemented-ingest-conformance-pending",
+  "hashEncoding": "UTF-8 without BOM; CRLF/CR normalized to LF",
+  "files": [
+    {
+      "path": "CHANGELOG.fa.md",
+      "sha256": "eb66d1514efdef83888276ac0d6d0fa70af8af617f892f4d3171bb286a070593"
+    },
+    {
+      "path": "device-batch.example.json",
+      "sha256": "074534dd780b1d436572f929dc723977d2ef279d7083528daf5968e9fd8f0d69"
+    },
+    {
+      "path": "HUB-SESSION-PROMPT.fa.md",
+      "sha256": "67f96f497fa377ca5e863f371a2e8486288ea8fa6125ce835eb39440dcf69093"
+    },
+    {
+      "path": "IMPLEMENTATION-STATUS.fa.md",
+      "sha256": "493e6afa4c05625592dd979feab46b2431bcfc95b97485f7d591671566f61843"
+    },
+    {
+      "path": "README.fa.md",
+      "sha256": "b525d0d72afed1702a64879048523e941beb63500e7db71bfe1017fc1e6c87b6"
+    },
+    {
+      "path": "receipt.example.json",
+      "sha256": "1e6a980fe88aa80b8f3a41de1f3185195252c77bae736a5e425c7a5612d7b5a7"
+    },
+    {
+      "path": "RUNBOOK.fa.md",
+      "sha256": "13a2336ff4a7c4e9e455991f3f63192f0279035f150583b916e47623a0287070"
+    },
+    {
+      "path": "SCENARIO.fa.md",
+      "sha256": "724f85b0c9391fa4b7453fe3ba4a98b483d84dc71bef060a288362d00c97a388"
+    },
+    {
+      "path": "STORAGE-CONTRACT.fa.md",
+      "sha256": "1f035a5768c719c67774ec09b55317ecbac707f00bee70bb88cd4e84d764168e"
+    },
+    {
+      "path": "storage-v1.json",
+      "sha256": "946eeb6e116b27fb8624149767baea62ccea0d1acc9e63ed27a3c6d12f729844"
+    },
+    {
+      "path": "Verify-Package.ps1",
+      "sha256": "b06d8f8a4d2b2dd65e7b6764862bb69d4422c1e015d373944f8e2136583d82cb"
+    }
+  ]
+}

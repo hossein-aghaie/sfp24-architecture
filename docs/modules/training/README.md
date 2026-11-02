@@ -1,25 +1,23 @@
-# Training / Skill Gap
+# آموزش، شایستگی و ورود کارکنان
 
-> **Status:** Work 11 design; LMS not implemented · **Owner:** Module: training · **Updated:** 2026-11-02
+این ماژول قرار است نیاز شایستگی فعالیت‌ها، آموزش، آزمون، ارزیابی، شواهد و Skill Gap را پوشش دهد. آموزش فقط برای اپراتور تولید نیست؛ فعالیت اداری، کیفیت، نگهداری یا ایستگاه بدون ماشین هم می‌تواند نیاز آموزش داشته باشد.
 
-## دامنه
-آموزش، آزمون، ارزیابی، شایستگی و Onboarding.
+**وضعیت واقعی:** فقط پیش‌نمایش تألیف مرحلهٔ سوم با JSON محلی و مجوز اختصاصی در شاخهٔ مستقل وجود دارد. LMS، محاسبهٔ Gap، آزمون عملیاتی، Onboarding و AI متصل هنوز ساخته نشده‌اند. [وضعیت و مرز ادغام](WORKSTREAM.md).
 
-## ورودی/خروجی احتمالی، نه قرارداد تصویب‌شده
-| Input | Output |
+## پاسخ‌ها و جزئیات مستقیم
+
+| دنبال چه هستید؟ | سند اصلی |
 |---|---|
-| Person, Activity, Requirement, Evidence | Qualification, Gap, Learning assignments |
+| هدف، مثال‌ها، نقش‌های واقعی و مدل پایه | [طراحی محصول آموزش](PRODUCT.fa.md) |
+| Activity، Requirement، Evidence، Qualification و الگوریتم Gap | [موتور شایستگی و LMS](SKILL-GAP-LMS.fa.md) |
+| برنامهٔ آموزش، ارزیاب و اتصال به هسته | [عملیات و یکپارچگی](OPERATIONS-AND-INTEGRATION.fa.md) |
+| تجربهٔ فرد تازه‌وارد، Buddy و بازدید حضوری | [Onboarding کارکنان](ONBOARDING.fa.md) |
+| حساب گوشی، OJT، سیاست شرکت/صنعت و Seat | [فراگیر و سیاست‌ها](LEARNER-AND-POLICY.fa.md) |
+| پیش‌نویس درس و سؤال با AI | [دستیار تألیف](AI-KNOWLEDGE.fa.md) |
+| Retrieval، Provider، بستهٔ محتوایی و Pi | [AI و دانش مشترک هسته](../../core/KNOWLEDGE-AI.fa.md) |
+| منابع استاندارد و مقایسهٔ بازار | [Research آموزش](../../research/TRAINING-STANDARDS.fa.md) |
+| تصمیم پذیرفته‌شده، پیشنهاد و مسئلهٔ باز | [نمایهٔ تصمیم‌ها](DECISIONS.md) |
 
-## نقاط تماس با هسته
-Person/Account و Tenant، Scope/Permission، قرارداد داده، UI contributions، نسخه ماژول. [Module Draft](../../contracts/MODULE-CONTRACT-DRAFT.md).
+این اسناد نسخهٔ موضوعی جاریِ طراحی‌اند؛ فصل‌ها و مثال‌های تفصیلی حذف نشده‌اند. متن اولیهٔ انتقال‌یافته در [آرشیو اصلی](../../source-material/work-11/docs/modules/training/README.md) بدون تغییر محفوظ است. نیازهای مشترک Person/Account/Permission در [مرجع هویت](../../core/IDENTITY-AND-ACCESS.fa.md) تعریف می‌شوند، نه در یک هویت موازی داخل آموزش.
 
-## سؤالات
-عملکرد پایه بدون ماژول‌های دیگر؟ مالک داده چه کسی است؟ در حالت ناموجود یا ناسازگار چه رفتاری دارد؟ کدام پروفایل/میز/داشبورد را گسترش می‌دهد؟
-
-[Sources](../../sources/README.md) · [Core questions](../../core/OPEN-QUESTIONS.md). این صفحه فقط نقطه ورود است؛ جزئیات بعداً به فایل‌های کوچک موضوعی این پوشه اضافه می‌شوند.
-
-## Historical original documents
-
-**The complete selected Work 11 training documentation (10 files) is preserved unmodified.** Start with [its own topic navigator](../../source-material/work-11/docs/modules/training/README.md), then follow the linked specialized documents. The [historical decision index](../../source-material/work-11/docs/modules/training/DECISIONS.md) distinguishes agreed domain policies, open commercial questions and stages without implementation permission.
-
-This module landing page is **not** a substitute for those documents. [Migration provenance](../../source-material/README.md).
+تأیید هدف محصول با تأیید API، schema و شروع کدنویسی یکی نیست. [مسائل مشترک باز](../../core/OPEN-QUESTIONS.md) · [صفحهٔ اول محصول](../../../README.md)

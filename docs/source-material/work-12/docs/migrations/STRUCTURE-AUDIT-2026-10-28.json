@@ -1,0 +1,151 @@
+{
+  "date": "2026-10-28",
+  "branch": "codex/02-structure-audit",
+  "baseCommit": "db8ae3f",
+  "status": "validated-owner-smoke-confirmed",
+  "authorization": "Owner approved stage-02 cleanup after discussion; no main/demo changes, deployment or automatic service startup.",
+  "decisionsRecorded": "PRODUCT-BLUEPRINT.md: 2026-10-28 owner direction; module/parameter/workspace boundaries and open proposals distinguished from shipped behavior.",
+  "documentation": {
+    "fullSnapshots": 9,
+    "mappedSections": 140,
+    "ledger": "DOCUMENT-CONSOLIDATION-2026-10-28.json",
+    "currentReferences": [
+      "START-HERE.md",
+      "PRODUCT-BLUEPRINT.md",
+      "CURRENT-STATE.md",
+      "ARCHITECTURE.md",
+      "UI-UX-SPEC.md",
+      "DEVELOPER-GUIDE.md",
+      "RUNBOOK.md"
+    ],
+    "historicalTextPreserved": true
+  },
+  "removedComponents": [
+    {
+      "path": "src/company/CompanyWorkspace.vue",
+      "lines": 348,
+      "reason": "No runtime import, lazy registration, test or tool reference; replaced by current account shell/data definitions/message structure editor."
+    },
+    {
+      "path": "src/company/InputCatalog.vue",
+      "lines": 281,
+      "reason": "No runtime import, lazy registration, test or tool reference; replaced by current account shell/data definitions/message structure editor."
+    },
+    {
+      "path": "src/company/InputDefinitionDialog.vue",
+      "lines": 201,
+      "reason": "No runtime import, lazy registration, test or tool reference; replaced by current account shell/data definitions/message structure editor."
+    },
+    {
+      "path": "src/telemetry/HttpFormatEditor.vue",
+      "lines": 770,
+      "reason": "No runtime import, lazy registration, test or tool reference; replaced by current account shell/data definitions/message structure editor."
+    }
+  ],
+  "removedCompatibility": [
+    "ModelLibrary legacy hashed company-models fallback",
+    "Wizard draft/image legacy vault path fallback"
+  ],
+  "deploymentRootFix": "SceneService receives the same ModelLibrary/CompanyFiles instance configured for API model routes.",
+  "files": {
+    "currentLibraryFilesCopiedAndByteVerified": 2,
+    "canonicalRoot": ".local/companies/<company-uuid>/",
+    "legacyLocationsPrivatelyArchived": true,
+    "activeCompanyFilesNotDeleted": true,
+    "oldFixtureConfigsArchived": [
+      ".local/phase3/private",
+      ".local/data-hub/private"
+    ],
+    "oldQaFoldersArchived": 8,
+    "generatedPortableSimulatorCopyRemoved": true,
+    "pnpmStoreAndRuntimePreserved": true
+  },
+  "database": {
+    "localPort": 3317,
+    "obsoleteSchemasRemoved": 58,
+    "oldScopedAccountsRemoved": 150,
+    "remainingProductSchemas": 2,
+    "protectedTablesChecked": 80,
+    "protectedRowCountsUnchanged": true,
+    "privateBackup": ".local/archive/cleanup-2026-10-28/private",
+    "databaseBackupBytes": 1877073,
+    "restoreOfBackupTested": false,
+    "activeCompanyReset": false,
+    "schemaMigrationHistoryChanged": false
+  },
+  "integrationTestCleanup": {
+    "normalRunsRemoveOwnedSchemasUsersAndFiles": true,
+    "manualFixtureExportPreservedOnlyWithExplicitOptIn": true,
+    "verifiedRemovedSchemasInLastRun": 14,
+    "verifiedRemovedUsersInLastRun": 16
+  },
+  "productionPath": {
+    "entry": [
+      "src/main.ts",
+      "src/accounts/AccountsWorkspace.vue",
+      "src/App.vue"
+    ],
+    "form": "src/company/ProductionEditor.vue",
+    "api": "server/operations/http.ts",
+    "service": "server/operations/production/service.ts",
+    "authorization": [
+      "server/platform/identity/access.ts",
+      "src/company/access-policy.ts"
+    ],
+    "storage": "server/platform/storage/tenant-storage.ts",
+    "inputs": "server/data-hub/production-source.ts; generic parameter consumer integration is still incomplete",
+    "tests": [
+      "tests/production-feedback.test.ts",
+      "tests/platform.integration.test.ts",
+      "tests/support/operations-acceptance.ts",
+      "tests/support/telemetry-acceptance.ts"
+    ]
+  },
+  "intentionallyRetained": [
+    "Applied migrations and signed rc.4 contract snapshot",
+    "Independent EdgeBox transport and configurable 200 code:0 ACK",
+    "Current production count consumer pending explicit parameter integration",
+    "services/ingest/server and labs/data-hub isolated lab packages/tests",
+    "external-simulator/v1 and v2 independent tools",
+    "All runtime/cache dependencies required by the separate demos"
+  ],
+  "validation": {
+    "productTests": {
+      "pass": 144,
+      "skip": 1
+    },
+    "ingestLabTests": 9,
+    "labLauncherTests": 1,
+    "simulatorTests": 7,
+    "realMariaDbIntegration": {
+      "pass": 62
+    },
+    "realHttpReceiverManagement": "PASS with disposable schemas",
+    "buildAll": "PASS",
+    "edgeboxTypecheck": "PASS",
+    "signedContractManifest": "e5e1dfe4c5b0d6cf97882b0acdd7f8ecb32eb18fcdbc76d331622ff71a5d250d",
+    "browserQa": "NOT RUN for this cleanup; frontend bundle hashes unchanged; backend owner services not restarted",
+    "docs": {
+      "result": "PASS",
+      "snapshots": 9,
+      "mappedSections": 140,
+      "checkedLocalLinks": 74
+    },
+    "launcherCheck": "PASS on stage-02 branch; no services started or stopped",
+    "ownerFieldSmoke": {
+      "result": "Owner reported all three checks appeared correct after manual Stop/Start",
+      "checks": [
+        "Company definitions and Hub sources open",
+        "Model library and workshop layout display",
+        "Simulator packet received in Hub"
+      ],
+      "screenshot": "User attachment codex-clipboard-212950ee-1d43-4949-aa46-42f78f23e73f.png shows one message, one value 2, test_valid, active setup test",
+      "scope": "Owner-performed smoke; not automated browser QA or proof of operational persistence"
+    }
+  },
+  "followUp": [
+    "First production module workflow and optional review/task behavior need a separate implementation slice.",
+    "Graphify experiment snapshot is stale after this cleanup and is not an authority for deletions."
+  ],
+  "launcherFix": "Manage.ps1 accepts only the two explicitly approved product branches; absolute checkout path and ownership guards unchanged."
+}

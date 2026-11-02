@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-19",
+  "status": "structural-migration-approved",
+  "branch": "codex/telemetry-monorepo",
+  "reviewedImplementationCommit": "e51f09653a9cbe5ba657ba1ae1fef27b8e5f6389",
+  "rollbackCheckpoint": "2dd5d45",
+  "approvedContract": {
+    "version": "2.0.0-rc.4",
+    "manifestSha256": "e5e1dfe4c5b0d6cf97882b0acdd7f8ecb32eb18fcdbc76d331622ff71a5d250d",
+    "semanticsChanged": false
+  },
+  "programReview": {
+    "status": "approved",
+    "evidence": "TELEMETRY-MONOREPO-VALIDATION.json",
+    "testsActuallyRun": true,
+    "fullHubAncestryChecked": true,
+    "workingTreeCleanAtImplementationCommit": true
+  },
+  "hubReview": {
+    "status": "approved-structural-only",
+    "threadId": "01a14a04-3473-7ca2-b5a8-4e73c9d34288",
+    "turnId": "01a154c9-d2c7-7950-adce-bbeb726c6258",
+    "revision": 26,
+    "scope": [
+      "60 hub source-map entries and 6 uncommitted reports preserved",
+      "24 signed contract artifacts unchanged",
+      "legacy UI dist and simulator cwd preserved",
+      "single-process launcher closes orphan-process finding",
+      "workspace-local pnpm configuration"
+    ],
+    "testsRunIndependently": false,
+    "gitAncestryVerifiedIndependently": false,
+    "statement": "No remaining identified structural blocker in current files attributed to reviewedImplementationCommit"
+  },
+  "runtimeAcceptanceRc4": "NOT RUN",
+  "rc4ImplementationStarted": false,
+  "liveServicesOrDatabasesChanged": false,
+  "oldHubRepositoryRetained": true,
+  "pushed": false,
+  "merged": false,
+  "deployed": false
+}

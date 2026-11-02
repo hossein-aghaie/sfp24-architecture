@@ -1,25 +1,17 @@
-# START HERE
+# از اینجا شروع کنید
 
-این فایل کوتاه، **مسیریاب** است. برای فهم یک موضوع ابتدا README آن حوزه را بخوانید و فقط لینک‌های مرتبط را دنبال کنید.
+برای شناخت محصول، جلسه یا ارائه، **[صفحهٔ اول ریپو](../README.md)** کافی است؛ جواب فناوری، وضعیت اجرا و معرفی ماژول‌ها همان‌جا مستقیم پیدا می‌شود.
 
-| مأموریت | مرجع |
+| می‌خواهید چه کاری انجام دهید؟ | فقط این بخش را شروع کنید |
 |---|---|
-| هسته، سازمان، هویت و مجوز | [Core](core/README.md) |
-| ماژول جدید | [Modules](modules/README.md) |
-| Data، Module SDK، Profile، Dashboard | [Contracts](contracts/README.md) |
-| چرایی تصمیم و شکست گزینه قبلی | [Decisions](decisions/README.md) و [Journal](journal/README.md) |
-| تحقیق استاندارد | [Research](research/README.md) |
-| تسک اجرایی Codex | [Implementation](implementation/README.md) |
-| قواعد نوشتن | [Governance](governance/README.md) |
-| کد و اسناد اولیه Work 11/12 | [Sources](sources/README.md) |
+| معرفی به مشتری | [محصول](PRODUCT.fa.md)، [فناوری](TECHNOLOGY.fa.md)، [وضعیت](STATUS.fa.md) |
+| تغییر یک موضوع هسته | [نقشهٔ مالک موضوع‌ها](core/README.md) |
+| طراحی/توسعهٔ آموزش | [Training](modules/training/README.md) |
+| افزودن ماژول دیگر | [Modules](modules/README.md) و [قراردادها](contracts/README.md) |
+| فهم چرایی یا مخالفت‌ها | [Journal](journal/README.md) |
+| یافتن سند قدیمی با اسم یا موضوع | [کاتالوگ کامل منابع](sources/CATALOG.md) |
+| اجرای برنامه و ارتقای نسخه | [راهنمای اجرا](operations/README.md) |
 
-**وضعیت‌ها:** Observed=مشاهده مستند؛ Open=حل‌نشده؛ Proposed=پیشنهادی؛ Approved=تأیید صریح؛ Implemented=اجرای راستی‌آزمایی‌شده؛ Rejected=رد با علت؛ Superseded=جایگزین‌شده با لینک.
+**مرز مرجعیت:** تصمیم/معماری/طراحی در این مخزن؛ کد/تست/migration/راه‌انداز همان نسخه در مخزن محصول. [تصمیم انتقال مرجعیت](decisions/ADR-0002-CANONICAL-DOCUMENTATION.md).
 
-## Original material migration
-[Read the verified historical source index](source-material/README.md) before treating newly summarized architecture or module proposals as settled decisions.
-
-## ممیزی‌های مبتنی بر شواهد
-[ممیزی مستندات اجرایی و لینک‌ها — ۲۰۲۶-۱۱-۰۲](audits/README.md)؛ نتیجه مشاهده است، نه مجوز تغییر کد.
-
-## چرا این معماری و این خانواده ماژول‌ها مطرح شدند؟
-[نقشه سه فکر بلند پیش از ریپازیتوری‌سازی](journal/pre-repository/README.md) — مسیر تاریخی و گزینه‌های بررسی‌شده، **نه تصمیم نهایی SDK**.
+وضعیت نیاز یا تصمیم با وضعیت اجرا یکی نیست. Observed=مشاهده با منبع؛ Open=حل‌نشده؛ Proposed=پیشنهاد؛ Approved=تأیید در دامنهٔ مشخص؛ Implemented=اجرا با شواهد؛ Rejected=رد با دلیل؛ Superseded=جایگزین با پیوند. هیچ‌کدام از خلاصه‌های تاریخی، دستور جدید اجرا نیستند.

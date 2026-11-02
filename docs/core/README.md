@@ -1,21 +1,17 @@
-# Core Architecture — مرجع موضوعی
+# هسته — هر موضوع را کجا بخوانیم
 
-> **Status:** معماری هنوز در دست تحلیل؛ قراردادهای Draft نهایی/قابل اجرا نیستند.
+برای شناخت کلی: [معماری موجود](ARCHITECTURE.fa.md). برای فناوری‌ها: [جدول فناوری](../TECHNOLOGY.fa.md). این صفحه فهرست است، نه تعریف دوم مفاهیم.
 
-| مسئله | سند مالک |
-|---|---|
-| نقشه پلتفرم | [PLATFORM-MAP](PLATFORM-MAP.md) |
-| مرز Core و Domain | [CANONICAL-BOUNDARIES](CANONICAL-BOUNDARIES.fa.md) |
-| هویت، Tenant، مجوز و ظرفیت فراگیر | [IDENTITY-AND-ENTITLEMENTS](IDENTITY-AND-ENTITLEMENTS-AUDIT.fa.md) |
-| Data/Tag/Parameter و Extension | [DATA-AND-EXTENSIONS](DATA-AND-EXTENSIONS-AUDIT.fa.md) |
-| مسائل باز و سناریوها | [OPEN-QUESTIONS](OPEN-QUESTIONS.md) |
-| قراردادهای پیشنهادی | [Contracts](../contracts/README.md) |
-| نسخه‌های اصلی تاریخی با متن کامل | [Source-Material Index](../source-material/README.md) |
+| موضوع | مرجع اصلی جاری | نوع محتوا |
+|---|---|---|
+| سرویس‌ها، ذخیره‌سازی و مرز اجرا | [معماری](ARCHITECTURE.fa.md) | مشاهدهٔ کد مبنا |
+| Person، Account، Tenant، مجوز و ظرفیت | [هویت و دسترسی](IDENTITY-AND-ACCESS.fa.md) | رفتار موجود و تصمیم‌های باز |
+| تگ، پارامتر، نوع زمان و مصرف‌کننده | [داده و پارامتر](DATA-AND-PARAMETERS.fa.md) | رفتار موجود و مرز طراحی |
+| افزودن فیلد و موجودیت ماژول | [گسترش تعاریف](EXTENSIONS.fa.md) | قرارداد registry فعلی، نه Plugin SDK |
+| اتاق، میز، داشبورد و سه‌بعدی | [فضای کاری](WORKSPACES.fa.md) | موجود/نمایشی/باز جدا |
+| دانش، Provider و RAG مشترک | [AI و دانش](KNOWLEDGE-AI.fa.md) | جهت محصول + پیشنهاد فنی، بدون اجرا |
+| مرز هسته و ماژول | [مرزبندی هدف](CANONICAL-BOUNDARIES.fa.md) | Proposed |
+| SDK و نقاط توسعهٔ عمومی | [قراردادها](../contracts/README.md) | Draftهای نسخهٔ بعد |
+| نیازهای حل‌نشده | [مسائل باز](OPEN-QUESTIONS.md) | Open |
 
-**مرجع جاری اینجا است؛ شناسه Work و برنچ فقط provenance انتقال تاریخی است.** هر ادعای وضعیت اجرایی باید با کد و تست جدا بررسی شود.
-
-## ممیزی وضعیت اجرا
-[تحلیل دقیق ناهمخوانی‌های مستندات اجرایی](../audits/2026-11-02-production-recording/README.fa.md).
-
-## تاریخچه استدلال طراحی هسته
-[فکر بلند درباره هسته، داده، شخص، سادگی و تجربه کاربر](../journal/pre-repository/02-CORE-AND-UX-THINKING.fa.md). تصمیم اجرایی جدید از آن به‌صورت خودکار حاصل نمی‌شود.
+ممیزی‌های هویت و داده در [IDENTITY audit](IDENTITY-AND-ENTITLEMENTS-AUDIT.fa.md) و [DATA audit](DATA-AND-EXTENSIONS-AUDIT.fa.md) شواهد و زمینه‌اند؛ برای تعریف جاری از مراجع جدول بالا شروع کنید. متن اصلی همهٔ منابع در [کاتالوگ](../sources/CATALOG.md) است.

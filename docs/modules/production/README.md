@@ -1,19 +1,13 @@
-# Production
+# ثبت و گزارش تولید
 
-> **Status:** Partially implemented in code · **Owner:** Module: production · **Updated:** 2026-11-02
+اولین ماژول عملیاتی محصول برای گزارش کار انجام‌شده و مشاهدهٔ سوابق است. ورودی می‌تواند دستی یا شمارش معتبر دستگاه باشد؛ پلان پیش‌نیاز همهٔ ثبت‌ها نیست.
 
-## دامنه
-ثبت دستی تولید و اتصال اختیاری شمارش معتبر.
-
-## ورودی/خروجی احتمالی، نه قرارداد تصویب‌شده
-| Input | Output |
+| موضوع | مرجع |
 |---|---|
-| Person, Resource, Operation, manual/count evidence | Production Report |
+| چه ساخته شده و چه محدودیت دارد؟ | [وضعیت محصول](../../STATUS.fa.md) |
+| ثبت کار و گزارش | [راهنمای عملیات](../../operations/guides/PHASE3B-OPERATIONS.md) |
+| ورودی شمارش و پارامتر | [راهنمای منابع تولید](../../operations/guides/PRODUCTION-DATA-SOURCES.md) |
+| Person/Account و مجوز خود/دیگران | [هویت](../../core/IDENTITY-AND-ACCESS.fa.md) |
+| داده و مصرف رسمی | [پارامترها](../../core/DATA-AND-PARAMETERS.fa.md) |
 
-## نقاط تماس با هسته
-Person/Account و Tenant، Scope/Permission، قرارداد داده، UI contributions، نسخه ماژول. [Module Draft](../../contracts/MODULE-CONTRACT-DRAFT.md).
-
-## سؤالات
-عملکرد پایه بدون ماژول‌های دیگر؟ مالک داده چه کسی است؟ در حالت ناموجود یا ناسازگار چه رفتاری دارد؟ کدام پروفایل/میز/داشبورد را گسترش می‌دهد؟
-
-[Sources](../../sources/README.md) · [Core questions](../../core/OPEN-QUESTIONS.md). این صفحه فقط نقطه ورود است؛ جزئیات بعداً به فایل‌های کوچک موضوعی این پوشه اضافه می‌شوند.
+شمارش دستگاه به‌تنهایی تولید سالم یا OP فرد را اثبات نمی‌کند. گزارش نهایی، Permission و منشأ خودش را دارد؛ ویجت نمایشی جای ثبت واقعی را نمی‌گیرد. OEE و برنامه‌ریزی موتور جدا می‌خواهند؛ از وجود این ماژول اجراشده فرض نشوند.

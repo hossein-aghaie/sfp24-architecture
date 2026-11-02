@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-19",
+  "branch": "codex/telemetry-monorepo",
+  "before": {
+    "web": {
+      "pass": 74,
+      "skip": 1,
+      "fail": 0
+    },
+    "hub": {
+      "pass": 9,
+      "skip": 0,
+      "fail": 0
+    },
+    "webTypecheckBuild": "PASS",
+    "hubTypecheckBuildIsolatedSnapshot": "PASS"
+  },
+  "after": {
+    "web": {
+      "pass": 74,
+      "skip": 1,
+      "fail": 0
+    },
+    "hub": {
+      "pass": 9,
+      "skip": 0,
+      "fail": 0
+    },
+    "contract": {
+      "signedFiles": 24,
+      "definitions": 61,
+      "operations": 37,
+      "externalRefs": 329,
+      "negativeSchemaExamples": 8,
+      "goldenHashes": "PASS"
+    },
+    "webBuild": "PASS",
+    "ingestBuild": "PASS",
+    "labBuild": "PASS",
+    "frozenOfflineInstall": "PASS",
+    "catalogResolvedVersionsAgree": true,
+    "sharedVersions": {
+      "exceljs": "4.4.0",
+      "fastify": "5.12.5",
+      "lucide-vue-next": "0.468.0",
+      "mariadb": "3.5.4",
+      "vue": "3.5.43",
+      "@types/node": "24.19.2",
+      "@vitejs/plugin-vue": "6.0.10",
+      "prettier": "3.6.0",
+      "tsx": "4.23.15",
+      "typescript": "5.9.3",
+      "vite": "7.3.7",
+      "vue-tsc": "3.3.13"
+    },
+    "browser": {
+      "webLogin": true,
+      "legacyHubSyntheticLogin": true,
+      "pageErrors": 0,
+      "ephemeralLoopbackOnly": true,
+      "temporaryDatabaseRemoved": true
+    },
+    "artifactComparison": {
+      "hubBuiltFilesByteIdentical": 9,
+      "web": [
+        {
+          "extension": ".css",
+          "equalIgnoringVueScopeHashesAndAssetNames": true
+        },
+        {
+          "extension": ".js",
+          "equalIgnoringVueScopeHashesAndAssetNames": true
+        }
+      ]
+    },
+    "simulatorLauncherTest": {
+      "pass": 1,
+      "fixtureOnly": true,
+      "sameProcess": true,
+      "termination": "SIGTERM exit observed"
+    },
+    "workspaceLocalStoreVerified": true
+  },
+  "preservation": {
+    "webCodeUnchangedFiles": 221,
+    "hubTrackedFilesMapped": 60,
+    "hubUncommittedReportsPreserved": 6,
+    "fullHubGitAncestry": true,
+    "oldSourceWorktreesTrackedChangesPreserved": true
+  },
+  "notRun": [
+    "rc.4 T01-T34 runtime acceptance",
+    "MariaDB migration/grants/locks/races",
+    "hardware/firmware acceptance",
+    "cross-server scaling or benchmark",
+    "remote CI"
+  ],
+  "servicesOrExistingDatabasesChanged": false
+}

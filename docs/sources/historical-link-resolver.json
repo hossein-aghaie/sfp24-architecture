@@ -1,0 +1,477 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "file": "docs/source-material/work-11/docs/core/DATA-POINTS-AND-CONSUMERS.fa.md",
+      "line": 59,
+      "originalLink": "../PRODUCT-BLUEPRINT.md#جهت-ادامه-پس-از-هاب--بازبینی-مالک-۲۰۲۶-۱۰-۲۸",
+      "sourcePath": "docs/PRODUCT-BLUEPRINT.md",
+      "status": "external-pinned-source",
+      "url": "https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/243aa9b8b161ed1e9b91285068425386f86c5c5c/docs/PRODUCT-BLUEPRINT.md#%D8%AC%D9%87%D8%AA-%D8%A7%D8%AF%D8%A7%D9%85%D9%87-%D9%BE%D8%B3-%D8%A7%D8%B2-%D9%87%D8%A7%D8%A8--%D8%A8%D8%A7%D8%B2%D8%A8%DB%8C%D9%86%DB%8C-%D9%85%D8%A7%D9%84%DA%A9-%DB%B2%DB%B0%DB%B2%DB%B6-%DB%B1%DB%B0-%DB%B2%DB%B8"
+    },
+    {
+      "file": "docs/source-material/work-11/docs/core/DEFINITION-EXTENSIONS.md",
+      "line": 37,
+      "originalLink": "../modules/data-hub/WORKFLOW.fa.md",
+      "sourcePath": "docs/modules/data-hub/WORKFLOW.fa.md",
+      "status": "external-pinned-source",
+      "url": "https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/243aa9b8b161ed1e9b91285068425386f86c5c5c/docs/modules/data-hub/WORKFLOW.fa.md"
+    },
+    {
+      "file": "docs/source-material/work-11/docs/core/README.md",
+      "line": 7,
+      "originalLink": "../ARCHITECTURE.md",
+      "sourcePath": "docs/ARCHITECTURE.md",
+      "status": "external-pinned-source",
+      "url": "https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/243aa9b8b161ed1e9b91285068425386f86c5c5c/docs/ARCHITECTURE.md"
+    },
+    {
+      "file": "docs/source-material/work-11/docs/core/README.md",
+      "line": 8,
+      "originalLink": "../TENANCY-IDENTITY-DESIGN.md",
+      "sourcePath": "docs/TENANCY-IDENTITY-DESIGN.md",
+      "status": "external-pinned-source",
+      "url": "https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/243aa9b8b161ed1e9b91285068425386f86c5c5c/docs/TENANCY-IDENTITY-DESIGN.md"
+    },
+    {
+      "file": "docs/source-material/work-11/docs/core/README.md",
+      "line": 9,
+      "originalLink": "../PHASE3-COMPANY-ACCOUNTS-CONTRACT.md",
+      "sourcePath": "docs/PHASE3-COMPANY-ACCOUNTS-CONTRACT.md",
+      "status": "external-pinned-source",
+      "url": "https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/243aa9b8b161ed1e9b91285068425386f86c5c5c/docs/PHASE3-COMPANY-ACCOUNTS-CONTRACT.md"
+    },
+    {
+      "file": "docs/source-material/work-11/docs/core/README.md",
+      "line": 10,
+      "originalLink": "../UI-UX-SPEC.md",
+      "sourcePath": "docs/UI-UX-SPEC.md",
+      "status": "external-pinned-source",
+      "url": "https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/243aa9b8b161ed1e9b91285068425386f86c5c5c/docs/UI-UX-SPEC.md"
+    },
+    {
+      "file": "docs/source-material/work-11/docs/core/README.md",
+      "line": 11,
+      "originalLink": "../CURRENT-STATE.md",
+      "sourcePath": "docs/CURRENT-STATE.md",
+      "status": "external-pinned-source",
+      "url": "https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/243aa9b8b161ed1e9b91285068425386f86c5c5c/docs/CURRENT-STATE.md"
+    },
+    {
+      "file": "docs/source-material/work-11/docs/core/README.md",
+      "line": 12,
+      "originalLink": "../PRODUCT-BLUEPRINT.md",
+      "sourcePath": "docs/PRODUCT-BLUEPRINT.md",
+      "status": "external-pinned-source",
+      "url": "https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/243aa9b8b161ed1e9b91285068425386f86c5c5c/docs/PRODUCT-BLUEPRINT.md"
+    },
+    {
+      "file": "docs/source-material/work-11/docs/core/README.md",
+      "line": 13,
+      "originalLink": "../DECISIONS.md",
+      "sourcePath": "docs/DECISIONS.md",
+      "status": "external-pinned-source",
+      "url": "https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/243aa9b8b161ed1e9b91285068425386f86c5c5c/docs/DECISIONS.md"
+    },
+    {
+      "file": "docs/source-material/work-11/docs/core/README.md",
+      "line": 14,
+      "originalLink": "../DEVELOPER-GUIDE.md",
+      "sourcePath": "docs/DEVELOPER-GUIDE.md",
+      "status": "external-pinned-source",
+      "url": "https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/243aa9b8b161ed1e9b91285068425386f86c5c5c/docs/DEVELOPER-GUIDE.md"
+    },
+    {
+      "file": "docs/source-material/work-11/docs/core/README.md",
+      "line": 14,
+      "originalLink": "../RUNBOOK.md",
+      "sourcePath": "docs/RUNBOOK.md",
+      "status": "external-pinned-source",
+      "url": "https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/243aa9b8b161ed1e9b91285068425386f86c5c5c/docs/RUNBOOK.md"
+    },
+    {
+      "file": "docs/source-material/work-11/docs/core/README.md",
+      "line": 15,
+      "originalLink": "LOCAL-FOLDERS.fa.md",
+      "sourcePath": "docs/core/LOCAL-FOLDERS.fa.md",
+      "status": "external-pinned-source",
+      "url": "https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/243aa9b8b161ed1e9b91285068425386f86c5c5c/docs/core/LOCAL-FOLDERS.fa.md"
+    },
+    {
+      "file": "docs/source-material/work-11/docs/core/README.md",
+      "line": 17,
+      "originalLink": "COMPANY-ADMIN-QUICKSTART.md",
+      "sourcePath": "docs/core/COMPANY-ADMIN-QUICKSTART.md",
+      "status": "external-pinned-source",
+      "url": "https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/243aa9b8b161ed1e9b91285068425386f86c5c5c/docs/core/COMPANY-ADMIN-QUICKSTART.md"
+    },
+    {
+      "file": "docs/source-material/work-11/docs/core/README.md",
+      "line": 19,
+      "originalLink": "../../packages/telemetry-contract/README.md",
+      "sourcePath": "packages/telemetry-contract/README.md",
+      "status": "external-pinned-source",
+      "url": "https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/243aa9b8b161ed1e9b91285068425386f86c5c5c/packages/telemetry-contract/README.md"
+    },
+    {
+      "file": "docs/source-material/work-11/docs/core/README.md",
+      "line": 21,
+      "originalLink": "../START-HERE.md",
+      "sourcePath": "docs/START-HERE.md",
+      "status": "external-pinned-source",
+      "url": "https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/243aa9b8b161ed1e9b91285068425386f86c5c5c/docs/START-HERE.md"
+    },
+    {
+      "file": "docs/source-material/work-11/docs/core/README.md",
+      "line": 21,
+      "originalLink": "../modules/README.md",
+      "sourcePath": "docs/modules/README.md",
+      "status": "external-pinned-source",
+      "url": "https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/243aa9b8b161ed1e9b91285068425386f86c5c5c/docs/modules/README.md"
+    },
+    {
+      "file": "docs/source-material/work-11/docs/modules/training/README.md",
+      "line": 21,
+      "originalLink": "../../../src/company/training/README.md",
+      "sourcePath": "src/company/training/README.md",
+      "status": "external-pinned-source",
+      "url": "https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/243aa9b8b161ed1e9b91285068425386f86c5c5c/src/company/training/README.md"
+    },
+    {
+      "file": "docs/source-material/work-11/docs/modules/training/README.md",
+      "line": 21,
+      "originalLink": "../../START-HERE.md",
+      "sourcePath": "docs/START-HERE.md",
+      "status": "external-pinned-source",
+      "url": "https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/243aa9b8b161ed1e9b91285068425386f86c5c5c/docs/START-HERE.md"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/deliveries/PHASE2-DELIVERY.md",
+      "line": 86,
+      "originalLink": "../../../.local/qa/phase2/before/1366-immersive.png",
+      "sourcePath": ".local/qa/phase2/before/1366-immersive.png",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/deliveries/PHASE2-DELIVERY.md",
+      "line": 86,
+      "originalLink": "../../../.local/qa/phase2/after/1366-immersive-fa.png",
+      "sourcePath": ".local/qa/phase2/after/1366-immersive-fa.png",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/deliveries/PHASE2-DELIVERY.md",
+      "line": 87,
+      "originalLink": "../../../.local/qa/phase2/before/1366-explore.png",
+      "sourcePath": ".local/qa/phase2/before/1366-explore.png",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/deliveries/PHASE2-DELIVERY.md",
+      "line": 87,
+      "originalLink": "../../../.local/qa/phase2/after/1366-explore-fa.png",
+      "sourcePath": ".local/qa/phase2/after/1366-explore-fa.png",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/deliveries/PHASE2-DELIVERY.md",
+      "line": 88,
+      "originalLink": "../../../.local/qa/phase2/before/1366-analytics.png",
+      "sourcePath": ".local/qa/phase2/before/1366-analytics.png",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/deliveries/PHASE2-DELIVERY.md",
+      "line": 88,
+      "originalLink": "../../../.local/qa/phase2/after/1366-analytics-fa.png",
+      "sourcePath": ".local/qa/phase2/after/1366-analytics-fa.png",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-19/START-HERE.md",
+      "line": 3,
+      "originalLink": "../../../packages/telemetry-contract/contract/README.fa.md",
+      "sourcePath": "packages/telemetry-contract/contract/README.fa.md",
+      "status": "external-pinned-source",
+      "url": "https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/19b644c791ab3c228513db3aeb6e53b3e7389bd8/packages/telemetry-contract/contract/README.fa.md"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-19/START-HERE.md",
+      "line": 5,
+      "originalLink": "../../integration/telemetry-execution-v2/README.fa.md",
+      "sourcePath": "docs/integration/telemetry-execution-v2/README.fa.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "line": 133,
+      "originalLink": "../packages/telemetry-contract/README.md",
+      "sourcePath": "docs/archive/packages/telemetry-contract/README.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "line": 133,
+      "originalLink": "integration/HUB-TAG-PUBLICATION-DESIGN.fa.md",
+      "sourcePath": "docs/archive/state-2026-10-28/integration/HUB-TAG-PUBLICATION-DESIGN.fa.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "line": 133,
+      "originalLink": "../packages/telemetry-contract/contract/README.fa.md",
+      "sourcePath": "docs/archive/packages/telemetry-contract/contract/README.fa.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "line": 141,
+      "originalLink": "archive/state-2026-10-19/ARCHITECTURE.md",
+      "sourcePath": "docs/archive/state-2026-10-28/archive/state-2026-10-19/ARCHITECTURE.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "line": 151,
+      "originalLink": "guides/DEFINITION-EXTENSIONS.md",
+      "sourcePath": "docs/archive/state-2026-10-28/guides/DEFINITION-EXTENSIONS.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "line": 156,
+      "originalLink": "product-notes/DATA-POINTS-AND-CONSUMERS.fa.md",
+      "sourcePath": "docs/archive/state-2026-10-28/product-notes/DATA-POINTS-AND-CONSUMERS.fa.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 112,
+      "originalLink": "../external-simulator/v2/README.md",
+      "sourcePath": "docs/archive/external-simulator/v2/README.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 257,
+      "originalLink": "product-notes/DATA-POINTS-AND-CONSUMERS.fa.md",
+      "sourcePath": "docs/archive/state-2026-10-28/product-notes/DATA-POINTS-AND-CONSUMERS.fa.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 259,
+      "originalLink": "product-notes/DATA-POINTS-AND-CONSUMERS.fa.md",
+      "sourcePath": "docs/archive/state-2026-10-28/product-notes/DATA-POINTS-AND-CONSUMERS.fa.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 294,
+      "originalLink": "migrations/TELEMETRY-MONOREPO-VALIDATION.json",
+      "sourcePath": "docs/archive/state-2026-10-28/migrations/TELEMETRY-MONOREPO-VALIDATION.json",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 294,
+      "originalLink": "migrations/TELEMETRY-MONOREPO-REVIEW.json",
+      "sourcePath": "docs/archive/state-2026-10-28/migrations/TELEMETRY-MONOREPO-REVIEW.json",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 305,
+      "originalLink": "migrations/WORKSPACE-CLEANUP-2026-10-19.json",
+      "sourcePath": "docs/archive/state-2026-10-28/migrations/WORKSPACE-CLEANUP-2026-10-19.json",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 309,
+      "originalLink": "guides/DATA-HUB-VALIDATION-2026-10-20.json",
+      "sourcePath": "docs/archive/state-2026-10-28/guides/DATA-HUB-VALIDATION-2026-10-20.json",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 313,
+      "originalLink": "archive/state-2026-10-19/CURRENT-STATE.md",
+      "sourcePath": "docs/archive/state-2026-10-28/archive/state-2026-10-19/CURRENT-STATE.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/DECISIONS.md",
+      "line": 7,
+      "originalLink": "archive/DECISIONS-EARLY-PILOT.md",
+      "sourcePath": "docs/archive/state-2026-10-28/archive/DECISIONS-EARLY-PILOT.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/DECISIONS.md",
+      "line": 11,
+      "originalLink": "integration/method4/README.fa.md",
+      "sourcePath": "docs/archive/state-2026-10-28/integration/method4/README.fa.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/DECISIONS.md",
+      "line": 17,
+      "originalLink": "guides/PHASE3B-OPERATIONS.md",
+      "sourcePath": "docs/archive/state-2026-10-28/guides/PHASE3B-OPERATIONS.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/DECISIONS.md",
+      "line": 35,
+      "originalLink": "TENANCY-IDENTITY-DESIGN.md",
+      "sourcePath": "docs/archive/state-2026-10-28/TENANCY-IDENTITY-DESIGN.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/DECISIONS.md",
+      "line": 71,
+      "originalLink": "archive/deliveries/DYNAMIC-WORKSPACES-PROGRESS.md",
+      "sourcePath": "docs/archive/state-2026-10-28/archive/deliveries/DYNAMIC-WORKSPACES-PROGRESS.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/DECISIONS.md",
+      "line": 73,
+      "originalLink": "archive/DECISIONS-EARLY-PILOT.md",
+      "sourcePath": "docs/archive/state-2026-10-28/archive/DECISIONS-EARLY-PILOT.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/DECISIONS.md",
+      "line": 73,
+      "originalLink": "archive/research/idea-inbox.md",
+      "sourcePath": "docs/archive/state-2026-10-28/archive/research/idea-inbox.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/DEVELOPER-GUIDE.md",
+      "line": 5,
+      "originalLink": "guides/PRODUCTION-DATA-SOURCES.md",
+      "sourcePath": "docs/archive/state-2026-10-28/guides/PRODUCTION-DATA-SOURCES.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/DEVELOPER-GUIDE.md",
+      "line": 35,
+      "originalLink": "guides/PHASE3B-OPERATIONS.md",
+      "sourcePath": "docs/archive/state-2026-10-28/guides/PHASE3B-OPERATIONS.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/guides/DATA-HUB-WORKFLOW.fa.md",
+      "line": 74,
+      "originalLink": "../../external-simulator/v2/README.md",
+      "sourcePath": "docs/archive/external-simulator/v2/README.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/guides/DATA-HUB-WORKFLOW.fa.md",
+      "line": 226,
+      "originalLink": "../product-notes/DATA-POINTS-AND-CONSUMERS.fa.md",
+      "sourcePath": "docs/archive/state-2026-10-28/product-notes/DATA-POINTS-AND-CONSUMERS.fa.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/guides/LOCAL-FOLDERS.fa.md",
+      "line": 77,
+      "originalLink": "../../CHANGELOG.md",
+      "sourcePath": "docs/archive/CHANGELOG.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/RUNBOOK.md",
+      "line": 73,
+      "originalLink": "../external-simulator/v1/README.md",
+      "sourcePath": "docs/archive/external-simulator/v1/README.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/RUNBOOK.md",
+      "line": 131,
+      "originalLink": "migrations/WORKSPACE-CLEANUP-2026-10-19.json",
+      "sourcePath": "docs/archive/state-2026-10-28/migrations/WORKSPACE-CLEANUP-2026-10-19.json",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/RUNBOOK.md",
+      "line": 133,
+      "originalLink": "LOCAL-USER-GUIDE-FA.html",
+      "sourcePath": "docs/archive/state-2026-10-28/LOCAL-USER-GUIDE-FA.html",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/RUNBOOK.md",
+      "line": 133,
+      "originalLink": "archive/state-2026-10-19/RUNBOOK.md",
+      "sourcePath": "docs/archive/state-2026-10-28/archive/state-2026-10-19/RUNBOOK.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "line": 80,
+      "originalLink": "archive/research/UI-VISUAL-IMPLEMENTATION-CONTRACT.md",
+      "sourcePath": "docs/archive/state-2026-10-28/archive/research/UI-VISUAL-IMPLEMENTATION-CONTRACT.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "line": 80,
+      "originalLink": "CODEX-SMART-FACTORY-HANDOFF.md",
+      "sourcePath": "docs/archive/state-2026-10-28/CODEX-SMART-FACTORY-HANDOFF.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "line": 81,
+      "originalLink": "archive/deliveries/PHASE2-DELIVERY.md",
+      "sourcePath": "docs/archive/state-2026-10-28/archive/deliveries/PHASE2-DELIVERY.md",
+      "status": "unavailable-in-source-snapshot"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/guides/DEVICE-CONNECTION-QUICKSTART.md",
+      "line": 5,
+      "originalLink": "../../packages/telemetry-contract/README.md",
+      "sourcePath": "packages/telemetry-contract/README.md",
+      "status": "external-pinned-source",
+      "url": "https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/19b644c791ab3c228513db3aeb6e53b3e7389bd8/packages/telemetry-contract/README.md"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/integration/HUB-TAG-PUBLICATION-DESIGN.fa.md",
+      "line": 5,
+      "originalLink": "../../packages/telemetry-contract/README.md",
+      "sourcePath": "packages/telemetry-contract/README.md",
+      "status": "external-pinned-source",
+      "url": "https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/19b644c791ab3c228513db3aeb6e53b3e7389bd8/packages/telemetry-contract/README.md"
+    },
+    {
+      "file": "docs/source-material/work-12/docs/START-HERE.md",
+      "line": 28,
+      "originalLink": "../packages/telemetry-contract/README.md",
+      "sourcePath": "packages/telemetry-contract/README.md",
+      "status": "external-pinned-source",
+      "url": "https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/19b644c791ab3c228513db3aeb6e53b3e7389bd8/packages/telemetry-contract/README.md"
+    },
+    {
+      "file": "docs/source-material/work-12/README.md",
+      "line": 26,
+      "originalLink": "packages/telemetry-contract/README.md",
+      "sourcePath": "packages/telemetry-contract/README.md",
+      "status": "external-pinned-source",
+      "url": "https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/19b644c791ab3c228513db3aeb6e53b3e7389bd8/packages/telemetry-contract/README.md"
+    },
+    {
+      "file": "docs/source-material/work-12/README.md",
+      "line": 47,
+      "originalLink": "tools/README.md",
+      "sourcePath": "tools/README.md",
+      "status": "external-pinned-source",
+      "url": "https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/19b644c791ab3c228513db3aeb6e53b3e7389bd8/tools/README.md"
+    }
+  ]
+}

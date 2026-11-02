@@ -1,0 +1,54 @@
+{
+  "startup": {
+    "simulatorWorkingSetMiB": 66.3,
+    "at": "2026-10-17T20:58:56.5349901Z",
+    "hubPeakWorkingSetMiB": 79.7,
+    "hubWorkingSetMiB": 69.5,
+    "window": "first approximately 30 seconds after readiness, simulator stopped",
+    "monitorStarted": "2026-10-17T20:58:26.4720926Z",
+    "simulatorPeakWorkingSetMiB": 81.1
+  },
+  "units": "MiB / process working set",
+  "runtime": "Node.js 24.19.0",
+  "logicalProcessors": 16,
+  "release": "0.1.0",
+  "minuteSamples": [
+    {
+      "at": "2026-10-17T20:52:37.7414715Z",
+      "hubMiB": 79.2,
+      "hubCpuSeconds": 3.4375,
+      "simulatorMiB": 75.5,
+      "simulatorCpuSeconds": 3.0625,
+      "logicalProcessors": 16,
+      "phase": "idle-start"
+    },
+    {
+      "at": "2026-10-17T20:53:37.9046115Z",
+      "hubMiB": 80.5,
+      "hubCpuSeconds": 3.5,
+      "simulatorMiB": 76.4,
+      "simulatorCpuSeconds": 3.078125,
+      "logicalProcessors": 16,
+      "phase": "idle-1min"
+    },
+    {
+      "at": "2026-10-17T20:54:38.0043609Z",
+      "hubMiB": 101.7,
+      "hubCpuSeconds": 11.5625,
+      "simulatorMiB": 122.9,
+      "simulatorCpuSeconds": 10.234375,
+      "logicalProcessors": 16,
+      "phase": "load-1min"
+    },
+    {
+      "at": "2026-10-17T20:55:38.0324858Z",
+      "hubMiB": 122.4,
+      "hubCpuSeconds": 19.3125,
+      "simulatorMiB": 144.3,
+      "simulatorCpuSeconds": 16.40625,
+      "logicalProcessors": 16,
+      "phase": "load-2min"
+    }
+  ],
+  "note": "Two-minute accelerated synthetic load. No capacity guarantee. No introduced Docker/WSL process."
+}
