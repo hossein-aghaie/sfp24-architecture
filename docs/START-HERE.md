@@ -17,3 +17,6 @@
 
 ## Original material migration
 [Read the verified historical source index](source-material/README.md) before treating newly summarized architecture or module proposals as settled decisions.
+
+## ممیزی‌های مبتنی بر شواهد
+[ممیزی مستندات اجرایی و لینک‌ها — ۲۰۲۶-۱۱-۰۲](audits/README.md)؛ نتیجه مشاهده است، نه مجوز تغییر کد.
