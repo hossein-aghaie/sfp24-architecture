@@ -1,24 +1,32 @@
-# SFP24 — محصول، فناوری و معماری
+# SFP24 — Architecture Knowledge Base
 
-SFP24 نرم‌افزار ماژولار ثبت، پایش و گزارش عملیات صنعتی است؛ از کارگاه کوچک با ثبت دستی تا شرکت دارای تجهیزات متصل و مسئولیت‌های متنوع. **محصول در حال توسعه است؛ نام یک ماژول به معنی آماده‌بودن آن نیست.** پویشگر، کارگاه پایلوت است.
+> **Status:** در حال طراحی · **Type:** مستندات و تصمیم‌ها، نه کد اجرایی
 
-## برای جلسه و شناخت سریع محصول
+این ریپازیتوری تاریخچه تفکر، چرایی تصمیم‌ها، مطالعات استاندارد و قراردادهای مشترک را برای هسته و ماژول‌های SFP24 نگه می‌دارد.
 
-| سؤال شما | پاسخ کامل با یک کلیک |
+| نقطه شروع | لینک |
 |---|---|
-| این محصول چیست و برای چه شرکت‌هایی است؟ | [معرفی محصول و سناریوها](docs/PRODUCT.fa.md) |
-| با چه فناوری‌هایی نوشته شده؟ | [فناوری‌ها و محل استفاده](docs/TECHNOLOGY.fa.md) |
-| چه چیزی ساخته شده و چه چیزی نمایشی یا پیشنهادی است؟ | [وضعیت واقعی محصول و ماژول‌ها](docs/STATUS.fa.md) |
-| هسته چطور کار می‌کند و داده‌ها کجا هستند؟ | [معماری موجود و مرز سرویس‌ها](docs/core/ARCHITECTURE.fa.md) |
-| آموزش و Skill Gap شامل چیست؟ | [ماژول آموزش، شایستگی و ورود کارکنان](docs/modules/training/README.md) |
-| اتاق کاری، میزها و داشبوردها به چه نتیجه‌ای رسیده‌اند؟ | [وضعیت بحث و پیاده‌سازی رابط](docs/core/WORKSPACES.fa.md) |
+| مسیر مطالعه | [START-HERE](docs/START-HERE.md) |
+| دستور واحد ایجنت‌ها | [AGENTS](AGENTS.md) |
+| معماری هسته | [Core](docs/core/README.md) |
+| قراردادها | [Contracts](docs/contracts/README.md) |
+| طراحی ماژول‌ها | [Modules](docs/modules/README.md) |
+| تصمیم‌های تصویب یا رد شده | [Decisions](docs/decisions/README.md) |
+| سابقه و اتاق فکر | [Journal](docs/journal/README.md) |
+| استانداردها و تحقیق | [Research](docs/research/README.md) |
+| مشخصات اجرایی Codex | [Implementation](docs/implementation/README.md) |
+| منشأ اسناد و کد | [Sources](docs/sources/README.md) |
 
-**فناوری‌های اصلی:** Vue 3، TypeScript، Three.js، ECharts، Node.js، Fastify و MariaDB. جدول نسخه‌ها، محل استفاده و تفکیک فناوری واقعی از طرح آینده در [صفحهٔ فناوری](docs/TECHNOLOGY.fa.md) است.
+```mermaid
+flowchart LR
+ A["گفتگو و نیاز"] --> B["تحقیق و گزینه‌ها"]
+ B --> C{"تصمیم صاحب محصول؟"}
+ C -->|باز| D["Open question"]
+ C -->|تأیید| E["ADR"]
+ E --> F["قرارداد نسخه‌دار"]
+ F --> G["Spec اجرایی"]
+ G --> H["کد و تست"]
+ H --> B
+```
 
-## برای ادامهٔ طراحی یا توسعه
-
-[هسته و مالک موضوع‌ها](docs/core/README.md) · [ماژول‌ها](docs/modules/README.md) · [قراردادهای موجود و پیشنهادی](docs/contracts/README.md) · [تصمیم‌ها](docs/decisions/README.md) · [اتاق فکر](docs/journal/README.md) · [اسناد تاریخی قابل جست‌وجو](docs/sources/CATALOG.md)
-
-این مخزن **مرجع واحد تصمیم‌ها، معماری و اسناد محصول** است. کد، migration اجرایی و راه‌انداز در [مخزن نرم‌افزار](https://github.com/hossein-aghaie/pouyeshgar-workshop/tree/codex/03-production-recording) باقی می‌مانند. وضعیت اجرا همیشه به نسخهٔ مشخص کد متصل است؛ ویرایش یک سند به‌تنهایی اجرای قابلیت را ثابت نمی‌کند.
-
-برای ایجنت‌ها: [AGENTS](AGENTS.md) و [قواعد تغییر](docs/governance/CHANGE-WORKFLOW.md). برای دیدن دلایل گذشته: [اتاق فکر](docs/journal/README.md). پیشنهادهای حل‌نشده با مرتب‌شدن پوشه‌ها تصویب نمی‌شوند.
+**هشدار:** پیشنهاد، تصمیم مصوب و قابلیت پیاده‌شده سه وضعیت متفاوت‌اند.
