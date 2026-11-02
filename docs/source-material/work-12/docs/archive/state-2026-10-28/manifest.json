@@ -1,0 +1,629 @@
+{
+  "date": "2026-10-28",
+  "purpose": "Exact source records before consolidation; historical statements are not current instructions. Original relative links are interpreted from original paths.",
+  "documents": [
+    {
+      "original": "docs/ARCHITECTURE.md",
+      "snapshot": "docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "sha256": "cb49eb547c02ab314785fa0488c9aaec7a34a989e12c83d84e1422b4fe0fb1bc",
+      "headings": [
+        {
+          "line": 3,
+          "title": "تأیید نام دستگاه و محافظت وابستگی‌ها — ۲۰۲۶-۱۰-۲۷"
+        },
+        {
+          "line": 12,
+          "title": "ورود پروندهٔ منبع و عکس در ZIP — ۲۰۲۶-۱۰-۲۷"
+        },
+        {
+          "line": 25,
+          "title": "نام‌گذاری TAG.IN و جدول فشردهٔ تگ — ۲۰۲۶-۱۰-۲۷"
+        },
+        {
+          "line": 34,
+          "title": "اصلاح تست دریافت و وضعیت ذخیره‌شده — بازخورد ۲۰۲۶-۱۰-۲۷"
+        },
+        {
+          "line": 45,
+          "title": "کلید ثابت دستگاه و کد خوانای تگ — ۲۰۲۶-۱۰-۲۷"
+        },
+        {
+          "line": 57,
+          "title": "کنترل دریافت و تحویل تیم فنی — ۲۰۲۶-۱۰-۲۶"
+        },
+        {
+          "line": 68,
+          "title": "ساختار اجرایی جدید HTTP — ۲۰۲۶-۱۰-۲۶"
+        },
+        {
+          "line": 74,
+          "title": "فایل شرکت و نوع منبع — بازنگری ۲۰۲۶-۱۰-۲۵"
+        },
+        {
+          "line": 83,
+          "title": "ویزارد و HTTP چندکاناله — ۲۰۲۶-۱۰-۲۵"
+        },
+        {
+          "line": 91,
+          "title": "جهت ارتباط و چندمسیره‌بودن دستگاه — تصمیم ۲۰۲۶-۱۰-۲۴"
+        },
+        {
+          "line": 97,
+          "title": "۲۰۲۶-۱۰-۲۴ — مرز ذخیرهٔ خام هاب و امکان جداسازی آینده"
+        },
+        {
+          "line": 112,
+          "title": "ساختار سورس"
+        },
+        {
+          "line": 125,
+          "title": "مرز مصوب rc.4 — هدف پیاده‌سازی بعدی"
+        },
+        {
+          "line": 135,
+          "title": "آنچه انتقال تغییر نداده"
+        },
+        {
+          "line": 143,
+          "title": "2026-10-21 — Workspace extension boundary"
+        },
+        {
+          "line": 149,
+          "title": "2026-10-21 — Shared master definitions and module contributions"
+        },
+        {
+          "line": 154,
+          "title": "2026-10-22 — Module self-description proposal; not an implementation approval"
+        }
+      ]
+    },
+    {
+      "original": "docs/CURRENT-STATE.md",
+      "snapshot": "docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "sha256": "60e1d63738686213c99192e37a91a7b5e0b4005c0a5aac90141bec6172818136",
+      "headings": [
+        {
+          "line": 3,
+          "title": "آزمایش Graphify در مرحلهٔ۰۲ — ۲۰۲۶-۱۰-۲۸"
+        },
+        {
+          "line": 7,
+          "title": "شروع شاخهٔ مرحلهٔ۰۲ — ۲۰۲۶-۱۰-۲۸"
+        },
+        {
+          "line": 11,
+          "title": "نقطهٔ مرحلهٔ ۰۱ — ۲۰۲۶-۱۰-۲۸"
+        },
+        {
+          "line": 20,
+          "title": "نمایش بدون ثبت و مسیریابی چند ساختار — ۲۰۲۶-۱۰-۲۸"
+        },
+        {
+          "line": 29,
+          "title": "پیام موفقیت حساب‌ها — ۲۰۲۶-۱۰-۲۷"
+        },
+        {
+          "line": 34,
+          "title": "تأیید نام دستگاه و محافظت وابستگی‌ها — ۲۰۲۶-۱۰-۲۷"
+        },
+        {
+          "line": 43,
+          "title": "ورود پروندهٔ منبع و عکس در ZIP — ۲۰۲۶-۱۰-۲۷"
+        },
+        {
+          "line": 56,
+          "title": "نام‌گذاری TAG.IN و جدول فشردهٔ تگ — ۲۰۲۶-۱۰-۲۷"
+        },
+        {
+          "line": 65,
+          "title": "اصلاح تست دریافت و وضعیت ذخیره‌شده — بازخورد ۲۰۲۶-۱۰-۲۷"
+        },
+        {
+          "line": 76,
+          "title": "کلید ثابت دستگاه و کد خوانای تگ — ۲۰۲۶-۱۰-۲۷"
+        },
+        {
+          "line": 88,
+          "title": "کنترل دریافت و تحویل تیم فنی — ۲۰۲۶-۱۰-۲۶"
+        },
+        {
+          "line": 101,
+          "title": "پوشهٔ مستقل شبیه‌سازها — ۲۰۲۶-۱۰-۲۶"
+        },
+        {
+          "line": 106,
+          "title": "فایل اتصال خصوصی و شبیه‌ساز مستقل۲ — ۲۰۲۶-۱۰-۲۶"
+        },
+        {
+          "line": 114,
+          "title": "اتصال پارسر ساختارها و HTTP 202 — ۲۰۲۶-۱۰-۲۶"
+        },
+        {
+          "line": 122,
+          "title": "اصلاح تست میدانی عکس و نوع منبع — ۲۰۲۶-۱۰-۲۵"
+        },
+        {
+          "line": 131,
+          "title": "ویزارد مسیر دریافت — ۲۰۲۶-۱۰-۲۵"
+        },
+        {
+          "line": 283,
+          "title": "انجام‌شده"
+        },
+        {
+          "line": 299,
+          "title": "هنوز انجام نشده"
+        },
+        {
+          "line": 303,
+          "title": "شواهد پیش از پاک‌سازی"
+        },
+        {
+          "line": 307,
+          "title": "حدود ثابت"
+        },
+        {
+          "line": 324,
+          "title": "ذخیرهٔ ساختارهای پیام و نشست — ۲۰۲۶-۱۰-۲۵"
+        }
+      ]
+    },
+    {
+      "original": "docs/UI-UX-SPEC.md",
+      "snapshot": "docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "sha256": "98ba2e72255a2a183bd48085f7019c55b2ebff45daa261899c518d33167a7664",
+      "headings": [
+        {
+          "line": 3,
+          "title": "نمایش دادهٔ موقت — ۲۰۲۶-۱۰-۲۸"
+        },
+        {
+          "line": 8,
+          "title": "جدول تگ — اصلاح جاری ۲۰۲۶-۱۰-۲۷"
+        },
+        {
+          "line": 13,
+          "title": "اصلاح جاری راه‌اندازی — ۲۰۲۶-۱۰-۲۷"
+        },
+        {
+          "line": 18,
+          "title": "بازخورد میدانی — عکس و نوع دستگاه، ۲۰۲۶-۱۰-۲۵"
+        },
+        {
+          "line": 23,
+          "title": "راه‌اندازی منابع داده — ویزارد گرافیکی، ۲۰۲۶-۱۰-۲۵"
+        },
+        {
+          "line": 29,
+          "title": "نمای کلی ۲ — مسیر شروع کار، ۲۰۲۶-۱۰-۲۴"
+        },
+        {
+          "line": 33,
+          "title": "راهنمای اصلی — بازبینی مالک ۲۰۲۶-۱۰-۲۴"
+        },
+        {
+          "line": 37,
+          "title": "مرجع بصری مالک و راهنمای گرافیکی — ۲۰۲۶-۱۰-۲۴"
+        },
+        {
+          "line": 43,
+          "title": "تصمیم مالک و اجرای هاب چندمنبعی — ۲۰۲۶-۱۰-۲۴"
+        },
+        {
+          "line": 51,
+          "title": "۲۰۲۶-۱۰-۲۴ — تراکم کاری هاب"
+        },
+        {
+          "line": 59,
+          "title": "Four surfaces, three monitoring modes"
+        },
+        {
+          "line": 67,
+          "title": "Acceptance"
+        },
+        {
+          "line": 79,
+          "title": "References and evidence"
+        },
+        {
+          "line": 83,
+          "title": "2026-10-21 — Company definitions and workspace terminology"
+        },
+        {
+          "line": 89,
+          "title": "2026-10-21 — Readable tenant scale and compact definitions"
+        },
+        {
+          "line": 97,
+          "title": "2026-10-21 — Factory identity and tenant status"
+        },
+        {
+          "line": 105,
+          "title": "2026-10-21 — Compact identity, no duplicate role"
+        },
+        {
+          "line": 112,
+          "title": "2026-10-21 — Input catalog hierarchy and readable rows"
+        },
+        {
+          "line": 117,
+          "title": "ویرایشگر چیدمان — ۲۰۲۶-۱۰-۲۱"
+        },
+        {
+          "line": 155,
+          "title": "رابط ساختار پیام — بازبینی ۲۰۲۶-۱۰-۲۵"
+        },
+        {
+          "line": 165,
+          "title": "ذخیرهٔ ساختارهای پیام و نشست — ۲۰۲۶-۱۰-۲۵"
+        },
+        {
+          "line": 172,
+          "title": "اتصال پارسر ساختارها و HTTP 202 — ۲۰۲۶-۱۰-۲۵"
+        }
+      ]
+    },
+    {
+      "original": "docs/DEVELOPER-GUIDE.md",
+      "snapshot": "docs/archive/state-2026-10-28/DEVELOPER-GUIDE.md",
+      "sha256": "73442075b104ad1b5a40ad1670365ade86ea2462f29a80a8b40bd983c5cc96f3",
+      "headings": [
+        {
+          "line": 3,
+          "title": "Source-layer extension"
+        },
+        {
+          "line": 7,
+          "title": "Product integration update — 2026-10-15"
+        },
+        {
+          "line": 15,
+          "title": "Ownership"
+        },
+        {
+          "line": 31,
+          "title": "Phase 3B operational seams"
+        },
+        {
+          "line": 37,
+          "title": "Rules at the seams"
+        },
+        {
+          "line": 47,
+          "title": "Adding one module: illustrative future `costing`"
+        },
+        {
+          "line": 58,
+          "title": "Adding a file connector later (design example, NOT implemented)"
+        },
+        {
+          "line": 66,
+          "title": "Validation and limits"
+        }
+      ]
+    },
+    {
+      "original": "docs/RUNBOOK.md",
+      "snapshot": "docs/archive/state-2026-10-28/RUNBOOK.md",
+      "sha256": "272a671403c9222ede8f8632da83495db34436d3824390c447e31c2545708ce8",
+      "headings": [
+        {
+          "line": 3,
+          "title": "فایل شرکت و بارگذاری عکس — ۲۰۲۶-۱۰-۲۵"
+        },
+        {
+          "line": 12,
+          "title": "بارگذاری ویزارد و HTTP چندکاناله — ۲۰۲۶-۱۰-۲۵"
+        },
+        {
+          "line": 28,
+          "title": "نگهداری کلید اتصال و نشست مرورگر — ۲۰۲۶-۱۰-۲۴"
+        },
+        {
+          "line": 34,
+          "title": "گیرنده مستقل EdgeBox — ۲۰۲۶-۱۰-۲۴"
+        },
+        {
+          "line": 61,
+          "title": "سه پوشهٔ قابل استفاده"
+        },
+        {
+          "line": 71,
+          "title": "محصول جاری"
+        },
+        {
+          "line": 79,
+          "title": "دو برنامه، دو راه‌انداز مستقل"
+        },
+        {
+          "line": 87,
+          "title": "نصب و بررسی توسعه"
+        },
+        {
+          "line": 101,
+          "title": "داده‌های خصوصی و انتقال به سرور"
+        },
+        {
+          "line": 105,
+          "title": "فایل‌های کتابخانهٔ مدل شرکت"
+        },
+        {
+          "line": 129,
+          "title": "سابقه و بازگشت"
+        }
+      ]
+    },
+    {
+      "original": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/DATA-HUB-WORKFLOW.fa.md",
+      "sha256": "5fb9854f3211985b0bb90c7b35f1d9ce164b88eb3724c39a80df189f5f4633c0",
+      "headings": [
+        {
+          "line": 3,
+          "title": "تأیید نام دستگاه و محافظت وابستگی‌ها — ۲۰۲۶-۱۰-۲۷"
+        },
+        {
+          "line": 12,
+          "title": "ورود پروندهٔ منبع و عکس در ZIP — ۲۰۲۶-۱۰-۲۷"
+        },
+        {
+          "line": 25,
+          "title": "نام‌گذاری TAG.IN و جدول فشردهٔ تگ — ۲۰۲۶-۱۰-۲۷"
+        },
+        {
+          "line": 34,
+          "title": "اصلاح تست دریافت و وضعیت ذخیره‌شده — بازخورد ۲۰۲۶-۱۰-۲۷"
+        },
+        {
+          "line": 45,
+          "title": "کلید ثابت دستگاه و کد خوانای تگ — ۲۰۲۶-۱۰-۲۷"
+        },
+        {
+          "line": 57,
+          "title": "کنترل دریافت و تحویل تیم فنی — ۲۰۲۶-۱۰-۲۶"
+        },
+        {
+          "line": 70,
+          "title": "فایل تحویل به تیم فنی و فرستندهٔ جدید"
+        },
+        {
+          "line": 78,
+          "title": "جریان تست"
+        },
+        {
+          "line": 86,
+          "title": "زمان، مسیر و انتخاب ساختار"
+        },
+        {
+          "line": 97,
+          "title": "پاسخ HTTP و مسئولیت نگه‌داری"
+        },
+        {
+          "line": 113,
+          "title": "سقف‌های فعلی آزمایش عملیاتی"
+        },
+        {
+          "line": 123,
+          "title": "شروع از ویزارد — راه‌اندازی منابع داده"
+        },
+        {
+          "line": 141,
+          "title": "نقشهٔ قابل انتخاب و منوهای جدید — ۲۰۲۶-۱۰-۲۴"
+        },
+        {
+          "line": 147,
+          "title": "گردش جاری چندمنبعی — ۲۰۲۶-۱۰-۲۴"
+        },
+        {
+          "line": 153,
+          "title": "اتصال آزمایشی HTTP — ۲۰۲۶-۱۰-۲۴"
+        },
+        {
+          "line": 170,
+          "title": "مسیر کار"
+        },
+        {
+          "line": 182,
+          "title": "بخش‌ها و حدود فعلی"
+        },
+        {
+          "line": 198,
+          "title": "نگهداری و آزمون"
+        },
+        {
+          "line": 207,
+          "title": "ورودی‌های تجهیزات — به‌روزرسانی ۲۰۲۶-۱۰-۲۱"
+        },
+        {
+          "line": 229,
+          "title": "تعریف داده‌ها و منابع چندگانه — ۲۰۲۶-۱۰-۲۱"
+        }
+      ]
+    },
+    {
+      "original": "docs/guides/LOCAL-FOLDERS.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/LOCAL-FOLDERS.fa.md",
+      "sha256": "785dc0519271fca1fbe10042444b67f2cf07ab85585f2389ba731da975d79fcc",
+      "headings": [
+        {
+          "line": 3,
+          "title": "فایل‌های دائمی شرکت — ساختار اجرایی ۲۰۲۶-۱۰-۲۵"
+        },
+        {
+          "line": 38,
+          "title": "نقشهٔ نگه‌داری داده برای انتقال به سرور — ۲۰۲۶-۱۰-۲۳"
+        },
+        {
+          "line": 61,
+          "title": "چه چیزی پاک شد و چه چیزی باقی ماند؟"
+        },
+        {
+          "line": 69,
+          "title": "اجرای سه محیط"
+        }
+      ]
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "sha256": "e236afc99fe90b981b6a84cea46aeabd6c8a54cf615b6869032b4759d30df6b5",
+      "headings": [
+        {
+          "line": 15,
+          "title": "1. Confirmed product direction / تصمیم‌های قطعی"
+        },
+        {
+          "line": 28,
+          "title": "2. Product principles / اصول طراحی"
+        },
+        {
+          "line": 39,
+          "title": "3. Multi-tenant organization and physical model"
+        },
+        {
+          "line": 53,
+          "title": "4. Data capture spectrum and source contracts"
+        },
+        {
+          "line": 77,
+          "title": "5. Equipment state: do not collapse distinct meanings"
+        },
+        {
+          "line": 90,
+          "title": "6. Two opposite factory examples using one operational core"
+        },
+        {
+          "line": 108,
+          "title": "7. Workforce, shifts, planning, quality and maintenance"
+        },
+        {
+          "line": 122,
+          "title": "8. KPI definitions, metrics engine and dashboards"
+        },
+        {
+          "line": 133,
+          "title": "9. UX, data-entry and onboarding"
+        },
+        {
+          "line": 152,
+          "title": "10. Security, tenants, audit and deployment"
+        },
+        {
+          "line": 161,
+          "title": "11. AI and open ecosystem (future, not mandatory in first pilot)"
+        },
+        {
+          "line": 169,
+          "title": "12. Standards to study, not compliance claims"
+        },
+        {
+          "line": 173,
+          "title": "13. Actual implementation status at handoff"
+        },
+        {
+          "line": 179,
+          "title": "14. Recommended design sequence (not a blanket implementation order)"
+        },
+        {
+          "line": 193,
+          "title": "15. Open questions — ask owner when designing each module"
+        },
+        {
+          "line": 216,
+          "title": "16. Critical requirement: a customer may only want ONE module / قابلیت‌های مستقل"
+        },
+        {
+          "line": 247,
+          "title": "17. Unplanned / volatile production is a FIRST-CLASS workflow / تولید بدون برنامهٔ ثابت"
+        },
+        {
+          "line": 260,
+          "title": "18. Capture and interoperability is a CONFIGURABLE PIPELINE, not one fixed API"
+        },
+        {
+          "line": 289,
+          "title": "19. Source-aware state, availability and OEE contracts"
+        },
+        {
+          "line": 301,
+          "title": "20. Minimum UI/UX contract established by the owner in Phase 2"
+        },
+        {
+          "line": 321,
+          "title": "21. Next-session handoff — USE THIS IF THE ORIGINAL CHAT IS UNAVAILABLE"
+        },
+        {
+          "line": 349,
+          "title": "22. Why this chapter exists / چرا این فصل اضافه شده است"
+        },
+        {
+          "line": 357,
+          "title": "23. Demand ≠ order ≠ forecast ≠ production plan ≠ actual production"
+        },
+        {
+          "line": 394,
+          "title": "24. Planning and scheduling are several separate services, not synonyms"
+        },
+        {
+          "line": 432,
+          "title": "25. Warehouse, inventory, materials and logistics require their own business semantics"
+        },
+        {
+          "line": 467,
+          "title": "26. Unifying processes without oversimplifying manufacturing"
+        },
+        {
+          "line": 489,
+          "title": "27. Standards and international ecosystem — careful, source-grounded mapping"
+        },
+        {
+          "line": 514,
+          "title": "28. Concrete acceptance scenarios for future development (not yet tests)"
+        },
+        {
+          "line": 529,
+          "title": "29. Scope discipline and delivery sequence (architectural vision ≠ current release)"
+        },
+        {
+          "line": 550,
+          "title": "30. Plain-language recap for fresh ChatGPT/Codex sessions / خلاصهٔ فهم مسئله"
+        }
+      ]
+    },
+    {
+      "original": "docs/DECISIONS.md",
+      "snapshot": "docs/archive/state-2026-10-28/DECISIONS.md",
+      "sha256": "609cbc32d9b31956f6710c7f934293346ee37e17ff99b479cc5def5c177e912e",
+      "headings": [
+        {
+          "line": 3,
+          "title": "۲۰۲۶-۱۰-۲۴ — ذخیرهٔ خام قابل جداسازی در INGEST"
+        },
+        {
+          "line": 9,
+          "title": "2026-10-18 — Method 4: authorized experimental implementation"
+        },
+        {
+          "line": 13,
+          "title": "Confirmed by owner"
+        },
+        {
+          "line": 37,
+          "title": "Not yet decided: seek owner's business input before schema/implementation"
+        },
+        {
+          "line": 53,
+          "title": "Evidence vs decisions"
+        },
+        {
+          "line": 75,
+          "title": "D-2026-10-19 — یک محصول، دو runtime، دو دموی ثابت"
+        },
+        {
+          "line": 79,
+          "title": "2026-10-21 — Single factory per company and role-neutral workspaces (owner approved)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1270 @@
+{
+  "date": "2026-10-28",
+  "method": "Full source snapshots are immutable and hash-checked. Every original H2 section has an explicit current destination or historical disposition. This is section-level traceability, not an automated proof of semantic equivalence. Do not delete source narratives based on a summary.",
+  "manifest": "docs/archive/state-2026-10-28/manifest.json",
+  "sections": [
+    {
+      "original": "docs/ARCHITECTURE.md",
+      "snapshot": "docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "line": 3,
+      "title": "تأیید نام دستگاه و محافظت وابستگی‌ها — ۲۰۲۶-۱۰-۲۷",
+      "current": "docs/ARCHITECTURE.md",
+      "currentHeading": "مرز فرایند و ذخیره‌سازی",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/ARCHITECTURE.md",
+      "snapshot": "docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "line": 12,
+      "title": "ورود پروندهٔ منبع و عکس در ZIP — ۲۰۲۶-۱۰-۲۷",
+      "current": "docs/ARCHITECTURE.md",
+      "currentHeading": "مرز فرایند و ذخیره‌سازی",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/ARCHITECTURE.md",
+      "snapshot": "docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "line": 25,
+      "title": "نام‌گذاری TAG.IN و جدول فشردهٔ تگ — ۲۰۲۶-۱۰-۲۷",
+      "current": "docs/ARCHITECTURE.md",
+      "currentHeading": "مسیر دریافت HTTP",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/ARCHITECTURE.md",
+      "snapshot": "docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "line": 34,
+      "title": "اصلاح تست دریافت و وضعیت ذخیره‌شده — بازخورد ۲۰۲۶-۱۰-۲۷",
+      "current": "docs/ARCHITECTURE.md",
+      "currentHeading": "مسیر دریافت HTTP",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/ARCHITECTURE.md",
+      "snapshot": "docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "line": 45,
+      "title": "کلید ثابت دستگاه و کد خوانای تگ — ۲۰۲۶-۱۰-۲۷",
+      "current": "docs/ARCHITECTURE.md",
+      "currentHeading": "مسیر دریافت HTTP",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/ARCHITECTURE.md",
+      "snapshot": "docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "line": 57,
+      "title": "کنترل دریافت و تحویل تیم فنی — ۲۰۲۶-۱۰-۲۶",
+      "current": "docs/ARCHITECTURE.md",
+      "currentHeading": "مسیر دریافت HTTP",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/ARCHITECTURE.md",
+      "snapshot": "docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "line": 68,
+      "title": "ساختار اجرایی جدید HTTP — ۲۰۲۶-۱۰-۲۶",
+      "current": "docs/ARCHITECTURE.md",
+      "currentHeading": "مسیر دریافت HTTP",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/ARCHITECTURE.md",
+      "snapshot": "docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "line": 74,
+      "title": "فایل شرکت و نوع منبع — بازنگری ۲۰۲۶-۱۰-۲۵",
+      "current": "docs/ARCHITECTURE.md",
+      "currentHeading": "فایل‌ها، استقرار و مسیر بعدی",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/ARCHITECTURE.md",
+      "snapshot": "docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "line": 83,
+      "title": "ویزارد و HTTP چندکاناله — ۲۰۲۶-۱۰-۲۵",
+      "current": "docs/ARCHITECTURE.md",
+      "currentHeading": "مسیر دریافت HTTP",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/ARCHITECTURE.md",
+      "snapshot": "docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "line": 91,
+      "title": "جهت ارتباط و چندمسیره‌بودن دستگاه — تصمیم ۲۰۲۶-۱۰-۲۴",
+      "current": "docs/ARCHITECTURE.md",
+      "currentHeading": "مرز فرایند و ذخیره‌سازی",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/ARCHITECTURE.md",
+      "snapshot": "docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "line": 97,
+      "title": "۲۰۲۶-۱۰-۲۴ — مرز ذخیرهٔ خام هاب و امکان جداسازی آینده",
+      "current": "docs/ARCHITECTURE.md",
+      "currentHeading": "مرز فرایند و ذخیره‌سازی",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/ARCHITECTURE.md",
+      "snapshot": "docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "line": 112,
+      "title": "ساختار سورس",
+      "current": "docs/ARCHITECTURE.md",
+      "currentHeading": "مرز فرایند و ذخیره‌سازی",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/ARCHITECTURE.md",
+      "snapshot": "docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "line": 125,
+      "title": "مرز مصوب rc.4 — هدف پیاده‌سازی بعدی",
+      "current": "docs/ARCHITECTURE.md",
+      "currentHeading": "مرز فرایند و ذخیره‌سازی",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/ARCHITECTURE.md",
+      "snapshot": "docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "line": 135,
+      "title": "آنچه انتقال تغییر نداده",
+      "current": "docs/ARCHITECTURE.md",
+      "currentHeading": "فایل‌ها، استقرار و مسیر بعدی",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/ARCHITECTURE.md",
+      "snapshot": "docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "line": 143,
+      "title": "2026-10-21 — Workspace extension boundary",
+      "current": "docs/ARCHITECTURE.md",
+      "currentHeading": "هویت، دسترسی و فضاهای کاری",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/ARCHITECTURE.md",
+      "snapshot": "docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "line": 149,
+      "title": "2026-10-21 — Shared master definitions and module contributions",
+      "current": "docs/ARCHITECTURE.md",
+      "currentHeading": "هویت، دسترسی و فضاهای کاری",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/ARCHITECTURE.md",
+      "snapshot": "docs/archive/state-2026-10-28/ARCHITECTURE.md",
+      "line": 154,
+      "title": "2026-10-22 — Module self-description proposal; not an implementation approval",
+      "current": "docs/ARCHITECTURE.md",
+      "currentHeading": "تگ، پارامتر و اطلاعات تکمیلی",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/CURRENT-STATE.md",
+      "snapshot": "docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 3,
+      "title": "آزمایش Graphify در مرحلهٔ۰۲ — ۲۰۲۶-۱۰-۲۸",
+      "current": "docs/CURRENT-STATE.md",
+      "currentHeading": "ابزار بررسی Graphify",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/CURRENT-STATE.md",
+      "snapshot": "docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 7,
+      "title": "شروع شاخهٔ مرحلهٔ۰۲ — ۲۰۲۶-۱۰-۲۸",
+      "current": "docs/CURRENT-STATE.md",
+      "currentHeading": "ساخته‌شده",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/CURRENT-STATE.md",
+      "snapshot": "docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 11,
+      "title": "نقطهٔ مرحلهٔ ۰۱ — ۲۰۲۶-۱۰-۲۸",
+      "current": "docs/CURRENT-STATE.md",
+      "currentHeading": "ساخته‌شده",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/CURRENT-STATE.md",
+      "snapshot": "docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 20,
+      "title": "نمایش بدون ثبت و مسیریابی چند ساختار — ۲۰۲۶-۱۰-۲۸",
+      "current": "docs/CURRENT-STATE.md",
+      "currentHeading": "ساخته‌شده",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/CURRENT-STATE.md",
+      "snapshot": "docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 29,
+      "title": "پیام موفقیت حساب‌ها — ۲۰۲۶-۱۰-۲۷",
+      "current": "docs/CURRENT-STATE.md",
+      "currentHeading": "ساخته‌شده",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/CURRENT-STATE.md",
+      "snapshot": "docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 34,
+      "title": "تأیید نام دستگاه و محافظت وابستگی‌ها — ۲۰۲۶-۱۰-۲۷",
+      "current": "docs/CURRENT-STATE.md",
+      "currentHeading": "ساخته‌شده",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/CURRENT-STATE.md",
+      "snapshot": "docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 43,
+      "title": "ورود پروندهٔ منبع و عکس در ZIP — ۲۰۲۶-۱۰-۲۷",
+      "current": "docs/CURRENT-STATE.md",
+      "currentHeading": "ساخته‌شده",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/CURRENT-STATE.md",
+      "snapshot": "docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 56,
+      "title": "نام‌گذاری TAG.IN و جدول فشردهٔ تگ — ۲۰۲۶-۱۰-۲۷",
+      "current": "docs/CURRENT-STATE.md",
+      "currentHeading": "ساخته‌شده",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/CURRENT-STATE.md",
+      "snapshot": "docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 65,
+      "title": "اصلاح تست دریافت و وضعیت ذخیره‌شده — بازخورد ۲۰۲۶-۱۰-۲۷",
+      "current": "docs/CURRENT-STATE.md",
+      "currentHeading": "ساخته‌شده",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/CURRENT-STATE.md",
+      "snapshot": "docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 76,
+      "title": "کلید ثابت دستگاه و کد خوانای تگ — ۲۰۲۶-۱۰-۲۷",
+      "current": "docs/CURRENT-STATE.md",
+      "currentHeading": "ساخته‌شده",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/CURRENT-STATE.md",
+      "snapshot": "docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 88,
+      "title": "کنترل دریافت و تحویل تیم فنی — ۲۰۲۶-۱۰-۲۶",
+      "current": "docs/CURRENT-STATE.md",
+      "currentHeading": "ساخته‌شده",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/CURRENT-STATE.md",
+      "snapshot": "docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 101,
+      "title": "پوشهٔ مستقل شبیه‌سازها — ۲۰۲۶-۱۰-۲۶",
+      "current": "docs/CURRENT-STATE.md",
+      "currentHeading": "ساخته‌شده",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/CURRENT-STATE.md",
+      "snapshot": "docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 106,
+      "title": "فایل اتصال خصوصی و شبیه‌ساز مستقل۲ — ۲۰۲۶-۱۰-۲۶",
+      "current": "docs/CURRENT-STATE.md",
+      "currentHeading": "ساخته‌شده",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/CURRENT-STATE.md",
+      "snapshot": "docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 114,
+      "title": "اتصال پارسر ساختارها و HTTP 202 — ۲۰۲۶-۱۰-۲۶",
+      "current": "docs/CURRENT-STATE.md",
+      "currentHeading": "ساخته‌شده",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/CURRENT-STATE.md",
+      "snapshot": "docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 122,
+      "title": "اصلاح تست میدانی عکس و نوع منبع — ۲۰۲۶-۱۰-۲۵",
+      "current": "docs/CURRENT-STATE.md",
+      "currentHeading": "ساخته‌شده",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/CURRENT-STATE.md",
+      "snapshot": "docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 131,
+      "title": "ویزارد مسیر دریافت — ۲۰۲۶-۱۰-۲۵",
+      "current": "docs/CURRENT-STATE.md",
+      "currentHeading": "ساخته‌شده",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/CURRENT-STATE.md",
+      "snapshot": "docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 283,
+      "title": "انجام‌شده",
+      "current": "docs/CURRENT-STATE.md",
+      "currentHeading": "ساخته‌شده",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/CURRENT-STATE.md",
+      "snapshot": "docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 299,
+      "title": "هنوز انجام نشده",
+      "current": "docs/CURRENT-STATE.md",
+      "currentHeading": "هنوز ساخته یا نهایی نشده",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/CURRENT-STATE.md",
+      "snapshot": "docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 303,
+      "title": "شواهد پیش از پاک‌سازی",
+      "current": "docs/CURRENT-STATE.md",
+      "currentHeading": "شواهد و حدود اعتبارسنجی",
+      "disposition": "historical evidence retained, current validation reported separately"
+    },
+    {
+      "original": "docs/CURRENT-STATE.md",
+      "snapshot": "docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 307,
+      "title": "حدود ثابت",
+      "current": "docs/CURRENT-STATE.md",
+      "currentHeading": "ساخته‌شده",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/CURRENT-STATE.md",
+      "snapshot": "docs/archive/state-2026-10-28/CURRENT-STATE.md",
+      "line": 324,
+      "title": "ذخیرهٔ ساختارهای پیام و نشست — ۲۰۲۶-۱۰-۲۵",
+      "current": "docs/CURRENT-STATE.md",
+      "currentHeading": "ساخته‌شده",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/UI-UX-SPEC.md",
+      "snapshot": "docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "line": 3,
+      "title": "نمایش دادهٔ موقت — ۲۰۲۶-۱۰-۲۸",
+      "current": "docs/UI-UX-SPEC.md",
+      "currentHeading": "جدول تگ و داده",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/UI-UX-SPEC.md",
+      "snapshot": "docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "line": 8,
+      "title": "جدول تگ — اصلاح جاری ۲۰۲۶-۱۰-۲۷",
+      "current": "docs/UI-UX-SPEC.md",
+      "currentHeading": "جدول تگ و داده",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/UI-UX-SPEC.md",
+      "snapshot": "docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "line": 13,
+      "title": "اصلاح جاری راه‌اندازی — ۲۰۲۶-۱۰-۲۷",
+      "current": "docs/UI-UX-SPEC.md",
+      "currentHeading": "پوسته و نمایش",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/UI-UX-SPEC.md",
+      "snapshot": "docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "line": 18,
+      "title": "بازخورد میدانی — عکس و نوع دستگاه، ۲۰۲۶-۱۰-۲۵",
+      "current": "docs/UI-UX-SPEC.md",
+      "currentHeading": "جدول تگ و داده",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/UI-UX-SPEC.md",
+      "snapshot": "docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "line": 23,
+      "title": "راه‌اندازی منابع داده — ویزارد گرافیکی، ۲۰۲۶-۱۰-۲۵",
+      "current": "docs/UI-UX-SPEC.md",
+      "currentHeading": "ویزارد هاب",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/UI-UX-SPEC.md",
+      "snapshot": "docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "line": 29,
+      "title": "نمای کلی ۲ — مسیر شروع کار، ۲۰۲۶-۱۰-۲۴",
+      "current": "docs/UI-UX-SPEC.md",
+      "currentHeading": "پوسته و نمایش",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/UI-UX-SPEC.md",
+      "snapshot": "docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "line": 33,
+      "title": "راهنمای اصلی — بازبینی مالک ۲۰۲۶-۱۰-۲۴",
+      "current": "docs/UI-UX-SPEC.md",
+      "currentHeading": "پوسته و نمایش",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/UI-UX-SPEC.md",
+      "snapshot": "docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "line": 37,
+      "title": "مرجع بصری مالک و راهنمای گرافیکی — ۲۰۲۶-۱۰-۲۴",
+      "current": "docs/UI-UX-SPEC.md",
+      "currentHeading": "پوسته و نمایش",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/UI-UX-SPEC.md",
+      "snapshot": "docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "line": 43,
+      "title": "تصمیم مالک و اجرای هاب چندمنبعی — ۲۰۲۶-۱۰-۲۴",
+      "current": "docs/UI-UX-SPEC.md",
+      "currentHeading": "پوسته و نمایش",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/UI-UX-SPEC.md",
+      "snapshot": "docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "line": 51,
+      "title": "۲۰۲۶-۱۰-۲۴ — تراکم کاری هاب",
+      "current": "docs/UI-UX-SPEC.md",
+      "currentHeading": "پوسته و نمایش",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/UI-UX-SPEC.md",
+      "snapshot": "docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "line": 59,
+      "title": "Four surfaces, three monitoring modes",
+      "current": "docs/UI-UX-SPEC.md",
+      "currentHeading": "پوسته و نمایش",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/UI-UX-SPEC.md",
+      "snapshot": "docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "line": 67,
+      "title": "Acceptance",
+      "current": "docs/UI-UX-SPEC.md",
+      "currentHeading": "پوسته و نمایش",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/UI-UX-SPEC.md",
+      "snapshot": "docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "line": 79,
+      "title": "References and evidence",
+      "current": "docs/UI-UX-SPEC.md",
+      "currentHeading": "پوسته و نمایش",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/UI-UX-SPEC.md",
+      "snapshot": "docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "line": 83,
+      "title": "2026-10-21 — Company definitions and workspace terminology",
+      "current": "docs/UI-UX-SPEC.md",
+      "currentHeading": "صفحات و توسعهٔ ماژول",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/UI-UX-SPEC.md",
+      "snapshot": "docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "line": 89,
+      "title": "2026-10-21 — Readable tenant scale and compact definitions",
+      "current": "docs/UI-UX-SPEC.md",
+      "currentHeading": "پوسته و نمایش",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/UI-UX-SPEC.md",
+      "snapshot": "docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "line": 97,
+      "title": "2026-10-21 — Factory identity and tenant status",
+      "current": "docs/UI-UX-SPEC.md",
+      "currentHeading": "پوسته و نمایش",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/UI-UX-SPEC.md",
+      "snapshot": "docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "line": 105,
+      "title": "2026-10-21 — Compact identity, no duplicate role",
+      "current": "docs/UI-UX-SPEC.md",
+      "currentHeading": "پوسته و نمایش",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/UI-UX-SPEC.md",
+      "snapshot": "docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "line": 112,
+      "title": "2026-10-21 — Input catalog hierarchy and readable rows",
+      "current": "docs/UI-UX-SPEC.md",
+      "currentHeading": "صفحات و توسعهٔ ماژول",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/UI-UX-SPEC.md",
+      "snapshot": "docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "line": 117,
+      "title": "ویرایشگر چیدمان — ۲۰۲۶-۱۰-۲۱",
+      "current": "docs/UI-UX-SPEC.md",
+      "currentHeading": "پوسته و نمایش",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/UI-UX-SPEC.md",
+      "snapshot": "docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "line": 155,
+      "title": "رابط ساختار پیام — بازبینی ۲۰۲۶-۱۰-۲۵",
+      "current": "docs/UI-UX-SPEC.md",
+      "currentHeading": "ویزارد هاب",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/UI-UX-SPEC.md",
+      "snapshot": "docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "line": 165,
+      "title": "ذخیرهٔ ساختارهای پیام و نشست — ۲۰۲۶-۱۰-۲۵",
+      "current": "docs/UI-UX-SPEC.md",
+      "currentHeading": "ویزارد هاب",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/UI-UX-SPEC.md",
+      "snapshot": "docs/archive/state-2026-10-28/UI-UX-SPEC.md",
+      "line": 172,
+      "title": "اتصال پارسر ساختارها و HTTP 202 — ۲۰۲۶-۱۰-۲۵",
+      "current": "docs/UI-UX-SPEC.md",
+      "currentHeading": "ویزارد هاب",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/DEVELOPER-GUIDE.md",
+      "snapshot": "docs/archive/state-2026-10-28/DEVELOPER-GUIDE.md",
+      "line": 3,
+      "title": "Source-layer extension",
+      "current": "docs/DEVELOPER-GUIDE.md",
+      "currentHeading": "قواعد سرویس و امنیت",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/DEVELOPER-GUIDE.md",
+      "snapshot": "docs/archive/state-2026-10-28/DEVELOPER-GUIDE.md",
+      "line": 7,
+      "title": "Product integration update — 2026-10-15",
+      "current": "docs/DEVELOPER-GUIDE.md",
+      "currentHeading": "قواعد سرویس و امنیت",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/DEVELOPER-GUIDE.md",
+      "snapshot": "docs/archive/state-2026-10-28/DEVELOPER-GUIDE.md",
+      "line": 15,
+      "title": "Ownership",
+      "current": "docs/DEVELOPER-GUIDE.md",
+      "currentHeading": "قواعد سرویس و امنیت",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/DEVELOPER-GUIDE.md",
+      "snapshot": "docs/archive/state-2026-10-28/DEVELOPER-GUIDE.md",
+      "line": 31,
+      "title": "Phase 3B operational seams",
+      "current": "docs/DEVELOPER-GUIDE.md",
+      "currentHeading": "قواعد سرویس و امنیت",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/DEVELOPER-GUIDE.md",
+      "snapshot": "docs/archive/state-2026-10-28/DEVELOPER-GUIDE.md",
+      "line": 37,
+      "title": "Rules at the seams",
+      "current": "docs/DEVELOPER-GUIDE.md",
+      "currentHeading": "قواعد سرویس و امنیت",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/DEVELOPER-GUIDE.md",
+      "snapshot": "docs/archive/state-2026-10-28/DEVELOPER-GUIDE.md",
+      "line": 47,
+      "title": "Adding one module: illustrative future `costing`",
+      "current": "docs/DEVELOPER-GUIDE.md",
+      "currentHeading": "قواعد سرویس و امنیت",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/DEVELOPER-GUIDE.md",
+      "snapshot": "docs/archive/state-2026-10-28/DEVELOPER-GUIDE.md",
+      "line": 58,
+      "title": "Adding a file connector later (design example, NOT implemented)",
+      "current": "docs/DEVELOPER-GUIDE.md",
+      "currentHeading": "قواعد سرویس و امنیت",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/DEVELOPER-GUIDE.md",
+      "snapshot": "docs/archive/state-2026-10-28/DEVELOPER-GUIDE.md",
+      "line": 66,
+      "title": "Validation and limits",
+      "current": "docs/DEVELOPER-GUIDE.md",
+      "currentHeading": "قواعد سرویس و امنیت",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/RUNBOOK.md",
+      "snapshot": "docs/archive/state-2026-10-28/RUNBOOK.md",
+      "line": 3,
+      "title": "فایل شرکت و بارگذاری عکس — ۲۰۲۶-۱۰-۲۵",
+      "current": "docs/RUNBOOK.md",
+      "currentHeading": "اجرای روزمره",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/RUNBOOK.md",
+      "snapshot": "docs/archive/state-2026-10-28/RUNBOOK.md",
+      "line": 12,
+      "title": "بارگذاری ویزارد و HTTP چندکاناله — ۲۰۲۶-۱۰-۲۵",
+      "current": "docs/RUNBOOK.md",
+      "currentHeading": "اجرای روزمره",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/RUNBOOK.md",
+      "snapshot": "docs/archive/state-2026-10-28/RUNBOOK.md",
+      "line": 28,
+      "title": "نگهداری کلید اتصال و نشست مرورگر — ۲۰۲۶-۱۰-۲۴",
+      "current": "docs/RUNBOOK.md",
+      "currentHeading": "اجرای روزمره",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/RUNBOOK.md",
+      "snapshot": "docs/archive/state-2026-10-28/RUNBOOK.md",
+      "line": 34,
+      "title": "گیرنده مستقل EdgeBox — ۲۰۲۶-۱۰-۲۴",
+      "current": "docs/RUNBOOK.md",
+      "currentHeading": "اجرای روزمره",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/RUNBOOK.md",
+      "snapshot": "docs/archive/state-2026-10-28/RUNBOOK.md",
+      "line": 61,
+      "title": "سه پوشهٔ قابل استفاده",
+      "current": "docs/RUNBOOK.md",
+      "currentHeading": "اجرای روزمره",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/RUNBOOK.md",
+      "snapshot": "docs/archive/state-2026-10-28/RUNBOOK.md",
+      "line": 71,
+      "title": "محصول جاری",
+      "current": "docs/RUNBOOK.md",
+      "currentHeading": "اجرای روزمره",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/RUNBOOK.md",
+      "snapshot": "docs/archive/state-2026-10-28/RUNBOOK.md",
+      "line": 79,
+      "title": "دو برنامه، دو راه‌انداز مستقل",
+      "current": "docs/RUNBOOK.md",
+      "currentHeading": "اجرای روزمره",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/RUNBOOK.md",
+      "snapshot": "docs/archive/state-2026-10-28/RUNBOOK.md",
+      "line": 87,
+      "title": "نصب و بررسی توسعه",
+      "current": "docs/RUNBOOK.md",
+      "currentHeading": "اجرای روزمره",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/RUNBOOK.md",
+      "snapshot": "docs/archive/state-2026-10-28/RUNBOOK.md",
+      "line": 101,
+      "title": "داده‌های خصوصی و انتقال به سرور",
+      "current": "docs/RUNBOOK.md",
+      "currentHeading": "اجرای روزمره",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/RUNBOOK.md",
+      "snapshot": "docs/archive/state-2026-10-28/RUNBOOK.md",
+      "line": 105,
+      "title": "فایل‌های کتابخانهٔ مدل شرکت",
+      "current": "docs/RUNBOOK.md",
+      "currentHeading": "اجرای روزمره",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/RUNBOOK.md",
+      "snapshot": "docs/archive/state-2026-10-28/RUNBOOK.md",
+      "line": 129,
+      "title": "سابقه و بازگشت",
+      "current": "docs/RUNBOOK.md",
+      "currentHeading": "اجرای روزمره",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/DATA-HUB-WORKFLOW.fa.md",
+      "line": 3,
+      "title": "تأیید نام دستگاه و محافظت وابستگی‌ها — ۲۰۲۶-۱۰-۲۷",
+      "current": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "currentHeading": "۶. تحویل، ورود فایل و حذف",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/DATA-HUB-WORKFLOW.fa.md",
+      "line": 12,
+      "title": "ورود پروندهٔ منبع و عکس در ZIP — ۲۰۲۶-۱۰-۲۷",
+      "current": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "currentHeading": "۶. تحویل، ورود فایل و حذف",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/DATA-HUB-WORKFLOW.fa.md",
+      "line": 25,
+      "title": "نام‌گذاری TAG.IN و جدول فشردهٔ تگ — ۲۰۲۶-۱۰-۲۷",
+      "current": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "currentHeading": "۴. تگ‌ها و آمادهٔ استفاده",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/DATA-HUB-WORKFLOW.fa.md",
+      "line": 34,
+      "title": "اصلاح تست دریافت و وضعیت ذخیره‌شده — بازخورد ۲۰۲۶-۱۰-۲۷",
+      "current": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "currentHeading": "۴. تگ‌ها و آمادهٔ استفاده",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/DATA-HUB-WORKFLOW.fa.md",
+      "line": 45,
+      "title": "کلید ثابت دستگاه و کد خوانای تگ — ۲۰۲۶-۱۰-۲۷",
+      "current": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "currentHeading": "۴. تگ‌ها و آمادهٔ استفاده",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/DATA-HUB-WORKFLOW.fa.md",
+      "line": 57,
+      "title": "کنترل دریافت و تحویل تیم فنی — ۲۰۲۶-۱۰-۲۶",
+      "current": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "currentHeading": "۱. منبع و مشخصات اتصال",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/DATA-HUB-WORKFLOW.fa.md",
+      "line": 70,
+      "title": "فایل تحویل به تیم فنی و فرستندهٔ جدید",
+      "current": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "currentHeading": "۶. تحویل، ورود فایل و حذف",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/DATA-HUB-WORKFLOW.fa.md",
+      "line": 78,
+      "title": "جریان تست",
+      "current": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "currentHeading": "۳. ذخیره و تست راه‌اندازی",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/DATA-HUB-WORKFLOW.fa.md",
+      "line": 86,
+      "title": "زمان، مسیر و انتخاب ساختار",
+      "current": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "currentHeading": "۲. تعریف ساختار پیام",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/DATA-HUB-WORKFLOW.fa.md",
+      "line": 97,
+      "title": "پاسخ HTTP و مسئولیت نگه‌داری",
+      "current": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "currentHeading": "۵. پاسخ، خطا و تکرار",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/DATA-HUB-WORKFLOW.fa.md",
+      "line": 113,
+      "title": "سقف‌های فعلی آزمایش عملیاتی",
+      "current": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "currentHeading": "۵. پاسخ، خطا و تکرار",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/DATA-HUB-WORKFLOW.fa.md",
+      "line": 123,
+      "title": "شروع از ویزارد — راه‌اندازی منابع داده",
+      "current": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "currentHeading": "۱. منبع و مشخصات اتصال",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/DATA-HUB-WORKFLOW.fa.md",
+      "line": 141,
+      "title": "نقشهٔ قابل انتخاب و منوهای جدید — ۲۰۲۶-۱۰-۲۴",
+      "current": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "currentHeading": "۱. منبع و مشخصات اتصال",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/DATA-HUB-WORKFLOW.fa.md",
+      "line": 147,
+      "title": "گردش جاری چندمنبعی — ۲۰۲۶-۱۰-۲۴",
+      "current": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "currentHeading": "۱. منبع و مشخصات اتصال",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/DATA-HUB-WORKFLOW.fa.md",
+      "line": 153,
+      "title": "اتصال آزمایشی HTTP — ۲۰۲۶-۱۰-۲۴",
+      "current": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "currentHeading": "۱. منبع و مشخصات اتصال",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/DATA-HUB-WORKFLOW.fa.md",
+      "line": 170,
+      "title": "مسیر کار",
+      "current": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "currentHeading": "۱. منبع و مشخصات اتصال",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/DATA-HUB-WORKFLOW.fa.md",
+      "line": 182,
+      "title": "بخش‌ها و حدود فعلی",
+      "current": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "currentHeading": "۱. منبع و مشخصات اتصال",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/DATA-HUB-WORKFLOW.fa.md",
+      "line": 198,
+      "title": "نگهداری و آزمون",
+      "current": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "currentHeading": "۱. منبع و مشخصات اتصال",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/DATA-HUB-WORKFLOW.fa.md",
+      "line": 207,
+      "title": "ورودی‌های تجهیزات — به‌روزرسانی ۲۰۲۶-۱۰-۲۱",
+      "current": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "currentHeading": "۶. تحویل، ورود فایل و حذف",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/DATA-HUB-WORKFLOW.fa.md",
+      "line": 229,
+      "title": "تعریف داده‌ها و منابع چندگانه — ۲۰۲۶-۱۰-۲۱",
+      "current": "docs/guides/DATA-HUB-WORKFLOW.fa.md",
+      "currentHeading": "۷. مصرف در برنامه",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/guides/LOCAL-FOLDERS.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/LOCAL-FOLDERS.fa.md",
+      "line": 3,
+      "title": "فایل‌های دائمی شرکت — ساختار اجرایی ۲۰۲۶-۱۰-۲۵",
+      "current": "docs/guides/LOCAL-FOLDERS.fa.md",
+      "currentHeading": "بقیهٔ اطلاعات کجا هستند؟",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/guides/LOCAL-FOLDERS.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/LOCAL-FOLDERS.fa.md",
+      "line": 38,
+      "title": "نقشهٔ نگه‌داری داده برای انتقال به سرور — ۲۰۲۶-۱۰-۲۳",
+      "current": "docs/guides/LOCAL-FOLDERS.fa.md",
+      "currentHeading": "بقیهٔ اطلاعات کجا هستند؟",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/guides/LOCAL-FOLDERS.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/LOCAL-FOLDERS.fa.md",
+      "line": 61,
+      "title": "چه چیزی پاک شد و چه چیزی باقی ماند؟",
+      "current": "docs/guides/LOCAL-FOLDERS.fa.md",
+      "currentHeading": "بقیهٔ اطلاعات کجا هستند؟",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/guides/LOCAL-FOLDERS.fa.md",
+      "snapshot": "docs/archive/state-2026-10-28/guides/LOCAL-FOLDERS.fa.md",
+      "line": 69,
+      "title": "اجرای سه محیط",
+      "current": "docs/guides/LOCAL-FOLDERS.fa.md",
+      "currentHeading": "بقیهٔ اطلاعات کجا هستند؟",
+      "disposition": "reorganized; full original retained"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 15,
+      "title": "1. Confirmed product direction / تصمیم‌های قطعی",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 28,
+      "title": "2. Product principles / اصول طراحی",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 39,
+      "title": "3. Multi-tenant organization and physical model",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 53,
+      "title": "4. Data capture spectrum and source contracts",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 77,
+      "title": "5. Equipment state: do not collapse distinct meanings",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 90,
+      "title": "6. Two opposite factory examples using one operational core",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 108,
+      "title": "7. Workforce, shifts, planning, quality and maintenance",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 122,
+      "title": "8. KPI definitions, metrics engine and dashboards",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 133,
+      "title": "9. UX, data-entry and onboarding",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 152,
+      "title": "10. Security, tenants, audit and deployment",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 161,
+      "title": "11. AI and open ecosystem (future, not mandatory in first pilot)",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 169,
+      "title": "12. Standards to study, not compliance claims",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 173,
+      "title": "13. Actual implementation status at handoff",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 179,
+      "title": "14. Recommended design sequence (not a blanket implementation order)",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 193,
+      "title": "15. Open questions — ask owner when designing each module",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 216,
+      "title": "16. Critical requirement: a customer may only want ONE module / قابلیت‌های مستقل",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 247,
+      "title": "17. Unplanned / volatile production is a FIRST-CLASS workflow / تولید بدون برنامهٔ ثابت",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 260,
+      "title": "18. Capture and interoperability is a CONFIGURABLE PIPELINE, not one fixed API",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 289,
+      "title": "19. Source-aware state, availability and OEE contracts",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 301,
+      "title": "20. Minimum UI/UX contract established by the owner in Phase 2",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 321,
+      "title": "21. Next-session handoff — USE THIS IF THE ORIGINAL CHAT IS UNAVAILABLE",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 349,
+      "title": "22. Why this chapter exists / چرا این فصل اضافه شده است",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 357,
+      "title": "23. Demand ≠ order ≠ forecast ≠ production plan ≠ actual production",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 394,
+      "title": "24. Planning and scheduling are several separate services, not synonyms",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 432,
+      "title": "25. Warehouse, inventory, materials and logistics require their own business semantics",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 467,
+      "title": "26. Unifying processes without oversimplifying manufacturing",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 489,
+      "title": "27. Standards and international ecosystem — careful, source-grounded mapping",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 514,
+      "title": "28. Concrete acceptance scenarios for future development (not yet tests)",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 529,
+      "title": "29. Scope discipline and delivery sequence (architectural vision ≠ current release)",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/PRODUCT-BLUEPRINT.md",
+      "snapshot": "docs/archive/state-2026-10-28/PRODUCT-BLUEPRINT.md",
+      "line": 550,
+      "title": "30. Plain-language recap for fresh ChatGPT/Codex sessions / خلاصهٔ فهم مسئله",
+      "current": "docs/PRODUCT-BLUEPRINT.md",
+      "currentHeading": "جهت ادامه پس از هاب — بازبینی مالک، ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained in current blueprint; new owner direction has explicit precedence"
+    },
+    {
+      "original": "docs/DECISIONS.md",
+      "snapshot": "docs/archive/state-2026-10-28/DECISIONS.md",
+      "line": 3,
+      "title": "۲۰۲۶-۱۰-۲۴ — ذخیرهٔ خام قابل جداسازی در INGEST",
+      "current": "docs/DECISIONS.md",
+      "currentHeading": "تصمیم جاری و تقدم بر سابقه — ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained historical decisions; current precedence stated at top"
+    },
+    {
+      "original": "docs/DECISIONS.md",
+      "snapshot": "docs/archive/state-2026-10-28/DECISIONS.md",
+      "line": 9,
+      "title": "2026-10-18 — Method 4: authorized experimental implementation",
+      "current": "docs/DECISIONS.md",
+      "currentHeading": "تصمیم جاری و تقدم بر سابقه — ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained historical decisions; current precedence stated at top"
+    },
+    {
+      "original": "docs/DECISIONS.md",
+      "snapshot": "docs/archive/state-2026-10-28/DECISIONS.md",
+      "line": 13,
+      "title": "Confirmed by owner",
+      "current": "docs/DECISIONS.md",
+      "currentHeading": "تصمیم جاری و تقدم بر سابقه — ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained historical decisions; current precedence stated at top"
+    },
+    {
+      "original": "docs/DECISIONS.md",
+      "snapshot": "docs/archive/state-2026-10-28/DECISIONS.md",
+      "line": 37,
+      "title": "Not yet decided: seek owner's business input before schema/implementation",
+      "current": "docs/DECISIONS.md",
+      "currentHeading": "تصمیم جاری و تقدم بر سابقه — ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained historical decisions; current precedence stated at top"
+    },
+    {
+      "original": "docs/DECISIONS.md",
+      "snapshot": "docs/archive/state-2026-10-28/DECISIONS.md",
+      "line": 53,
+      "title": "Evidence vs decisions",
+      "current": "docs/DECISIONS.md",
+      "currentHeading": "تصمیم جاری و تقدم بر سابقه — ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained historical decisions; current precedence stated at top"
+    },
+    {
+      "original": "docs/DECISIONS.md",
+      "snapshot": "docs/archive/state-2026-10-28/DECISIONS.md",
+      "line": 75,
+      "title": "D-2026-10-19 — یک محصول، دو runtime، دو دموی ثابت",
+      "current": "docs/DECISIONS.md",
+      "currentHeading": "تصمیم جاری و تقدم بر سابقه — ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained historical decisions; current precedence stated at top"
+    },
+    {
+      "original": "docs/DECISIONS.md",
+      "snapshot": "docs/archive/state-2026-10-28/DECISIONS.md",
+      "line": 79,
+      "title": "2026-10-21 — Single factory per company and role-neutral workspaces (owner approved)",
+      "current": "docs/DECISIONS.md",
+      "currentHeading": "تصمیم جاری و تقدم بر سابقه — ۲۰۲۶-۱۰-۲۸",
+      "disposition": "retained historical decisions; current precedence stated at top"
+    }
+  ],
+  "retainedDetailedDesign": "docs/product-notes/DATA-POINTS-AND-CONSUMERS.fa.md",
+  "currentOwnerDirection": "docs/PRODUCT-BLUEPRINT.md",
+  "signedContractUnchanged": true
+}
