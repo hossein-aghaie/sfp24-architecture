@@ -9,7 +9,7 @@
 | دنبال چه هستید؟ | سند اصلی |
 |---|---|
 | هدف، مثال‌ها، نقش‌های واقعی و مدل پایه | [طراحی محصول آموزش](PRODUCT.fa.md) |
-| Activity، Requirement، Evidence، Qualification و الگوریتم Gap | [موتور شایستگی و LMS](SKILL-GAP-LMS.fa.md) |
+| **Skill Gap Analysis / Skills Matrix**: الزام فعالیت، شواهد فرد، محاسبهٔ Gap و پوشش جانشینی | [سند مالک مدل، وضعیت‌ها و الگوریتم (بخش‌های ۲۰.۲ تا ۲۰.۴)](SKILL-GAP-LMS.fa.md) · [سابقهٔ تطبیق با Work 11](journal/2026-11-03-skill-gap-work11-source-check.fa.md) |
 | برنامهٔ آموزش، ارزیاب و اتصال به هسته | [عملیات و یکپارچگی](OPERATIONS-AND-INTEGRATION.fa.md) |
 | تجربهٔ فرد تازه‌وارد، Buddy و بازدید حضوری | [Onboarding کارکنان](ONBOARDING.fa.md) |
 | حساب گوشی، OJT، سیاست شرکت/صنعت و Seat | [فراگیر و سیاست‌ها](LEARNER-AND-POLICY.fa.md) |
