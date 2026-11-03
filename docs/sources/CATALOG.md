@@ -274,7 +274,7 @@
 | [docs/governance/README.md](../governance/README.md) | Documentation Governance |
 | [docs/governance/REQUESTS.md](../governance/REQUESTS.md) | درخواست‌های هسته و ارتباط بین ماژول‌ها |
 | [docs/implementation/DEVELOPER-GUIDE.fa.md](../implementation/DEVELOPER-GUIDE.fa.md) | راهنمای توسعهٔ جاری — ۲۰۲۶-۱۰-۲۸ |
-| [docs/implementation/README.md](../implementation/README.md) | Implementation Specs for Codex |
+| [docs/implementation/README.md](../implementation/README.md) | مشخصات کار برای پیاده‌سازی |
 | [docs/journal/2026-11-02/DOCUMENTATION-READABILITY.fa.md](../journal/2026-11-02/DOCUMENTATION-READABILITY.fa.md) | بازخورد صاحب محصول دربارهٔ پیدا کردن و ادامهٔ اسناد |
 | [docs/journal/2026-11-02/OWNER-AUTHORIZATION.raw.fa.md](../journal/2026-11-02/OWNER-AUTHORIZATION.raw.fa.md) | پیام‌های مالک دربارهٔ مرجع واحد و مرتب‌سازی |
 | [docs/journal/2026-11-02/README.md](../journal/2026-11-02/README.md) | ۲۰۲۶-۱۱-۰۲ — شروع مخزن معماری |
@@ -283,7 +283,7 @@
 | [docs/journal/pre-repository/02-CORE-AND-UX-THINKING.fa.md](../journal/pre-repository/02-CORE-AND-UX-THINKING.fa.md) | فکر بلند ۲ — هسته چگونه آینده‌نگر باشد بدون اینکه سنگین شود؟ |
 | [docs/journal/pre-repository/03-REPOSITORIES-AND-SEQUENCING.fa.md](../journal/pre-repository/03-REPOSITORIES-AND-SEQUENCING.fa.md) | فکر بلند ۳ — از برنچ‌های متعدد به مخزن اسناد و آزمون مستقل هسته |
 | [docs/journal/pre-repository/README.md](../journal/pre-repository/README.md) | گفتگوهای مبنایی پیش از ایجاد مخزن معماری — نقشه مطالعه |
-| [docs/journal/README.md](../journal/README.md) | Journal — تاریخچه گفتگو و مسیر تفکر |
+| [docs/journal/README.md](../journal/README.md) | گفتگوها و اتاق فکر |
 | [docs/modules/CATALOG.fa.md](../modules/CATALOG.fa.md) | فهرست حوزه‌ها و ماژول‌های محصول |
 | [docs/modules/maintenance/README.md](../modules/maintenance/README.md) | نگهداری و تعمیرات |
 | [docs/modules/maintenance/RECORDS.md](../modules/maintenance/RECORDS.md) | سوابق کار و اتاق فکر نگهداری و تعمیرات |
@@ -320,12 +320,12 @@
 | [docs/operations/RUNBOOK.fa.md](../operations/RUNBOOK.fa.md) | اجرا و نگهداری جاری — ۲۰۲۶-۱۰-۲۸ |
 | [docs/PRODUCT.fa.md](../PRODUCT.fa.md) | SFP24 چیست |
 | [docs/reference/HALL-01-LAYOUT.fa.md](../reference/HALL-01-LAYOUT.fa.md) | سالن نمونهٔ ۱ — چیدمان موجود |
-| [docs/research/README.md](../research/README.md) | Research & Standards |
+| [docs/research/README.md](../research/README.md) | مطالعات، مقایسه‌ها و استانداردها |
 | [docs/research/TRAINING-STANDARDS.fa.md](../research/TRAINING-STANDARDS.fa.md) | مطالعات بازار و استانداردهای آموزش |
 | [docs/sources/CATALOG.md](CATALOG.md) | کاتالوگ کامل اسناد و منابع |
-| [docs/sources/README.md](README.md) | منابع و نسخهٔ شواهد |
+| [docs/sources/README.md](README.md) | منابع و نسخه‌های اولیه |
 | [docs/START-HERE.md](../START-HERE.md) | راهنمای خواندن و استفاده از اسناد SFP24 |
 | [docs/STATUS.fa.md](../STATUS.fa.md) | وضعیت واقعی محصول |
 | [docs/TECHNOLOGY.fa.md](../TECHNOLOGY.fa.md) | فناوری‌های استفاده‌شده در SFP24 |
-| [README.md](../../README.md) | SFP24 — Architecture Knowledge Base |
+| [README.md](../../README.md) | SFP24 — معرفی محصول و راهنمای اسناد |
 | [tools/README.md](../../tools/README.md) | کنترل اسناد |
