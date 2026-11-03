@@ -47,3 +47,7 @@ flowchart LR
 ## منبع
 
 [متن کامل معماری مبنا](../source-material/work-12/docs/ARCHITECTURE.md) و [کد ثابت](https://github.com/hossein-aghaie/pouyeshgar-workshop/tree/b3f203bc74fe9ef92f6d0ef290fee44fb6a1932f). نسخه‌های lab، demo و قرارداد candidate را با Runtime جاری یکی ندانید. [وضعیت محصول](../STATUS.fa.md).
+
+## چرا فعلاً هاب در همین ساختار نگه داشته شده است؟
+
+[تصمیم تجمیع فعلی و حفظ امکان جداسازی آینده](../decisions/ADR-0003-HUB-CONSOLIDATION.md) سابقه، هزینهٔ همگام‌سازی در دورهٔ تغییر سریع، قید ماژولارماندن و شرط بازنگری را نگه می‌دارد. این تصمیم انتخاب دیتابیس جایگزین یا استقلال فعلی از قطع دیتابیس شرکت را ادعا نمی‌کند.

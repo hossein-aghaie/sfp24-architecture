@@ -267,8 +267,10 @@
 | [docs/core/WORKSPACES.fa.md](../core/WORKSPACES.fa.md) | اتاق کاری، میز، داشبورد و محیط سه‌بعدی |
 | [docs/decisions/ADR-0001-DOCUMENTATION-REPOSITORY.md](../decisions/ADR-0001-DOCUMENTATION-REPOSITORY.md) | ADR-0001 — ریپازیتوری مستقل اسناد SFP24 |
 | [docs/decisions/ADR-0002-CANONICAL-DOCUMENTATION.md](../decisions/ADR-0002-CANONICAL-DOCUMENTATION.md) | ADR-0002 — مرجع واحد و ورودی مستقیم اسناد |
+| [docs/decisions/ADR-0003-HUB-CONSOLIDATION.md](../decisions/ADR-0003-HUB-CONSOLIDATION.md) | ADR-0003 — مسیر فعلی هاب داده و حفظ امکان جداسازی آینده |
 | [docs/decisions/README.md](../decisions/README.md) | تصمیم‌های معماری و محصول |
 | [docs/governance/CHANGE-WORKFLOW.md](../governance/CHANGE-WORKFLOW.md) | گردش تغییر |
+| [docs/governance/CODE-AND-DOCS.fa.md](../governance/CODE-AND-DOCS.fa.md) | چه اسنادی کنار کد بمانند و چه چیزی در مخزن اسناد ثبت شود؟ |
 | [docs/governance/DECISION-RECORDS.md](../governance/DECISION-RECORDS.md) | Architecture Decision Records |
 | [docs/governance/DOCUMENTATION-POLICY.md](../governance/DOCUMENTATION-POLICY.md) | سیاست مستندسازی |
 | [docs/governance/README.md](../governance/README.md) | Documentation Governance |
@@ -279,6 +281,7 @@
 | [docs/journal/2026-11-02/OWNER-AUTHORIZATION.raw.fa.md](../journal/2026-11-02/OWNER-AUTHORIZATION.raw.fa.md) | پیام‌های مالک دربارهٔ مرجع واحد و مرتب‌سازی |
 | [docs/journal/2026-11-02/README.md](../journal/2026-11-02/README.md) | ۲۰۲۶-۱۱-۰۲ — شروع مخزن معماری |
 | [docs/journal/2026-11-03/MODULE-CATALOG.fa.md](../journal/2026-11-03/MODULE-CATALOG.fa.md) | تکمیل فهرست حوزه‌های محصول و خدمات کارکنان |
+| [docs/journal/2026-11-03/PRODUCT-SCOPE-AND-DEVELOPMENT.fa.md](../journal/2026-11-03/PRODUCT-SCOPE-AND-DEVELOPMENT.fa.md) | تعریف محصول و سابقهٔ مسیر توسعه |
 | [docs/journal/pre-repository/01-MODULE-LANDSCAPE-THINKING.fa.md](../journal/pre-repository/01-MODULE-LANDSCAPE-THINKING.fa.md) | فکر بلند ۱ — چرا این همه نوع ماژول مطرح شد؟ |
 | [docs/journal/pre-repository/02-CORE-AND-UX-THINKING.fa.md](../journal/pre-repository/02-CORE-AND-UX-THINKING.fa.md) | فکر بلند ۲ — هسته چگونه آینده‌نگر باشد بدون اینکه سنگین شود؟ |
 | [docs/journal/pre-repository/03-REPOSITORIES-AND-SEQUENCING.fa.md](../journal/pre-repository/03-REPOSITORIES-AND-SEQUENCING.fa.md) | فکر بلند ۳ — از برنچ‌های متعدد به مخزن اسناد و آزمون مستقل هسته |
@@ -318,7 +321,7 @@
 | [docs/operations/guides/PRODUCTION-DATA-SOURCES.md](../operations/guides/PRODUCTION-DATA-SOURCES.md) | منابع اطلاعات تولید — راهنمای همین نسخه |
 | [docs/operations/README.md](../operations/README.md) | اجرا و راهنماهای کاربری |
 | [docs/operations/RUNBOOK.fa.md](../operations/RUNBOOK.fa.md) | اجرا و نگهداری جاری — ۲۰۲۶-۱۰-۲۸ |
-| [docs/PRODUCT.fa.md](../PRODUCT.fa.md) | SFP24 چیست |
+| [docs/PRODUCT.fa.md](../PRODUCT.fa.md) | چشم‌انداز و تعریف محصول |
 | [docs/reference/HALL-01-LAYOUT.fa.md](../reference/HALL-01-LAYOUT.fa.md) | سالن نمونهٔ ۱ — چیدمان موجود |
 | [docs/research/README.md](../research/README.md) | مطالعات، مقایسه‌ها و استانداردها |
 | [docs/research/TRAINING-STANDARDS.fa.md](../research/TRAINING-STANDARDS.fa.md) | مطالعات بازار و استانداردهای آموزش |
