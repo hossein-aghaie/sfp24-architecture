@@ -327,5 +327,5 @@
 | [docs/START-HERE.md](../START-HERE.md) | راهنمای خواندن و استفاده از اسناد SFP24 |
 | [docs/STATUS.fa.md](../STATUS.fa.md) | وضعیت واقعی محصول |
 | [docs/TECHNOLOGY.fa.md](../TECHNOLOGY.fa.md) | فناوری‌های استفاده‌شده در SFP24 |
-| [README.md](../../README.md) | SFP24 — معرفی محصول و راهنمای اسناد |
+| [README.md](../../README.md) | معرفی محصول و راهنمای اسناد |
 | [tools/README.md](../../tools/README.md) | کنترل اسناد |
