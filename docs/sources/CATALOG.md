@@ -332,3 +332,6 @@
 | [docs/TECHNOLOGY.fa.md](../TECHNOLOGY.fa.md) | فناوری‌های استفاده‌شده در SFP24 |
 | [README.md](../../README.md) | معرفی محصول و راهنمای اسناد |
 | [tools/README.md](../../tools/README.md) | کنترل اسناد |
+
+| [docs/research/OPERATIONS-PLATFORMS.fa.md](../research/OPERATIONS-PLATFORMS.fa.md) | مقایسهٔ بسترهای عملیاتی و منابع اولیه |
+| [docs/journal/2026-11-03/PRODUCT-READER-FEEDBACK.raw.fa.md](../journal/2026-11-03/PRODUCT-READER-FEEDBACK.raw.fa.md) | متن کامل بازخورد سشن بیرونی، ارائه‌شده توسط صاحب محصول |
