@@ -278,11 +278,13 @@
 | [docs/journal/2026-11-02/DOCUMENTATION-READABILITY.fa.md](../journal/2026-11-02/DOCUMENTATION-READABILITY.fa.md) | بازخورد صاحب محصول دربارهٔ پیدا کردن و ادامهٔ اسناد |
 | [docs/journal/2026-11-02/OWNER-AUTHORIZATION.raw.fa.md](../journal/2026-11-02/OWNER-AUTHORIZATION.raw.fa.md) | پیام‌های مالک دربارهٔ مرجع واحد و مرتب‌سازی |
 | [docs/journal/2026-11-02/README.md](../journal/2026-11-02/README.md) | ۲۰۲۶-۱۱-۰۲ — شروع مخزن معماری |
+| [docs/journal/2026-11-03/MODULE-CATALOG.fa.md](../journal/2026-11-03/MODULE-CATALOG.fa.md) | تکمیل فهرست حوزه‌های محصول و خدمات کارکنان |
 | [docs/journal/pre-repository/01-MODULE-LANDSCAPE-THINKING.fa.md](../journal/pre-repository/01-MODULE-LANDSCAPE-THINKING.fa.md) | فکر بلند ۱ — چرا این همه نوع ماژول مطرح شد؟ |
 | [docs/journal/pre-repository/02-CORE-AND-UX-THINKING.fa.md](../journal/pre-repository/02-CORE-AND-UX-THINKING.fa.md) | فکر بلند ۲ — هسته چگونه آینده‌نگر باشد بدون اینکه سنگین شود؟ |
 | [docs/journal/pre-repository/03-REPOSITORIES-AND-SEQUENCING.fa.md](../journal/pre-repository/03-REPOSITORIES-AND-SEQUENCING.fa.md) | فکر بلند ۳ — از برنچ‌های متعدد به مخزن اسناد و آزمون مستقل هسته |
 | [docs/journal/pre-repository/README.md](../journal/pre-repository/README.md) | گفتگوهای مبنایی پیش از ایجاد مخزن معماری — نقشه مطالعه |
 | [docs/journal/README.md](../journal/README.md) | Journal — تاریخچه گفتگو و مسیر تفکر |
+| [docs/modules/CATALOG.fa.md](../modules/CATALOG.fa.md) | فهرست حوزه‌ها و ماژول‌های محصول |
 | [docs/modules/maintenance/README.md](../modules/maintenance/README.md) | نگهداری و تعمیرات |
 | [docs/modules/maintenance/RECORDS.md](../modules/maintenance/RECORDS.md) | سوابق کار و اتاق فکر نگهداری و تعمیرات |
 | [docs/modules/mrp/README.md](../modules/mrp/README.md) | برنامه‌ریزی نیاز مواد — MRP |
@@ -294,7 +296,7 @@
 | [docs/modules/planning/RECORDS.md](../modules/planning/RECORDS.md) | سوابق کار و اتاق فکر برنامه‌ریزی |
 | [docs/modules/production/README.md](../modules/production/README.md) | ثبت و گزارش تولید |
 | [docs/modules/production/RECORDS.md](../modules/production/RECORDS.md) | سوابق کار و اتاق فکر ثبت و گزارش تولید |
-| [docs/modules/README.md](../modules/README.md) | ماژول‌ها — کارکرد و وضعیت |
+| [docs/modules/README.md](../modules/README.md) | ماژول‌ها و حوزه‌های محصول |
 | [docs/modules/training/AI-KNOWLEDGE.fa.md](../modules/training/AI-KNOWLEDGE.fa.md) | دستیار تألیف آموزش |
 | [docs/modules/training/DECISIONS.md](../modules/training/DECISIONS.md) | تصمیم‌ها و پرسش‌های آموزش |
 | [docs/modules/training/LEARNER-AND-POLICY.fa.md](../modules/training/LEARNER-AND-POLICY.fa.md) | حساب فراگیر و سیاست صنایع |
