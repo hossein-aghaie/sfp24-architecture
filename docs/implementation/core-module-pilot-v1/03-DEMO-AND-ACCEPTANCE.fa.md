@@ -213,10 +213,11 @@ flowchart TD
 | **QA-50** | WorkOrder open/assigned و هنوز شروع‌نشده / cancel با reason | WorkOrder و Request مرتبط در همان تراکنش cancelled، Taskهای باز لغو؛ WorkOrder in_progress با cancel عمومی 409 |
 | **QA-51** | Company Admin با Permission مناسب / Policy revision و مدیریت اعضای Group | فقط همان Tenant/Scope و CAS؛ UI قاعدهٔ دیگری را خرید/فعال یا Permission اضافه نکند |
 | **QA-52** | کاربر بدون مجوز Company Admin / بازکردن ModuleCapabilities/PolicyEditor/GroupEditor و اجرای API | UI و API هم‌زمان محدود؛ نشت اطلاعات افراد و تیم‌های Tenant دیگر ممنوع |
+| **QA-53** | ثبت Permissionهای تازه و اجرای seedCatalog روی شرکت تازه و قدیمی / ورود مدیر شرکت | بدون Grant صریح، admin فقط حقوق قدیمی خود را دارد و از maintenance.review_close، maintenance.perform، tasks.decide و maintenance.policy.manage محروم است؛ با Grant صریح هم Self-Approval ممنوع باقی بماند؛ مجوزهای قدیمی از بین نروند |
 
 ### ۴.۱. اولویت آزمون‌ها
 
-**Blocking Critical:** QA-06 تا QA-15، QA-19 تا QA-33، QA-34، QA-38، QA-43، QA-45، QA-48 تا QA-52.  
+**Blocking Critical:** QA-06 تا QA-15، QA-19 تا QA-33، QA-34، QA-38، QA-43، QA-45، QA-48 تا QA-53.  
 **Blocking Functional:** بقیه، مگر موردی صرفاً به موتور خارج از Scope وابسته باشد؛ در آن صورت صریحاً `CONTRACT_STUB_ONLY` گزارش شود و «پاس» Runtime واقعی ثبت نشود.
 
 **ارزیابی مستقل:** هیچ تستی نباید برای سبزشدن، permission gate، Domain Revision، License یا WorkOrder Policy را حذف کند. اگر آزمونی با Spec تعارض داشت، Codex باید STOP و مسئله را گزارش کند.
