@@ -25,7 +25,7 @@
 
 - شرکت ساختگی دوشیفتی با Site `FACTORY-01`، Areas `PROD` و `MAINT`، تجهیز `CNC-07` و Part `P-100`، Operation `OP-10`. شناسهٔ نمایشی سفارش `ORDER-52` صرفاً Context تست است؛ ماژول Planning و Order رسمی اجرا نشده است.
 - اشخاص و Accountهای متمایز: `operator-b`، `prod-supervisor-b`، `maint-supervisor-b`، `electrician-b`، `mechanic-b`، `quality-viewer-b`، `admin-b`؛ دو گروه `ELECTRICAL` و `MECHANICAL` با اعضا و Site Scope مشخص.
-- Policy `factory_review@1`؛ Tasks رسیدگی و تحویل، گروه‌های مسئول، Test مستقل دو بررسی‌کننده در گام Closure (سناریوی `all_required`) با منع خودتأییدی. این الگو **انتخاب آزمایشی شرکت فرضی** است نه الزام جهانی ISO.
+- Policy `factory_review@1`؛ Tasks رسیدگی و تحویل، گروه‌های مسئول و دو بررسی مستقلِ `all_required`: `maint-supervisor-b` به‌عنوان بازبین فنی (`technical-review`) و `prod-supervisor-b` به‌عنوان بازبین تحویل تولید (`production-handover-review`) با Permission/Scope صریح، و هر دو مستقل از `electrician-b`/`mechanic-b` که کار را انجام داده‌اند. برای هر دو Step، WorkOrder/Policy Revision باید یکسان باشد؛ یک تأیید کافی نیست. این الگو **انتخاب آزمایشی شرکت فرضی** است نه الزام جهانی ISO.
 - میز اپراتور: work/report/issue/my-history/my-notifications؛ میز Maintenance Supervisor: Triage/Work Orders/Inbox/Notification/EquipmentHistory؛ میز Manager: Dashboard/Review Tasks؛ میز Technician: Assigned WorkOrders/Task Results/EquipmentHistory.
 - کارخانه «نظام کیفیت دارد» فقط به معنی سناریوی دارای شواهد و نقش‌های مرتبط است. ماژول واقعی QMS، PTW و Training در این Pilot ساخته نشده‌اند، پس هیچ عبارت «گواهی انطباق» یا «مجوز ایمنی صادر شد» در خروجی نباشد.
 
