@@ -99,21 +99,39 @@ PM زمان‌دار، Inventory، Costing، APM، کامل‌کردن PTW، ک�
   "requiredModules": [],
   "optionalModules": ["production", "training", "inventory", "oee"],
   "requiredPermissions": [
-    "maintenance.request.create",
-    "maintenance.request.view_own",
-    "maintenance.triage",
-    "maintenance.perform",
-    "maintenance.review_close"
+    "maintenance.request.create", "maintenance.request.reply",
+    "maintenance.request.cancel", "maintenance.request.view_own",
+    "maintenance.request.view_scope", "maintenance.resolve_direct",
+    "maintenance.triage", "maintenance.assign", "maintenance.perform",
+    "maintenance.work.cancel", "maintenance.work.view",
+    "maintenance.review_close", "maintenance.summary",
+    "maintenance.policy.manage", "tasks.read_own", "tasks.claim",
+    "tasks.decide", "notifications.read_own", "assignment.groups.manage"
   ],
-  "queryPortIds": ["maintenance.request.list", "maintenance.work.get", "maintenance.resource.history", "maintenance.summary"],
-  "actionPortIds": ["maintenance.request.report", "maintenance.request.resolve_direct", "maintenance.request.triage", "maintenance.work.assign", "maintenance.work.complete", "maintenance.work.review_close"],
-  "eventTypeIds": ["maintenance.request_reported.v1", "maintenance.work_closed.v1"],
+  "queryPortIds": [
+    "maintenance.request.list", "maintenance.request.get",
+    "maintenance.work.get", "maintenance.resource.history", "maintenance.summary"
+  ],
+  "actionPortIds": [
+    "maintenance.request.report", "maintenance.request.reply_info",
+    "maintenance.request.cancel", "maintenance.request.triage",
+    "maintenance.request.resolve_direct", "maintenance.work.assign",
+    "maintenance.work.start", "maintenance.work.complete",
+    "maintenance.work.review_close", "maintenance.work.reassign",
+    "maintenance.work.cancel", "maintenance.policy.update"
+  ],
+  "eventTypeIds": [
+    "maintenance.request_reported.v1", "maintenance.request_info_requested.v1",
+    "maintenance.request_rejected.v1", "maintenance.work_assigned.v1",
+    "maintenance.work_completed.v1", "maintenance.work_returned.v1",
+    "maintenance.work_closed.v1"
+  ],
   "uiContributionIds": ["maintenance.request.form", "maintenance.resource.history", "maintenance.inbox", "maintenance.summary.kpi"],
   "readinessResolverId": "maintenance.readiness.v1"
 }
 ```
 
-**محدودیت:** لیست Permissions این Manifest فقط مثال *حداقل معرفی* است، نه لیست کاملِ همهٔ Actions پایلوت؛ لیست دقیق و مجوز هر endpoint در [فایل ۰۲، بخش ۶](02-CODEX-WORK-PACKAGES.fa.md) مالک است. در پیاده‌سازی Registry، تمام Actionهای واقعی باید هم ID معتبر و هم Permission/Handler ثبت‌شده داشته باشند؛ Descriptor ناقص را Startup reject کند. در آغاز Runtime ماژول همچنان `pilot_only` است.
+**محدودیت:** این نمونه فهرست کامل Permissionهای پایلوت را نشان می‌دهد؛ هر Action واقعی در Registry باید Handler مورد اعتماد و مجوز متناظر داشته باشد، و تفکیک Permission هر endpoint در [فایل ۰۲، بخش ۶](02-CODEX-WORK-PACKAGES.fa.md) مالک است. Permissionهای مشترک Task/Notification متعلق به Host هستند؛ ذکرشان در Manifest یعنی dependency/eligibility و **نه مالکیت داده یا grant خودکار**. Descriptor ناقص یا ناشناخته در Startup رد شود. در آغاز Runtime ماژول همچنان `pilot_only` است.
 
 **Production Adapter:** شناسهٔ `production.record` به API موجود Production وصل شود، `production.history` به مسیر گزارش‌های موجود و `production.summary` به Query تجمیعی فعلی؛ هیچ `ProductionReport` دوم ساخته نشود و وابستگی Production به Maintenance اضافه نشود.
 
