@@ -254,6 +254,19 @@ Membership در گروه برق/مکانیک/تأسیسات Permission نمی‌
 **پروفایل‌های Fixture، نه Roleهای اجباری محصول:** کارگاه ساده یک شخص با Production و Maintenance direct permissions؛ کارخانهٔ بزرگ Operator فقط گزارش، Maintenance Supervisor برای Triage/Assignment، Electrician برای Perform، Reviewer مستقل برای Review Close، Manager برای dashboard/management. RoleGrants و `initialAdminGrants` کنونی ممکن است Grants وسیع داشته باشند؛ Codex نباید بدون تصمیم عمومی امنیت نقش‌ها را یکجا بازنویسی کند. برای پایلوت با Rules صریح و Scope، و تست Deny، حداقل حق را اعطا کند. تغییر Permissionهای عملیاتی به شکل مخفی در UI نباید امنیت سرور را عوض کند.
 
 
+### ۶.۱. جلوگیری از Grant خودکار ناخواسته به مدیر شرکت — اصلاح امنیتی ضروری
+
+**شاهد واقعی در کدِ مبنا:** در `server/platform/identity/permission-catalog.ts` مقدار `initialAdminGrants = operationalPermissions.map(p => p.key)` است؛ سپس `server/platform/catalog.ts` از آن برای `INSERT IGNORE INTO role_permissions(role_key,permission_key) VALUES ('company_admin',?)` استفاده می‌کند. بنابراین **صرف اضافه‌کردن Permission عملیاتی تازه به `operationalPermissions` می‌تواند آن را به نقش سراسری `company_admin` اعطا کند**. این تفاوت با پیشنهاد «گروه یا عنوان و مدیر بودن به‌تنهایی حق تأیید مستقل ایجاد نمی‌کند» باید قبل از اجرای WP-02/WP-03 برطرف شود.
+
+**تغییر دقیق پیشنهادی Codex در WP-01:**
+1. مجموعهٔ کلیدهای `operationalPermissions` موجود در SHA مبنا (`5c7ac617...`) را به‌عنوان `legacyInitialAdminGrantKeys` ثابت و مستند نگه دارد؛ `initialAdminGrants` را **فقط** از تقاطع `legacyInitialAdminGrantKeys` با کاتالوگ فعلی تولید کند، نه از map همهٔ کلیدهای تازه. به مجموعهٔ Legacy بدون تصمیم تازه چیزی اضافه نکند.
+2. Permissionهای جدید Maintenance/Task/Notifications/Assignment Group را در Catalog تعریف کند **ولی به نقش پیش‌فرض company_admin و هیچ Role Template دیگری به‌صورت خودکار اضافه نکند**. Grant عملیاتی برای کاربران شرکت تنها از مسیر `company_user_permission_rules` با کنترل مدیر واجد حق و `Scope` معتبر، یا در Fixture دورریختنی از `seed` آزمون مجاز باشد. Label، Position، Desk و Group عضویت، Grant ایجاد نکنند.
+3. `roleGrants.company_admin` برای `users.manage` و مجوزهای قدیمی همان رفتار سابق را حفظ کند. نمایش `module.maintenance.read` در کاتالوگ، Entitlement و Runtime Readiness را دور نزند. این تغییر، **بازنویسی کامل RBAC یا سلب Permissions قدیمی شرکت‌های موجود نیست**.
+4. Migration/Seed با دادهٔ موجود: هیچ `DELETE FROM role_permissions` سراسری اجرا نشود؛ اگر DBA قبلاً به‌طور دستی یک Grant معتبر داده، با Upgrade حذف خودکار نشود. چون Feature تازه پیش از انتشار عمومی است، Codex باید رفتار شرکت تازه و شرکت موجود را جدا در Test روی Fixture بررسی کند. انتشار به محیطی که قبلاً key جدید گرفته باشد نیازمند گزارش/تصمیم Migration اختصاصی است؛ «INSERT IGNORE» Grant ناخواستهٔ قدیمی را پس نمی‌گیرد.
+5. اجرای `maintenance.review_close` باید علاوه بر Permission موجود، `policy` و **استقلال Person واقعیِ انجام‌دهنده و بازبین** را در Domain بررسی کند. داشتن `company_admin` یا امکان مدیریت کاربران، bypass این شرط نیست.
+
+**تست اجباری QA-53:** بعد از افزودن کلیدهای تازه و اجرای `seedCatalog`، شرکت تازه با نقش `company_admin` بتواند کار مدیریتی قدیمی را انجام دهد، اما بدون Grant صریح نتواند `maintenance.review_close`، `maintenance.perform`، `tasks.decide` یا `maintenance.policy.manage` را انجام دهد. با Grant صریح و Scope درست هم Self-Approvalِ ممنوع همچنان رد شود. آزمایش یک شرکت قدیمی، سازگاری Permissionهای گذشته را تأیید کند.
+
 ## ۷. Form، Desk، Dashboard، Profile، Inbox و Bell — قرارداد UI پایلوت
 
 **هدف تجربهٔ کاربری:** یک میز ساده برای فرد کارگاهی و یک میز چندنقشی برای کارخانهٔ بزرگ، هر دو با همان Domain API. UI صرفاً Renderer/Action Caller است، نه Authority.
@@ -339,7 +352,7 @@ Company Admin یک صفحهٔ **آماده‌بودن قابلیت‌ها** بب
 | وضعیت | مسیر در مخزن کد | کار دقیق |
 |---|---|---|
 | **MODIFY** | `src/company/module-catalog.ts` و `server/platform/catalog.ts` | Descriptor شناخته‌شده و readiness Maintenance؛ **pilot_only تا پایان فاز**؛ Product module keys فعلی ثابت |
-| **MODIFY** | `server/platform/identity/permission-catalog.ts` و `server/platform/identity/access.ts` | افزودن کلیدهای Section ۶ و استفاده از demand/Scope موجود؛ تعریف bypass جدید ممنوع |
+| **MODIFY** | `server/platform/identity/permission-catalog.ts`، `server/platform/catalog.ts` و `server/platform/identity/access.ts` | افزودن کلیدهای بخش ۶ و **جلوگیری از Grant خودکار Permissionهای حساس به company_admin طبق بخش ۶.۱**؛ استفاده از demand/Scope موجود؛ عدم تغییر Grant قدیمی و عدم bypass |
 | **MODIFY** | `server/platform/migrations.ts` | Tenant migration افزایشی طبق بخش ۴، ثبت writable/append-only؛ عدم تغییر شماره/Checksum گذشته |
 | **MODIFY** | `server/operations/http.ts` | فقط register routeهای تازه با Validation و Guard؛ routeهای Production/Master/Notes موجود بمانند |
 | **MODIFY** | `src/company/workspaces.ts` و `src/company/tenant-shell.ts` | eligibility جدید UI/Pages و فیلترها، بدون Grant مجوز از Workspace |
