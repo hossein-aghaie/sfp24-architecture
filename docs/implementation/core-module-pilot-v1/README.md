@@ -15,7 +15,7 @@
 
 1. [۰۱ — قراردادهای دقیق هسته، رجیستری، داده، Readiness و Action](01-CONTRACTS-AND-DATA.fa.md) — مرز و نوع داده، قابلیت‌های دو ماژول، رفتار خطا و عدم تکرار.
 2. [۰۲ — State Machine، Schema، API، Permissions، UX و دستورکار بسته‌به‌بستهٔ Codex](02-CODEX-WORK-PACKAGES.fa.md) — مشخصات افزوده/حفظ‌شده/ممنوع، ۶ Work Package و معیار توقف.
-3. [۰۳ — کارخانه‌های ساختگی و ۵۲ آزمون پذیرش](03-DEMO-AND-ACCEPTANCE.fa.md) — دادهٔ نمونه، مسیرهای واقعی، امنیت، UI، Crash/Retry، راه‌های QA و قالب گزارش.
+3. [۰۳ — کارخانه‌های ساختگی و ۵۳ آزمون پذیرش](03-DEMO-AND-ACCEPTANCE.fa.md) — دادهٔ نمونه، مسیرهای واقعی، امنیت، UI، Crash/Retry، راه‌های QA و قالب گزارش.
 
 **اسناد منبع و نه سند موازی:** [Domain Interaction Contract Draft v0.1](../../contracts/DOMAIN-INTERACTION-CONTRACT-DRAFT.md)، [Module Contract Draft](../../contracts/MODULE-CONTRACT-DRAFT.md)، [Data Contract Draft](../../contracts/DATA-CONTRACT-DRAFT.md)، [UI Contribution Draft](../../contracts/UI-CONTRIBUTIONS-DRAFT.md)، [گفت‌وگوی این جلسه](../../journal/2026-11-05/CORE-MODULE-REQUIREMENTS-UX-INTEGRATION-SESSION.fa.md)، [نقد ۴۴ حوزه](../../journal/2026-11-05/CORE-OPERATIONS-UX-DESIGN-AND-REVIEW.fa.md).
 
