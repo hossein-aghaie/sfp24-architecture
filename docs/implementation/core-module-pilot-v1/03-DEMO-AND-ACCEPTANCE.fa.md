@@ -209,10 +209,14 @@ flowchart TD
 | **QA-46** | بازگشت برنامه از release جدید / rollout ناموفق | Feature Off و App سازگار، بدون پاک‌کردن سوابق |
 | **QA-47** | Input Device Parameter ارتباط ندارد / نمایش | unavailable/unknown، نه صفر یا خرابی قطعی |
 | **QA-48** | در UI نمایش درخواست/Task/Permission از دو Tenant / Browser check | هیچ منوی دسترسی و هیچ API leak؛ ارتباط Tenant به Content دیگری ندارد |
+| **QA-49** | Request در حالت reported/needs_info / cancel با reason معتبر | Request cancelled و Event/Notification مربوط فقط یک بار؛ درخواست لغو روی Revision قدیم 409 |
+| **QA-50** | WorkOrder open/assigned و هنوز شروع‌نشده / cancel با reason | WorkOrder و Request مرتبط در همان تراکنش cancelled، Taskهای باز لغو؛ WorkOrder in_progress با cancel عمومی 409 |
+| **QA-51** | Company Admin با Permission مناسب / Policy revision و مدیریت اعضای Group | فقط همان Tenant/Scope و CAS؛ UI قاعدهٔ دیگری را خرید/فعال یا Permission اضافه نکند |
+| **QA-52** | کاربر بدون مجوز Company Admin / بازکردن ModuleCapabilities/PolicyEditor/GroupEditor و اجرای API | UI و API هم‌زمان محدود؛ نشت اطلاعات افراد و تیم‌های Tenant دیگر ممنوع |
 
 ### ۴.۱. اولویت آزمون‌ها
 
-**Blocking Critical:** QA-06 تا QA-15، QA-19 تا QA-33، QA-34، QA-38، QA-43، QA-45، QA-48.  
+**Blocking Critical:** QA-06 تا QA-15، QA-19 تا QA-33، QA-34، QA-38، QA-43، QA-45، QA-48 تا QA-52.  
 **Blocking Functional:** بقیه، مگر موردی صرفاً به موتور خارج از Scope وابسته باشد؛ در آن صورت صریحاً `CONTRACT_STUB_ONLY` گزارش شود و «پاس» Runtime واقعی ثبت نشود.
 
 **ارزیابی مستقل:** هیچ تستی نباید برای سبزشدن، permission gate، Domain Revision، License یا WorkOrder Policy را حذف کند. اگر آزمونی با Spec تعارض داشت، Codex باید STOP و مسئله را گزارش کند.
