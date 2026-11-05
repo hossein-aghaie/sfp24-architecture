@@ -59,8 +59,8 @@
 ### ۲.۳. دو Policy غیرقابل‌ویرایش آزاد
 
 `workshop_simple@1`: حق ثبت/حل مستقیم برای فرد مجاز؛ هیچ Task اجباری.  
-`factory_review@1`: Report → Triage Task → (Need Info / Reject / Convert) → Assign (برق، مکانیک یا تأسیسات) → Work Task → Review Close Task → (Return/Reassign/Close).  
-`factory_review@1` در Review استقلال واقعی Person را بررسی می‌کند؛ شخصی با دو Role یا چند Desk نمی‌تواند کار خودش را برای استقلال دوبار امضا کند. Policyهای آینده نسخهٔ خود را دارند؛ پروندهٔ قدیمی به `policyRevision` ساخته‌شده متصل است، نه تفسیر زنده و متغیر.
+`factory_review@1`: Report → Triage Task → (Need Info / Reject / Convert) → Assign (برق، مکانیک یا تأسیسات) → Work Task → **دو Task مستقلِ بررسی تحویل در حالت `all_required`** → (Return/Reassign/Close). دو Step ثابت `technical-review` و `production-handover-review` به ترتیب برای بازبین فنی تعمیرات و مسئول تحویل تولیدِ واجد مجوز/محدوده‌اند؛ هر دو باید **برای همان WorkOrder Revision و PolicyRevision** نتیجه `approved` بدهند. اگر یکی Return کند، تمام Task/Decisionهای باز مربوط به آن دور بررسی supersede شوند و پس از rework و افزایش Revision، هر دو مرحله با Taskهای تازه شروع شوند. با تأیید تنها یک نفر WorkOrder همچنان `work_completed` می‌ماند.  
+`factory_review@1` در Review استقلال واقعی Person را بررسی می‌کند؛ **دو بازبین باید دو Person مستقل از انجام‌دهنده و مستقل از یکدیگر باشند**. شخصی با دو Role یا چند Desk نمی‌تواند کار خودش را برای استقلال دوبار امضا کند. نبود بازبین دومِ واجد شرایط، حالت «در انتظار بررسی» می‌دهد، نه تأیید خودکار. Policyهای آینده نسخهٔ خود را دارند؛ پروندهٔ قدیمی به `policyRevision` ساخته‌شده متصل است، نه تفسیر زنده و متغیر.
 
 ```mermaid
 flowchart TD
@@ -101,6 +101,8 @@ flowchart TD
 - Reassignment و Return نباید Decision یا Task قبلی را پاک کنند؛ Task قبلی `completed/superseded`، Task جدید با همان SubjectRevision فعلی و Step درست ایجاد شود.
 - تغییر مؤثر SubjectRevision از زمان ایجاد Task باید `409 stale_revision` یا `superseded` بدهد؛ ادامه روی rev قبلی بدون بررسی ممنوع.
 - برای شرکت کوچک اگر Policy می‌گوید `not_required`، Task/Approval مصنوعی ساخته نشود؛ Audit واقعی ثبت شود.
+
+**قانون Join:** در `all_required` هر دو Step با هویت Person متمایز و روی یک Revision معتبر لازم‌اند؛ `Task.approved` به‌خودی‌خود WorkOrder را Closed نمی‌کند. فقط Handler مشترک Domain بعد از بررسی هر دو Decision و شرایط Validity، Closure و Event را در Transaction معتبر ثبت کند. اگر هر دو Task به یک Person می‌رسند، Task دوم نباید Claim/Decision شود؛ به مسئول مجاز برای reassign/escalation گزارش داده شود.
 
 ### ۳.۲. Notification
 
