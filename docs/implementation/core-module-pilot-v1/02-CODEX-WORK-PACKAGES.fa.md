@@ -114,17 +114,26 @@ flowchart TD
 
 ### ۳.۲.۲. رویدادهای ثابت و مخاطب‌ها
 
-| EventType Version 1 | چه زمان ثبت می‌شود؟ | Recipient نامزد / مصرف‌کننده |
-|---|---|---|
-| `maintenance.request_reported.v1` | پس از Commit Request(reported) | اعضای گروه مجاز Triage مطابق Policy |
-| `maintenance.request_info_requested.v1` | بعد از needs_info | Reporter همان Request |
-| `maintenance.request_rejected.v1` | بعد از rejected_final | Reporter و ناظر مجازِ همان Scope |
-| `maintenance.work_assigned.v1` | بعد از Assign/Reassign | User یا اعضای گروه واجد Scope؛ Notification با dedupe |
-| `maintenance.work_completed.v1` | بعد از ثبت TechnicalAction و work_completed | بازبین‌های مجاز |
-| `maintenance.work_returned.v1` | بعد از Return/Rework | تکنسین/گروه مسئول |
-| `maintenance.work_closed.v1` | بعد از Closure معتبر | Reporter، مسئول و افراد مجاز مرتبط؛ Dashboard refresh |
+در پایلوت فقط Eventهای زیر ثبت شوند. هر Event نوع، نسخه، aggregateRef، Actor زمینه‌ای و correlationId مشخص دارد و **بعد از Commit Domain** معتبر است. Eventها خبر هستند؛ Command نیستند.
 
-برگرداندن Request به `reported` پس از reply-info با Event جدید `maintenance.request_reported.v1` و `eventId` تازه انجام می‌شود؛ این رویداد نباید به معنی ایجاد Request دوم باشد. اگر Request به صورت مستقیم `resolved_direct` شد، Event `maintenance.work_closed.v1` با `aggregateType="MaintenanceRequest"` و ref همان Request منتشر شود؛ **نباید WorkOrder جعلی ساخته شود**. برای `cancelled` پیام از همان سیستم Event با outcome واضح منتشر گردد، و اگر نیازمند EventType جدید شد، ID و مصرف‌کنندهٔ آن **قبل از تغییر کد در همین Spec و Registry** ثبت شوند؛ Event ناشناخته در Runtime ایجاد نشود.
+| EventType Version 1 | چه زمان ثبت می‌شود؟ | Recipient نامزد/مصرف‌کننده |
+|---|---|---|
+| `maintenance.request_reported.v1` | ایجاد Request(reported) | گروه Triage واجد Scope در factory_review |
+| `maintenance.request_info_requested.v1` | نیاز به اطلاعات بیشتر | Reporter مجاز |
+| `maintenance.request_replied.v1` | پاسخ Reporter و بازگشت به reported | گروه Triage، بدون Request جدید |
+| `maintenance.request_rejected.v1` | reject_final | Reporter |
+| `maintenance.request_cancelled.v1` | cancel Request یا cancel_from_work | Reporter و مسئول مربوط |
+| `maintenance.request_resolved_direct.v1` | resolved_direct با TechnicalAction/Evidence | Reporter/مسئول مجاز؛ aggregateRef **Request** |
+| `maintenance.work_created.v1` | پذیرش Request و ایجاد WorkOrder یکتا | سرپرست تعمیرات |
+| `maintenance.work_assigned.v1` | Assign به فرد/گروه | نامزد واجد Scope |
+| `maintenance.work_reassigned.v1` | بازارجاع با دلیل not_my_specialty یا مشابه | گروه مقصد و سرپرست |
+| `maintenance.work_started.v1` | transition واقعی به in_progress | مسئول و مصرف‌کنندگان مجاز |
+| `maintenance.work_completed.v1` | ثبت اقدام فنی و work_completed | Reviewers مجاز |
+| `maintenance.work_returned.v1` | رد تحویل برای Rework | اجراکننده/گروه مسئول |
+| `maintenance.work_closed.v1` | Review Close معتبر + بسته‌شدن Request | Reporter، مسئول و Dashboard refresh |
+| `maintenance.work_cancelled.v1` | Cancel قبل از شروع کار، همراه با cancel_from_work | Reporter و مسئول مربوط |
+
+قانون: `maintenance.request_resolved_direct.v1` به WorkOrder اشاره نمی‌کند. `maintenance.work_closed.v1` فقط وقتی WorkOrder واقعاً وجود دارد. مصرف‌کننده Notification می‌تواند همهٔ این رویدادها را به Message از کلیدهای Localization مربوط تبدیل کند؛ نه متن آزاد ارسالی Client. هیچ EventType جدیدی را Codex بدون به‌روزرسانی Spec/Registry و اجازهٔ جدا ایجاد نکند.
 
 ### ۳.۳. Event/Recovery
 
