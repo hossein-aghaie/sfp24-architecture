@@ -156,3 +156,67 @@ flowchart TD
 ### ۴.۴. بازیابی خطا
 
 Receipt و Domain Mutation و Event Outbox در همان **Tenant Transaction** ثبت شوند. اگر پس از Commit پاسخ HTTP گم شد، Retry با همان `Idempotency-Key` همان نتیجه را می‌دهد؛ Payload متفاوت با همان کلید `409`. درخواست درگاه اعلان شکست بخورد، Maintenance Record نباید rollback یا از دست برود؛ Delivery قابل retry است. Exactly-once end-to-end وعده ندهیم. تغییر ساختار با Migration افزایشی؛ rollback با بازگشت نسخهٔ برنامه و خاموش‌کردن قابلیت، **نه Drop اطلاعات تاریخی**.
+
+
+## ۵. قرارداد HTTP پایلوت (پیشنهاد دقیق، پس از تصویب اجرا شود)
+
+تمام مسیرها زیر `/api/v1/company` هستند. Actor، Tenant و Effective Scope از Session؛ در Body هرگز `actorId`، `tenantId` یا `effectivePermissions` معتبر تلقی نشوند. Fastify Schema: `additionalProperties:false`، Enum و حدود طول/عدد، `Idempotency-Key` برای همهٔ POSTهای اثرگذار، `expectedRevision` برای تغییر رکورد. `GET`ها pagination با `limit <= 50` و Cursor پایدار؛ داده/آمار تنها در Scope مجاز Actor.
+
+### ۵.۱. Registry و تنظیمات
+
+| Endpoint | Body/Query | گیت و پاسخ |
+|---|---|---|
+| `GET /company/module-capabilities` | moduleKey اختیاری | Descriptorهای امن + `licensed/enabled/compatible/ready/issues`؛ بدون افشای دادهٔ سایرین |
+| `GET /company/maintenance/policy` | — | Policy جاری و Revision با مجوز مشاهده |
+| `PUT /company/maintenance/policy` | `{policyKey:"workshop_simple"|"factory_review", expectedRevision}` | `maintenance.policy.manage`؛ CAS، Revision، Audit، Snapshot برای Instanceهای قبلی |
+| `GET /company/assignment-groups` | siteId? | فقط گروه‌های Tenant و Scope مجاز |
+| `POST /company/assignment-groups` | `{code,name,siteId?,members[]}` | `assignment.groups.manage`؛ اعتبار عضویت همان شرکت |
+| `PUT /company/assignment-groups/:id` | `{name?,members?,active?,expectedRevision}` | CAS + Audit، Task باز با سیاست مشخص بازبینی شود |
+
+### ۵.۲. Maintenance domain API
+
+| Endpoint | ورودی/نتیجه | مجوز |
+|---|---|---|
+| `POST /company/maintenance/requests` | `{resourceId,description,priority?:"normal"|"high",observedAt?,sourceNoteId?,relatedProductionReportId?}` → Request(reported) | `maintenance.request.create`، UUID معتبر Resource و Site |
+| `GET /company/maintenance/requests` | `resourceId?,siteId?,status?,cursor?,limit?` | `maintenance.request.view_own` یا `maintenance.request.view_scope` |
+| `GET /company/maintenance/requests/:id` | Request + history مجاز | Owner/Scope؛ 404 برای ناموجود یا نامجاز |
+| `POST /company/maintenance/requests/:id/reply-info` | `{reply,expectedRevision}` → reported | `maintenance.request.reply`، reporter یا delegate معتبر |
+| `POST /company/maintenance/requests/:id/triage` | `{outcome:"request_info"|"reject_final"|"convert_to_work",reason?,assigneeUserId?,groupId?,expectedRevision}` | `maintenance.triage`؛ برگشت/رد با دلیل حداقل ۸ نویسه؛ قبول → WorkOrder یکتا |
+| `POST /company/maintenance/requests/:id/resolve-direct` | `{summary,outcome,performedAt,evidence:[...],expectedRevision}` → resolved_direct | `maintenance.resolve_direct` در Policy مجاز؛ بدون Task مصنوعی |
+| `GET /company/maintenance/work-orders/:id` | WorkOrder + history | `maintenance.work.view` |
+| `POST /company/maintenance/work-orders/:id/assign` | `{assigneeUserId?,groupId?,reason?,expectedRevision}` → assigned | `maintenance.assign`؛ دقیقاً یکی از User/Group |
+| `POST /company/maintenance/work-orders/:id/start` | `{expectedRevision}` → in_progress | `maintenance.perform`؛ انتساب معتبر + شرط اجرا |
+| `POST /company/maintenance/work-orders/:id/complete` | `{summary,outcome,performedAt,evidence:[...],expectedRevision}` → work_completed | `maintenance.perform`؛ ساخت Task بررسی، نه آزادسازی دستگاه |
+| `POST /company/maintenance/work-orders/:id/review-close` | `{outcome:"approve"|"return",reason?,expectedRevision}` → closed/returned_for_rework | `maintenance.review_close`؛ استقلال Actor در factory_review |
+| `POST /company/maintenance/work-orders/:id/reassign` | `{reason,groupId?,assigneeUserId?,expectedRevision}` → assigned | `maintenance.assign`؛ `not_my_specialty` رد نهایی Request نیست |
+| `GET /company/resources/:id/maintenance` | تاریخچهٔ Resource با cursor/limit | read Scope؛ برای Resource Profile |
+| `GET /company/maintenance/summary` | `siteId?,resourceId?,from?,to?` | `maintenance.summary`؛ KPI واقعی با زمان و منشأ |
+
+### ۵.۳. Task/Notification/UX API
+
+| Endpoint | رفتار | گیت |
+|---|---|---|
+| `GET /company/tasks` | Tasks باز/Claim شدهٔ شخص یا گروه در Scope؛ cursor/limit | `tasks.read_own` |
+| `POST /company/tasks/:id/claim` | `{expectedRevision}`؛ Claim idempotent | `tasks.claim` + عضویت/Scope و حق مرحله |
+| `POST /company/tasks/:id/decision` | `{outcome,reason?,expectedRevision}`؛ Decision append-only، Domain owner مسئول اثر | `tasks.decide` + Permission مربوط به Action |
+| `GET /company/notifications` | `unreadOnly?,cursor?,limit?`؛ فقط اعلان خود شخص | `notifications.read_own` |
+| `GET /company/notifications/unread-count` | عدد خوانده‌نشده | recipient همان Actor |
+| `POST /company/notifications/:id/read` | فقط `readAt`، بدون تغییر Domain/Task | recipient همان Actor |
+| `GET /company/ui/contributions` | pageId? | فیلتر trusted registry، entitlement، readiness، permission |
+| `GET /company/dashboard/production-and-maintenance` | `siteId?,from?,to?` | Query مجاز هر Domain، نه SQL آزاد کاربر |
+
+**Response:** همهٔ تغییرهای موفق `{id,revision,status,requestId}` یا ActionOutcome شناخته‌شده بازگردانند؛ خطا `{error,requestId?,retryable?}` با کدهای محدود. HTTP: 400 malformed، 401 session invalid، 403 forbidden/license، 404 record missing/invisible، 409 stale/state/conflict، 422 invalid prerequisite، 503 service unavailable. از Routeِ عمومی `/actions/execute` یا Dispatch JS دلخواه خودداری شود.
+
+**Validation:** `description <= 3000`، `summary <= 2000`، `reason 8..500` در Reject/Return، `evidence <= 10` آیتم، body مرتبط <=64KiB، عدد Measurement متناهی و unit مجاز، تاریخ UTC ISO8601، priority enum. پیام خطای عدم Scope نباید وجود رکورد محرمانه را آشکار کند.
+
+## ۶. Permissionهای جدید و سطح انتساب
+
+به `server/platform/identity/permission-catalog.ts` با Domain Guard و آزمون اضافه شوند؛ **فقط افزودن label در UI کافی نیست**:
+
+- `maintenance.request.create`، `maintenance.request.reply`، `maintenance.request.view_own`، `maintenance.request.view_scope`، `maintenance.resolve_direct`؛
+- `maintenance.triage`، `maintenance.assign`، `maintenance.perform`، `maintenance.work.view`، `maintenance.review_close`، `maintenance.summary`، `maintenance.policy.manage`؛
+- `tasks.read_own`، `tasks.claim`، `tasks.decide`، `notifications.read_own`، `assignment.groups.manage`.
+
+Membership در گروه برق/مکانیک/تأسیسات Permission نمی‌دهد؛ Manager بودن در HR یا داشتن Desk نیز نمی‌دهد. برای هر Action: شرکت فعال + entitlement + Runtime ready + permission + Scope + Assignment معتبر (اگر لازم) + شرط Domain/Validity بررسی شود.
+
+**پروفایل‌های Fixture، نه Roleهای اجباری محصول:** کارگاه ساده یک شخص با Production و Maintenance direct permissions؛ کارخانهٔ بزرگ Operator فقط گزارش، Maintenance Supervisor برای Triage/Assignment، Electrician برای Perform، Reviewer مستقل برای Review Close، Manager برای dashboard/management. RoleGrants و `initialAdminGrants` کنونی ممکن است Grants وسیع داشته باشند؛ Codex نباید بدون تصمیم عمومی امنیت نقش‌ها را یکجا بازنویسی کند. برای پایلوت با Rules صریح و Scope، و تست Deny، حداقل حق را اعطا کند. تغییر Permissionهای عملیاتی به شکل مخفی در UI نباید امنیت سرور را عوض کند.
