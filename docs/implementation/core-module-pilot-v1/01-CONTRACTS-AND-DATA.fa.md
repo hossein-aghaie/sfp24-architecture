@@ -121,10 +121,20 @@ PM زمان‌دار، Inventory، Costing، APM، کامل‌کردن PTW، ک�
     "maintenance.work.cancel", "maintenance.policy.update"
   ],
   "eventTypeIds": [
-    "maintenance.request_reported.v1", "maintenance.request_info_requested.v1",
-    "maintenance.request_rejected.v1", "maintenance.work_assigned.v1",
-    "maintenance.work_completed.v1", "maintenance.work_returned.v1",
-    "maintenance.work_closed.v1"
+    "maintenance.request_reported.v1",
+    "maintenance.request_info_requested.v1",
+    "maintenance.request_replied.v1",
+    "maintenance.request_rejected.v1",
+    "maintenance.request_cancelled.v1",
+    "maintenance.request_resolved_direct.v1",
+    "maintenance.work_created.v1",
+    "maintenance.work_assigned.v1",
+    "maintenance.work_reassigned.v1",
+    "maintenance.work_started.v1",
+    "maintenance.work_completed.v1",
+    "maintenance.work_returned.v1",
+    "maintenance.work_closed.v1",
+    "maintenance.work_cancelled.v1"
   ],
   "uiContributionIds": ["maintenance.request.form", "maintenance.resource.history", "maintenance.inbox", "maintenance.summary.kpi"],
   "readinessResolverId": "maintenance.readiness.v1"
