@@ -324,6 +324,14 @@ type FormDefinition = {
 - API پرمیشن `production.view_own` را به `view_others` ارتقا ندهد؛ Widget تاریخچه Query را با Role/Site/Resource Scope محدود اجرا کند.
 - اگر Query خطا داد، Widget «داده در دسترس نیست» با Retry معنادار نشان دهد، نه صفر یا دادهٔ نمونه. **Preview و Runtime واقعی برچسب متفاوت داشته باشند.**
 
+### ۷.۶. Company Admin و اتصال Module Requirements به فرم‌های موجود
+
+Company Admin یک صفحهٔ **آماده‌بودن قابلیت‌ها** ببیند: Production (فعال/آماده)، Maintenance (فعلاً pilot_only یا پس از عرضه فعال)، نیازهای Resource/Site و خطاهای مشخص Readiness. او بتواند در محیط مجاز Policy Template و Assignment Groupهای همان Tenant را مدیریت کند و برای هر گزینه بداند اثر آن بر Taskهای باز چیست. اما **خرید ماژول** در این صفحه نباید با Permission کاربر یا تغییر یک JSON تعریف شود؛ مسیر Entitlement موجود در `AccountsService` محفوظ است.
+
+سه Component جدید برای UI پیکربندی: `ModuleCapabilitiesPanel.vue` (Readiness/Issues و لینک Master فعلی)، `MaintenancePolicyEditor.vue` (Policy Revision، هشدار اثر بر پروندهٔ باز، ذخیره با CAS)، `AssignmentGroupEditor.vue` (عضویت فقط Accounts همان شرکت و Scope مجاز). این سه از طریق `workspaceAccess`، `company.settings` و Permission تخصصی فقط برای کاربران مجاز ظاهر شوند؛ برای Operator ساده نمایش نداشته باشند.
+
+**گام جریان:** ثبت کد trusted ماژول → Entitlement/Permission معتبر شرکت → بررسی Readiness → Contribution UI مجاز → اجرای Action با گیت مستقل. خرید ماژول هیچ Field غیرمرتبط را برای همهٔ شرکت‌ها اجباری نمی‌کند. با خاموش‌شدن Maintenance کارت/Action جاری غیرفعال، سوابق تاریخیِ مجاز حفظ شود.
+
 ## ۸. فهرست دقیق فایل‌ها: اضافه، اصلاح، حفظ، ممنوع
 
 **مسیرهای حاضر، در SHA مبنا مشاهده شده‌اند. مسیرهای `NEW` در این جدول نام‌های پیشنهادی پروندهٔ تازه‌اند.** قبل از شروع Codex باید وضعیت HEAD واقعی بررسی و در PR ثبت شود؛ اگر فایل دیگری واقعاً مالک بهتری بود، فقط پس از گزارش سازگاری و اجازهٔ محدوده‌ای تغییر مسیر شود.
@@ -348,6 +356,7 @@ type FormDefinition = {
 | **NEW** | `src/company/{DeskRuntime,MaintenanceRequestForm,MaintenanceQueue,MaintenanceWorkOrder,TaskInbox,NotificationBell,EquipmentMaintenanceHistory,OperationsDashboard}.vue` | UI واقعی متکی به OperationalApi؛ همهٔ داده‌ها scoped و بدون Dummy در Runtime |
 | **NEW** | `tests/{module-registry,maintenance-domain,maintenance-policy,task-lifecycle,notification-contract,ui-contributions,core-module-pilot}.test.ts` | Contract/State/Scope/Retry/Schema/Legacy Regression |
 | **NEW** | `scripts/core-module-pilot-qa.mjs` | Demo Disposable با دو Tenant و Snapshot قابل بازتولید؛ هیچ دادهٔ مشتری واقعی |
+| **NEW** | `src/company/{ModuleCapabilitiesPanel,MaintenancePolicyEditor,AssignmentGroupEditor}.vue` | صفحهٔ آماده‌بودن ماژول، Policy و گروه‌های کاری برای Company Admin مجاز؛ بدون تغییر Entitlement از UI مستقیم |
 | **PRESERVE** | `server/operations/production/{service,work,validation}.ts`، `src/company/ProductionEditor.vue`، `ProductionReports.vue` | هیچ موتور تولید موازی یا تغییر معنای گزارش |
 | **PRESERVE** | `server/operations/data-parameters.ts`، `server/telemetry/*`، `src/SceneView.vue` | حفظ Source/Tag/Parameter و 3D؛ بدون فرمان PLC و OEE جعلی |
 | **PRESERVE** | `server/operations/master/*`، `src/company/definition-catalog.ts` | Master ID و Extensionهای موجود؛ بدون اضافه‌کردن حقوق یا صلاحیت به Person |
