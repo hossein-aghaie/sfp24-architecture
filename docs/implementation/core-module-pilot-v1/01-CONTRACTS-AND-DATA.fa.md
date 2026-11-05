@@ -80,6 +80,43 @@ type ModuleDescriptor = {
 
 PM زمان‌دار، Inventory، Costing، APM، کامل‌کردن PTW، کنترل CNC، Workflow Designer و OEE **در این مرحله اجرا نمی‌شوند**. نبود Production مانع درخواست خرابی دستی نشود.
 
+### ۲.۱.۱. نمونهٔ Descriptor قابل پیاده‌سازی
+
+ساختار زیر فقط IDهای registered trusted را معرفی می‌کند، **نه نام تابع JS ارسالی مشتری**. `requiredModules:[]` برای Maintenance به معنای عدم وابستگی اجباری آن به Production، OEE یا Training است:
+
+```json
+{
+  "contractVersion": "host.module.v1",
+  "moduleKey": "maintenance",
+  "release": "0.1.0-pilot",
+  "compatibleHostMajor": 1,
+  "capabilities": [
+    "maintenance.request",
+    "maintenance.triage",
+    "maintenance.work",
+    "maintenance.equipment_history"
+  ],
+  "requiredModules": [],
+  "optionalModules": ["production", "training", "inventory", "oee"],
+  "requiredPermissions": [
+    "maintenance.request.create",
+    "maintenance.request.view_own",
+    "maintenance.triage",
+    "maintenance.perform",
+    "maintenance.review_close"
+  ],
+  "queryPortIds": ["maintenance.request.list", "maintenance.work.get", "maintenance.resource.history", "maintenance.summary"],
+  "actionPortIds": ["maintenance.request.report", "maintenance.request.resolve_direct", "maintenance.request.triage", "maintenance.work.assign", "maintenance.work.complete", "maintenance.work.review_close"],
+  "eventTypeIds": ["maintenance.request_reported.v1", "maintenance.work_closed.v1"],
+  "uiContributionIds": ["maintenance.request.form", "maintenance.resource.history", "maintenance.inbox", "maintenance.summary.kpi"],
+  "readinessResolverId": "maintenance.readiness.v1"
+}
+```
+
+**محدودیت:** لیست Permissions این Manifest فقط مثال *حداقل معرفی* است، نه لیست کاملِ همهٔ Actions پایلوت؛ لیست دقیق و مجوز هر endpoint در [فایل ۰۲، بخش ۶](02-CODEX-WORK-PACKAGES.fa.md) مالک است. در پیاده‌سازی Registry، تمام Actionهای واقعی باید هم ID معتبر و هم Permission/Handler ثبت‌شده داشته باشند؛ Descriptor ناقص را Startup reject کند. در آغاز Runtime ماژول همچنان `pilot_only` است.
+
+**Production Adapter:** شناسهٔ `production.record` به API موجود Production وصل شود، `production.history` به مسیر گزارش‌های موجود و `production.summary` به Query تجمیعی فعلی؛ هیچ `ProductionReport` دوم ساخته نشود و وابستگی Production به Maintenance اضافه نشود.
+
 ### ۲.۲. Readiness و پاسخ
 
 Endpoint نامزد `GET /api/v1/company/module-capabilities` (یا مسیر سازگار موجود پس از بررسی Route Register) برای Actor مجاز، `ModuleDescriptor` عمومی و `CapabilityStatus` مجاز را می‌دهد؛ نباید فهرست Person/Resource محرمانه را در پیام خطای Readiness افشا کند. قابلیت خریداری‌شده ولی ناکافی به صورت `ready:false` با دلیل و مسیر تکمیل نشان داده می‌شود، نه اینکه بی‌سروصدا فعال شود.
