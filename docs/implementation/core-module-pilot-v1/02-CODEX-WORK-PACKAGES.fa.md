@@ -182,7 +182,9 @@ Receipt و Domain Mutation و Event Outbox در همان **Tenant Transaction** 
 | `GET /company/maintenance/requests/:id` | Request + history مجاز | Owner/Scope؛ 404 برای ناموجود یا نامجاز |
 | `POST /company/maintenance/requests/:id/reply-info` | `{reply,expectedRevision}` → reported | `maintenance.request.reply`، reporter یا delegate معتبر |
 | `POST /company/maintenance/requests/:id/triage` | `{outcome:"request_info"|"reject_final"|"convert_to_work",reason?,assigneeUserId?,groupId?,expectedRevision}` | `maintenance.triage`؛ برگشت/رد با دلیل حداقل ۸ نویسه؛ قبول → WorkOrder یکتا |
+| `POST /company/maintenance/requests/:id/cancel` | `{reason,expectedRevision}` → cancelled (فقط reported/needs_info) | `maintenance.request.cancel`، reporter یا triage با مجوز، reason ≥۸ نویسه |
 | `POST /company/maintenance/requests/:id/resolve-direct` | `{summary,outcome,performedAt,evidence:[...],expectedRevision}` → resolved_direct | `maintenance.resolve_direct` در Policy مجاز؛ بدون Task مصنوعی |
+| `POST /company/maintenance/work-orders/:id/cancel` | `{reason,expectedRevision}` → cancelled (فقط open/assigned و قبل از انجام واقعی) | `maintenance.work.cancel` + Scope + reason؛ Request مرتبط با وضعیت جدا و قابل پیگیری باقی بماند |
 | `GET /company/maintenance/work-orders/:id` | WorkOrder + history | `maintenance.work.view` |
 | `POST /company/maintenance/work-orders/:id/assign` | `{assigneeUserId?,groupId?,reason?,expectedRevision}` → assigned | `maintenance.assign`؛ دقیقاً یکی از User/Group |
 | `POST /company/maintenance/work-orders/:id/start` | `{expectedRevision}` → in_progress | `maintenance.perform`؛ انتساب معتبر + شرط اجرا |
@@ -205,6 +207,8 @@ Receipt و Domain Mutation و Event Outbox در همان **Tenant Transaction** 
 | `GET /company/ui/contributions` | pageId? | فیلتر trusted registry، entitlement، readiness، permission |
 | `GET /company/dashboard/production-and-maintenance` | `siteId?,from?,to?` | Query مجاز هر Domain، نه SQL آزاد کاربر |
 
+**Cancellation در کارخانه:** لغو WorkOrderِ هنوز شروع‌نشده باید Taskهای باز را `cancelled` کند، Decision تاریخی را حفظ کند و Request مرتبط را با نتیجهٔ ثبت‌شده به حالت قطعیِ مناسب ببرد؛ صرفاً حذف WorkOrder مجاز نیست. در این Pilot لغو WorkOrder پس از `in_progress` مسیر امن آماده‌ای ندارد و باید `409 invalid_transition` برگرداند؛ Extension آینده پس از طراحی rollback واقعی ممکن است.
+
 **Response:** همهٔ تغییرهای موفق `{id,revision,status,requestId}` یا ActionOutcome شناخته‌شده بازگردانند؛ خطا `{error,requestId?,retryable?}` با کدهای محدود. HTTP: 400 malformed، 401 session invalid، 403 forbidden/license، 404 record missing/invisible، 409 stale/state/conflict، 422 invalid prerequisite، 503 service unavailable. از Routeِ عمومی `/actions/execute` یا Dispatch JS دلخواه خودداری شود.
 
 **Validation:** `description <= 3000`، `summary <= 2000`، `reason 8..500` در Reject/Return، `evidence <= 10` آیتم، body مرتبط <=64KiB، عدد Measurement متناهی و unit مجاز، تاریخ UTC ISO8601، priority enum. پیام خطای عدم Scope نباید وجود رکورد محرمانه را آشکار کند.
@@ -213,8 +217,8 @@ Receipt و Domain Mutation و Event Outbox در همان **Tenant Transaction** 
 
 به `server/platform/identity/permission-catalog.ts` با Domain Guard و آزمون اضافه شوند؛ **فقط افزودن label در UI کافی نیست**:
 
-- `maintenance.request.create`، `maintenance.request.reply`، `maintenance.request.view_own`، `maintenance.request.view_scope`، `maintenance.resolve_direct`؛
-- `maintenance.triage`، `maintenance.assign`، `maintenance.perform`، `maintenance.work.view`، `maintenance.review_close`، `maintenance.summary`، `maintenance.policy.manage`؛
+- `maintenance.request.create`، `maintenance.request.reply`، `maintenance.request.cancel`، `maintenance.request.view_own`، `maintenance.request.view_scope`، `maintenance.resolve_direct`؛
+- `maintenance.triage`، `maintenance.assign`، `maintenance.perform`، `maintenance.work.cancel`، `maintenance.work.view`، `maintenance.review_close`، `maintenance.summary`، `maintenance.policy.manage`؛
 - `tasks.read_own`، `tasks.claim`، `tasks.decide`، `notifications.read_own`، `assignment.groups.manage`.
 
 Membership در گروه برق/مکانیک/تأسیسات Permission نمی‌دهد؛ Manager بودن در HR یا داشتن Desk نیز نمی‌دهد. برای هر Action: شرکت فعال + entitlement + Runtime ready + permission + Scope + Assignment معتبر (اگر لازم) + شرط Domain/Validity بررسی شود.
