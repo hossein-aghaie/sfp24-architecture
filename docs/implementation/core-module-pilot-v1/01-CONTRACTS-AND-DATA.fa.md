@@ -101,21 +101,23 @@ Readiness در زمان نمایش UI تنها یک راهنماست؛ **در ز
 ## ۴. DomainRef / Action / Result
 
 ```ts
-type DomainRef = {
+type DomainRefBase = {
   ownerModule: string;
   entityType: string;
   entityId: string;
-  tenantId: string;             // از Server Context تطبیق داده شود
-  referenceMode: "live" | "revision";
-  revision?: number;
+  tenantId: string;         // از Server Context تطبیق داده شود
 };
+type DomainRef = DomainRefBase &
+  ({referenceMode:"live"; revision?:never} |
+   {referenceMode:"revision"; revision:number});
 type ActionRequest<T> = {
   contractVersion: "domain.action.v1";
   requestId: string;           // UUID، ردیابی
   idempotencyKey: string;      // کلید ثابت در Retry
   correlationId?: string;
-  subject: DomainRef;
-  expectedRevision?: number;
+  subject?: DomainRef;         // برای تغییر رکورد موجود الزامی است
+  contextRefs?: DomainRef[];   // برای create: Resource/Person/Parent موجود
+  expectedRevision?: number;  // برای تغییر رکورد موجود
   input: T;
 };
 type ActionOutcome =
@@ -124,6 +126,8 @@ type ActionOutcome =
   | {status:"rejected"; requestId:string; code:string}
   | {status:"conflict"; requestId:string; code:string};
 ```
+
+**قانون تفکیک Create و Update:** برای ساخت `MaintenanceRequest`، هنوز Request ID وجود ندارد؛ بنابراین `subject` نباید با شناسهٔ ساختگی مقداردهی شود. در action `maintenance.request.report`، `subject` حذف و `contextRefs` شامل Resource معتبرِ همان Tenant است؛ نتیجه `resultRef` به Request تازه اشاره می‌کند. در `triage/reply/resolve/assign` روی رکورد موجود، `subject` از نوع `revision` با `expectedRevision` معتبر الزامی است. برای `referenceMode:"revision"` وجود `revision` مثبت الزامی است؛ برای `live` ارسال revision رد شود. Resolver باید Parent/Context را با ACL بررسی کند. JSON ارسالی کلاینت برای Actor یا Tenant مرجع اعتبار نیست.
 
 **مهم:** این مدل برای **TypeScript internal ports** و پاسخ‌های typed است؛ در این فاز Endpoint عمومی `/actions/execute` که arbitrary action اجرا کند نسازیم. هر ماژول HTTP مشخص دارد و به Server Actor متصل است. `tenantId`، `actorId`، Role و Permission از JSON مرورگر قابل اعتماد نیستند و با نشست تطبیق داده می‌شوند.
 
