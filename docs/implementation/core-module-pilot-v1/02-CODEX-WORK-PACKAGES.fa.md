@@ -322,3 +322,102 @@ type FormDefinition = {
 | **DO NOT TOUCH** | اسناد تاریخی snapshot، `main`، `demo/phase2`، Secrets، دادهٔ واقعی Tenant و شاخهٔ read-only Stage04 بدون اجازهٔ جدید | تغییر خارج از Scope ممنوع |
 
 **دقتِ Migration:** هیچ دستور اجرای Drop یا پاک‌کردن `production_reports`، `equipment_notes`، `company_work_desks` مجاز نیست. پاک‌کردن یک جدول آزمایشی فقط در fixture Disposable و با opt-in صریح.
+
+
+## ۹. بسته‌های اجرای Codex؛ هر مرحله قابل آزمون و بازگشت
+
+**این بخش «مسیر آمادهٔ تحویل به Codex» است، نه فرمان فعلی برای اجرای کد.** پس از تأیید جداگانهٔ مالک محصول، برای هر بسته فقط یک محدودهٔ مشخص مجاز شود. Codex می‌تواند در همان محدوده Taskها را خرد کند؛ **حق تغییر معماری، معنای Permission، entitlement یا اسناد دیگر از این اجازه استنباط نمی‌شود.**
+
+### WP-00 — Preflight / Baseline Read-only
+
+**ورودی:** SHA مبنای این سند + SHA اسناد همین بسته؛ شاخهٔ کد `codex/04-core-workspaces-dashboard` در حال حاضر read-only discovery است.
+
+**دستور:** قبل از هر کدنویسی، برنچ‌ها/HEAD، AGENTS، package scripts، schema migration versions، Routes، Permission Catalog، Desk persistence، Provisioning/Reset Tables و تست‌های موجود را بخوان. تفاوت HEAD با SHA `5c7ac...` را به‌صورت `changed/unchanged/unknown` گزارش کن. اگر HEAD فرق کرده یا محدودیت Stage04 هنوز مانع است، **اجرا را متوقف کن** تا مالک مبنا و شاخهٔ جدید را تأیید کند.
+
+**بعد از اجازهٔ مستقل:** از SHA تصویب‌شده برنچ تازهٔ پیشنهادی `codex/core-module-pilot-v1` بساز؛ شاخهٔ `codex/04-core-workspaces-dashboard` و `main` را تغییر نده. هر Task/PR باید SHA مبنای کد و commit اسناد را ثبت کند.
+
+**قبولی:** هیچ فایل یا جدول تغییر نکرده، فهرست واقعی مسیرها/تست‌ها/نسخه‌ها و اختلاف‌ها مشخص است.
+
+### WP-01 — Trusted Registry + Readiness + DomainRef
+
+**وابسته به WP-00 و تصمیم طراحی.** فایل‌ها: `server/platform/module-registry.ts` (NEW)، `server/operations/module-capabilities.ts` (NEW)، `src/company/ui-contribution-contract.ts` (NEW)، `server/operations/http.ts` و `src/company/module-catalog.ts` (MODIFY محدود).
+
+- تولید ۲ Descriptor trusted برای Production/Reports و Maintenance، Validate Startup، بدون Import دلخواه مشتری.
+- Typed `DomainRef` و CapabilityStatus؛ Tenant ID از Actor قابل اعتماد.
+- Readiness View با تفکیک `licensed/enabled/compatible/ready`؛ `maintenance` هنوز `pilot_only`.
+- Production Routes و entitlements موجود تغییر رفتاری نکنند.
+- Contract Tests برای Duplicate ID، Missing Port، Unlicensed و Disabled، Unknown Module، Missing Master، No implicit permissions.
+
+**قبولی WP-01:** تمام تست‌های قبلی Entitlement/Workspace/Master سبز؛ گیت License/Scope به ماژول غیرفعال دسترسی واقعی نمی‌دهد؛ هیچ Capability در UI زودتر از Backend نشان داده نمی‌شود.
+
+### WP-02 — Maintenance Domain + Additive Migration
+
+**وابسته به WP-01.** فایل‌ها و جدول‌های بخش ۴، کلاس‌های `maintenance/{model,service,validation,policy,http}.ts`، افزودن Routes/Guards.
+
+- همهٔ Request و WorkOrder State Transitionهای بخش ۲، Lock/expectedRevision، Tenant Scope و Audit به‌طور اتمیک اجرا شوند.
+- `sourceNoteId` یکتا؛ Note از بین نرود. `resolve_direct` بدون Task و با Evidence؛ `factory_review` با WorkOrder و Snapshot.
+- Action Receipt و Idempotency در همان Tenant Transaction؛ اگر نتیجهٔ عملیات ثبت شد و پاسخ از دست رفت، Retry اثر دوم نداشته باشد.
+- در این WP سیستم Customer-ready نیست؛ Fixture داخلیِ محدود برای Test می‌تواند entitlement/ready را در دیتابیس Disposable تنظیم کند. **بای‌پس دائمی Runtime برای `pilot_only` ممنوع**.
+
+**قبولی WP-02:** State Matrix، Scope، No Duplicate, CAS, Cross-Tenant و بازخوانی تاریخچه سبز؛ Production و EquipmentNotesِ قدیمی بدون تغییر رفتار.
+
+### WP-03 — Work Groups / Task / Decision / Events / Bell Backend
+
+**وابسته به WP-02.** فایل‌ها: `tasks/*`، `notifications/*`، `events/*`، route additions و tenant migrations.
+
+- Groupها همان Tenant و Scope و membership معتبر داشته باشند؛ افرادِ غیرعضو/نامجاز نمی‌توانند Claim کنند.
+- Task و Decision به Domain Subject/Revision/Policy ثابت متصل باشند؛ Return/Reassign/Independent Review، و در صورت نیاز Stepهای `all_required`.
+- Task Decision فقط از طریق Handler مالک Domain اثر ایجاد کند؛ نه تغییر مستقیم Status تخصصی از endpoint generic.
+- Event در زمان Commit ثبت و با Dedup به Notification تبدیل شود؛ Fail/Retry و `failed_requires_attention` بدون ازدست‌دادن Domain Record.
+- Bell فقط Notification برای Recipient جاری، read بدون Approve؛ بستن Task/خواندن Bell به‌تنهایی WorkOrder را نمی‌بندد.
+
+**قبولی WP-03:** موازی/ترتیبی، منع خودتأییدی، return-for-info، reassign برق→مکانیک، Dedupe notification، ازدست‌رفتن پاسخ، invalidation و Tenant Scope در تست پوشش داده شوند.
+
+### WP-04 — UI Runtime + Builder/Desk Integration
+
+**وابسته به WP-03.** فایل‌های `src/company/*` مشخص‌شده در بخش ۸.
+
+- `AssignedDesk.vue` به Runtime Component Registry trusted وصل شود؛ Studio Preview همچنان شبیه‌ساز باشد. Saved Deskهای فعلی بدون Migration اجباری و با شناسه‌های قدیمی باز شوند.
+- Formهای معینِ Maintenance و اتصال فرم Production موجود به Action/Query واقعی؛ بدون جعل Form Builder عمومی که SQL یا JS دلخواه اجرا کند.
+- Inbox، Bell، Resource Profile Section و Dashboard دو Domain؛ هر Widget نداشتن License/Scope را در Backend رعایت کند.
+- UI برای مدیر/سرپرست/اپراتور ساده و پیچیده در Mobile و Desktop قابل استفاده باشد؛ empty/loading/error/retry و data freshness روشن باشد.
+- تغییر 3D فقط انتخاب Resource و بازکردن Section/Action مجاز؛ هیچ TAG.OUT/PLC.
+
+**قبولی WP-04:** ارسال از میز = درخواست واقعی Server؛ خواندن و رد/اصلاح = نتیجهٔ واقعی قابل بازیابی؛ Widgetهای Preview هیچ دادهٔ خیالی را به‌عنوان تولید واقعی نشان ندهند.
+
+### WP-05 — کارخانه‌های ساختگی، Integration Tests، QA و انتخاب آمادگی عرضه
+
+**وابسته به WP-04.** فقط روی Disposable Local/Staging، با Fixture نام و دادهٔ جعلی. دو Company، چند Actor، دو Policy، Production و Maintenance نصب‌شدهٔ تستی؛ مسیر کامل در [فایل ۰۳](03-DEMO-AND-ACCEPTANCE.fa.md).
+
+**قبولی:** تمام GWTهای Critical/Must پاس شوند، Build و Typecheck و suiteهای موجود سبز، گزارش گردش داده و Screenshots اختیاری بدون دادهٔ واقعی، Migration از Snapshot قبلی تست، Crash/Retry تست، هیچ رکورد Tenant A در پاسخ Tenant B. بعد از گزارش و تأیید مالک، در PR **جداگانه** دربارهٔ تغییر `maintenance` به `ready` و امکان خرید/فعال‌سازی تصمیم گرفته شود.
+
+### ترتیب PRهای کد و تحویل اجباری
+
+| بسته | موضوع PR مستقل | حداقل گزارش لازم |
+|---|---|---|
+| 00 | گزارش Discovery، بدون PR اجرایی | SHA، وضعیت، File/Schema Map، خطرات و موضوعات نیازمند اجازه |
+| 01 | Registry/Readiness/Contracts | Diff محدود، تست قرارداد، عدم تغییر Permission ضمنی |
+| 02 | Maintenance tables/domain | Migration جدید، تست Domain، حالت‌های بازگشت و عدم حذف تاریخچه |
+| 03 | Task/Decision/Notifications | Case tests، Idempotency/Outbox tests و مراقبت از عدم Transaction جهانی |
+| 04 | Real Desk/UI Contributions | Regression فرم، پروفایل، زنگوله، داشبورد و Snapshot UI |
+| 05 | Demo fixture/integration/release recommendation | Test matrix + log و فهرست واقعی موارد ناشناخته؛ readiness هنوز مستقل تأیید شود |
+
+**در هر PR:** هدف و تکهٔ دقیق Spec، فایل‌های افزوده/تغییریافته/حذف‌شده، SHA code/docs مبنا، Migration، Permission، API، راه Replay/Recovery، نتیجهٔ تست، موضوعات Open، rollback strategy و Confirmation of no out-of-scope changes باید نوشته شوند.
+
+## ۱۰. روش اجرا، Rollback و محدودیت‌های امنیتی
+
+**محیط:** Node24 و pnpm11 از `package.json`؛ روی checkout تازه با `pnpm install --frozen-lockfile`، `pnpm typecheck`، `pnpm test`، `pnpm build`، `pnpm contract:check` و در صورت آماده‌بودن محیط `pnpm test:all`. آزمون Integration با MariaDB فقط در دیتابیس Disposable و فعال‌سازی صریح Fixture؛ Database واقعی مشتری، Hub زنده و PLC به تست متصل نشوند.
+
+**مراقبت از Provision:** هر جدول تازه در `tenantWritableTables/tenantAppendOnlyTables` و هر مسیر Provisioning/Reset مجاز ثبت شود. اگر Schema v19 روی محیط نیمه‌کاره بود، از Mechanism فعلی Migration/checksum و Recovery مستند استفاده شود؛ Migration گذشته بازنویسی نشود.
+
+**Rollback:** حداقل راه بازگشت، خاموش‌کردن Feature/Entitlement و بازگرداندن App Release سازگار بدون حذف Tenant Data است. دستور `DROP TABLE` یا پاک‌کردن دادهٔ ممیزی در محیط واقعی ممنوع. اگر نسخهٔ قدیمی App با Schema جدید سازگار نیست، قبل از Deploy باید برنامهٔ backward compatibility/rollback نوشته و آزموده شود؛ «Rollback آسان» بدون شاهد ادعا نشود.
+
+**وقفه‌های اجباری:** Missing Permission semantics، تغییر Tenant Isolation، تغییر ساختار Person/Account، جدیدشدن Core base SHA، اصلاح Schema برخلاف Spec، اضافه‌شدن ارسال فرمان فیزیکی، پیاده‌سازیِ خودکار PTW یا تصمیم دربارهٔ فروش/قیمت‌گذاری، همگی باید **STOP → Report → New Approval** شوند. Codex حق ندارد «برای اینکه تست سبز شود» گیت دسترسی یا Validation سرور را حذف کند.
+
+**گارانتی‌نکردن عمدی:** هیچ تضمین جهانی برای سازگاری همهٔ ۴۴ ماژول، Exactly-Once شبکه، انطباق ISO/IATF، اعتبار Legal e-signature یا ایمنی CNC از این Pilot نتیجه نمی‌شود. هدف تأیید واقعی مرزهای مشترک در دو دامنه و دو Company است.
+
+## ۱۱. جملهٔ آمادهٔ مأموریت Codex پس از تصویب
+
+> روی مخزن `hossein-aghaie/pouyeshgar-workshop` و **فقط پس از تأیید صریح شاخه و SHA مبنا**، اسناد `docs/implementation/core-module-pilot-v1/01...`، `02...` و `03...` را در کامیت قفل‌شدهٔ مخزن `sfp24-architecture` بخوان. نخست WP-00 را انجام بده و گزارش فایل‌های واقعی/اختلاف SHA و وضعیت Read-only Stage04 را بده. بدون مجوز مستقلِ مرحلهٔ بعد حتی یک فایل اجرایی را ویرایش نکن. پس از مجوز بستهٔ معین، فقط همان بسته را مطابق Schemas/Routes/Permissions/Tests نوشته‌شده اجرا کن. تصمیم معماری یا API جدید از خودت نساز؛ اگر اختلاف یا شکستِ Spec یافت شد با شواهد متوقف شو و Change Request بده. Production، هویت، Deskهای قدیمی و Tenant Isolation باید محفوظ بمانند. PR و گزارش تست دقیق، نه Merge/Deploy خودکار.
+
+**تفاوت این دستور با «کل هسته را بنویس»:** اول قرارداد و محدوده معلوم است، سپس Codex اختیار اجرای فنی همان بسته را دارد، نه اختیار تصمیم محصول.
