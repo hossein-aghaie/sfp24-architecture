@@ -36,6 +36,7 @@
 | `resolve_direct` | `reported` | `resolved_direct` | outcome + observedAt + evidence معتبر | `maintenance.resolve_direct` |
 | `cancel` | `reported/needs_info` | `cancelled` | actor صاحب Request یا triage، reason | مجوز/Policy متناظر |
 | `close_from_work` | `converted_to_work` | `closed` | نتیجهٔ WorkOrder در حالت `closed` | فراخوانی داخلی معتبر Maintenance |
+| `cancel_from_work` | `converted_to_work` | `cancelled` | WorkOrder فقط طبق قاعدهٔ `cancel`، قبل از اجرای فنی، Cancel شده باشد | فراخوانی داخلی اتمیک Maintenance؛ Reason و Audit اجباری |
 
 از وضعیت پایانی هیچ Action تغییردهنده‌ای مجاز نیست، جز اصلاح کنترل‌شدهٔ رکورد با Revision/History در طراحی بعدی (در پایلوت فعلاً ممنوع). گزارش مستقیم کارگاه `resolve_direct` **بدون ساخت Task/Approval یا WorkOrder صوری** عمل می‌کند؛ با این حال Actor، زمان، شرح کار، نتیجه و Evidence باید ثبت شوند.
 
@@ -106,6 +107,24 @@ flowchart TD
 `Notification`: `id,recipientUserId,kind,subjectRef,sourceEventId,createdAt,readAt,payloadVersion`. `readAt` فقط وضعیت اعلان است و هیچ مرحلهٔ Workflow را جلو نمی‌برد. Title/Body برای Recipient بدون مجوز از دادهٔ محرمانه ساخته نشوند؛ هنگام خواندن مجدد Scope کنترل شود. Unique `(sourceEventId,recipientUserId,kind)` و Query `unread count` برای زنگوله.
 
 `EquipmentNotes` فعلی باقی بماند؛ `note`/`issue`، پیام‌رسان عمومی یا WorkOrder نیست. Action اختیاری `maintenance.request.report` می‌تواند یک `sourceNoteId` معتبر را به Request تبدیل کند؛ UNIQUE این مرجع مانع ایجاد چند Request از یک Note شود؛ Note دست‌کاری نشود.
+
+### ۳.۲.۱. فقط یک مسیر انتقال وضعیت در Backend
+
+دو API زیر ممکن است در یک Workflow به یک عمل برسند: `/tasks/:id/decision` و `/maintenance/requests/:id/triage` (یا `/maintenance/work-orders/:id/review-close`). **نباید دو implementation مستقل از انتقال وضعیت وجود داشته باشد.** هر دو باید به یک تابع Domain Command Handler مورد اعتماد برسند که در یک تراکنش، expectedRevision و Authorization و PolicyValidity را بررسی کند، Decision/Task Outcome را ثبت کند و Domain State و Outbox را تغییر دهد. کلید Idempotency همان درخواست تا انتها منتقل شود. اگر Task جاری وجود دارد، فراخوانی مستقیم Domain Endpoint هم باید الزامات همان Task/Step را رعایت کند و راه دورزدن Approval نباشد.
+
+### ۳.۲.۲. رویدادهای ثابت و مخاطب‌ها
+
+| EventType Version 1 | چه زمان ثبت می‌شود؟ | Recipient نامزد / مصرف‌کننده |
+|---|---|---|
+| `maintenance.request_reported.v1` | پس از Commit Request(reported) | اعضای گروه مجاز Triage مطابق Policy |
+| `maintenance.request_info_requested.v1` | بعد از needs_info | Reporter همان Request |
+| `maintenance.request_rejected.v1` | بعد از rejected_final | Reporter و ناظر مجازِ همان Scope |
+| `maintenance.work_assigned.v1` | بعد از Assign/Reassign | User یا اعضای گروه واجد Scope؛ Notification با dedupe |
+| `maintenance.work_completed.v1` | بعد از ثبت TechnicalAction و work_completed | بازبین‌های مجاز |
+| `maintenance.work_returned.v1` | بعد از Return/Rework | تکنسین/گروه مسئول |
+| `maintenance.work_closed.v1` | بعد از Closure معتبر | Reporter، مسئول و افراد مجاز مرتبط؛ Dashboard refresh |
+
+برگرداندن Request به `reported` پس از reply-info با Event جدید `maintenance.request_reported.v1` و `eventId` تازه انجام می‌شود؛ این رویداد نباید به معنی ایجاد Request دوم باشد. اگر Request به صورت مستقیم `resolved_direct` شد، Event `maintenance.work_closed.v1` با `aggregateType="MaintenanceRequest"` و ref همان Request منتشر شود؛ **نباید WorkOrder جعلی ساخته شود**. برای `cancelled` پیام از همان سیستم Event با outcome واضح منتشر گردد، و اگر نیازمند EventType جدید شد، ID و مصرف‌کنندهٔ آن **قبل از تغییر کد در همین Spec و Registry** ثبت شوند؛ Event ناشناخته در Runtime ایجاد نشود.
 
 ### ۳.۳. Event/Recovery
 
@@ -207,7 +226,7 @@ Receipt و Domain Mutation و Event Outbox در همان **Tenant Transaction** 
 | `GET /company/ui/contributions` | pageId? | فیلتر trusted registry، entitlement، readiness، permission |
 | `GET /company/dashboard/production-and-maintenance` | `siteId?,from?,to?` | Query مجاز هر Domain، نه SQL آزاد کاربر |
 
-**Cancellation در کارخانه:** لغو WorkOrderِ هنوز شروع‌نشده باید Taskهای باز را `cancelled` کند، Decision تاریخی را حفظ کند و Request مرتبط را با نتیجهٔ ثبت‌شده به حالت قطعیِ مناسب ببرد؛ صرفاً حذف WorkOrder مجاز نیست. در این Pilot لغو WorkOrder پس از `in_progress` مسیر امن آماده‌ای ندارد و باید `409 invalid_transition` برگرداند؛ Extension آینده پس از طراحی rollback واقعی ممکن است.
+**Cancellation در کارخانه:** لغو WorkOrderِ هنوز شروع‌نشده باید Taskهای باز را `cancelled` کند، Decision تاریخی را حفظ کند و Request مرتبط را **در همان Transaction** از `converted_to_work` به `cancelled` ببرد؛ صرفاً حذف WorkOrder مجاز نیست. در این Pilot لغو WorkOrder پس از `in_progress` مسیر امن آماده‌ای ندارد و باید `409 invalid_transition` برگرداند؛ Extension آینده پس از طراحی rollback واقعی ممکن است.
 
 **Response:** همهٔ تغییرهای موفق `{id,revision,status,requestId}` یا ActionOutcome شناخته‌شده بازگردانند؛ خطا `{error,requestId?,retryable?}` با کدهای محدود. HTTP: 400 malformed، 401 session invalid، 403 forbidden/license، 404 record missing/invisible، 409 stale/state/conflict، 422 invalid prerequisite، 503 service unavailable. از Routeِ عمومی `/actions/execute` یا Dispatch JS دلخواه خودداری شود.
 
