@@ -220,3 +220,105 @@ Receipt و Domain Mutation و Event Outbox در همان **Tenant Transaction** 
 Membership در گروه برق/مکانیک/تأسیسات Permission نمی‌دهد؛ Manager بودن در HR یا داشتن Desk نیز نمی‌دهد. برای هر Action: شرکت فعال + entitlement + Runtime ready + permission + Scope + Assignment معتبر (اگر لازم) + شرط Domain/Validity بررسی شود.
 
 **پروفایل‌های Fixture، نه Roleهای اجباری محصول:** کارگاه ساده یک شخص با Production و Maintenance direct permissions؛ کارخانهٔ بزرگ Operator فقط گزارش، Maintenance Supervisor برای Triage/Assignment، Electrician برای Perform، Reviewer مستقل برای Review Close، Manager برای dashboard/management. RoleGrants و `initialAdminGrants` کنونی ممکن است Grants وسیع داشته باشند؛ Codex نباید بدون تصمیم عمومی امنیت نقش‌ها را یکجا بازنویسی کند. برای پایلوت با Rules صریح و Scope، و تست Deny، حداقل حق را اعطا کند. تغییر Permissionهای عملیاتی به شکل مخفی در UI نباید امنیت سرور را عوض کند.
+
+
+## ۷. Form، Desk، Dashboard، Profile، Inbox و Bell — قرارداد UI پایلوت
+
+**هدف تجربهٔ کاربری:** یک میز ساده برای فرد کارگاهی و یک میز چندنقشی برای کارخانهٔ بزرگ، هر دو با همان Domain API. UI صرفاً Renderer/Action Caller است، نه Authority.
+
+### ۷.۱. Contribution Descriptor و Query Binding
+
+```ts
+type UIContribution = {
+  id: string;                    // stable, namespaced e.g. "maintenance.request-form"
+  ownerModule: string;
+  kind: "form" | "desk_widget" | "dashboard_widget" |
+        "profile_section" | "inbox_view" | "full_page" | "3d_overlay";
+  requiredCapability: string;
+  requiredPermission: string;
+  contexts: Array<"person"|"resource"|"work_order"|"desk"|"company">;
+  componentId: string;           // allowlisted Vue component, not arbitrary import
+  queryPortId?: string;          // trusted scoped query
+  actionPortIds?: string[];      // trusted domain actions
+  version: 1;
+};
+type FieldSchema = {
+  key: string; labelFa: string; labelEn: string;
+  type: "text"|"textarea"|"select"|"number"|"date"|"ref";
+  required?: boolean; maxLength?: number; options?:string[];
+};
+type FormDefinition = {
+  schemaVersion: 1;
+  id: string; ownerModule:string; fields:FieldSchema[];
+  layout: Array<{sectionId:string;fieldKeys:string[]}>;
+  submitActionPortId:string; 
+};
+```
+
+برای این نسخه FormDefinition فقط ساختار trusted و فرم‌های معین دارد؛ ایجاد دیتابیس/ستون/Script دلخواه مشتری از UI Schema **ممنوع**. Validation سمت سرور مستقل از نمایش فیلد می‌ماند. Componentهای تخصصی PTW، LIMS یا Gantt در فازهای آینده به `full_page` اضافه می‌شوند، نه ساختن فرمول و منطقشان در Desk.
+
+**Binding گسترش‌پذیر:** Desk/Widget فقط `contributionId`، `layout` و `queryConfig` از مجموعهٔ فیلترهای مجاز (زمان، سایت، Resource) ذخیره کند؛ Auth/Scope/Permission/SQL داخل definition میز ذخیره نشود. Dashboard queryها به تابع سرور allowlist وصل باشند؛ نمایش مقدارِ دیررس/ناقص باید Source و timestamp مناسب داشته باشد.
+
+### ۷.۲. اجزای واقعی روی میز
+
+- **Production current work:** UI به `GET/POST /company/production/work` موجود و `ProductionEditor`/`ProductionReports` مرتبط می‌شود. ثبت واقعی از سرویس Production می‌گذرد؛ `DeskExperiencePreview` فقط در Studio Preview باقی بماند.
+- **Production history:** Query موجود با `production.view_own`/`view_others`؛ کاربر ساده فقط تاریخچهٔ مجاز خود را ببیند.
+- **Maintenance report problem:** فرم Resource + شرح + optional priority؛ Submit → Action typed و Request ID؛ هیچ Task/Approval صوری روی Desk ساده.
+- **Maintenance requests/Inbox:** فهرست Requests و Tasks با Owner/Group/Scope؛ قبول، ارجاع، برگشت، ثبت کار و تحویل فقط از API مربوط با Revision.
+- **Bell:** unread count + فهرست اعلان‌های کاربر؛ read تنها `readAt`؛ کلیک → لینک رکورد مجاز، نه اجرای Action.
+- **Resource profile:** `EquipmentNotes` موجود و Section `MaintenanceHistory` جدید با Query مجاز؛ Resource ID یکسان، بدون Duplicate Master.
+- **Dashboard:** KPIهای واقعی `Production Summary`، `Maintenance Open/Closed/Pending` و روند تولید موجود؛ Metric فقط از Query صاحب دامنه. در Pilot سه گونه Widget مجاز `kpi`، `table` و `time_series`، با filter محدود و ثبت provenance.
+- **3D:** فقط Context Resource انتخاب‌شده برای نمایش و بازکردن فرم/History مجاز؛ هیچ Tag.OUT یا انتقال وضعیت ماشین از SceneView نباشد.
+
+### ۷.۳. دو حالت Desk
+
+**کارگاه ساده:** `production work`، `good/scrap entry`، `my history`، `maintenance request`، `equipment notes`، `my notifications`. ترتیب ساده، صفحهٔ موبایل/لمسی، label فارسی روشن، هر اقدام اصلی قابل انجام در حداکثر چند گام. اگر شرکت Maintenance نخریده، کارت آن **وجود نداشته باشد**؛ Production همچنان کار کند.
+
+**کارخانهٔ چندتیمی:** `my production assignment`، `equipment status`، `request fault`، `my tasks`، `review queue`، `maintenance history`، `notifications`، `production & maintenance metrics`. هر نفر مطابق Permission/Entitlement/Scope فقط Contributionهای خودش را می‌بیند؛ مدیر ممکن است میز گزارش داشته باشد، تکنسین میز اجرای WorkOrder.
+
+**سازندهٔ میز:** `DeskStudioPreview.vue` و `desk-studio-model.ts` فعلی حفظ شود. Widget ID قدیمیِ `work`/`counts`/`history` و تخصیص `deskIds/primaryDeskId` با نسخهٔ ذخیره‌شده شکسته نشود. Widget قدیمیِ صرفاً Preview به نسخهٔ واقعی trusted Contribution نگاشت شود و **تنها وقتی Backend و Query/Action آماده و Licensed هستند** در AssignedDesk واقعی نمایش داده شود. در Studio همچنان Badge/متن واضح `Preview` برای موارد آماده‌نشده نشان داده شود؛ نه شبیه‌سازی عملیات واقعی.
+
+### ۷.۴. Profile، اتاق و دامنهٔ مسئولیت
+
+`Profile` یک Entity View با Sections است؛ مثلاً Person از `people.id`، Resource از `resources.id`. Maintenance بخش تاریخچهٔ تجهیز اضافه می‌کند؛ Training در آینده بخش صلاحیت Person را با Query مربوط اضافه می‌کند. **حذف بخش ماژول غیرفعال از UI نباید دادهٔ تاریخی را حذف کند.**
+
+`Workspace/Room` فعلاً ناوبری و مجموعهٔ Deskهای قابل انتخاب است؛ جدول/موتور جدید `rooms` لازم نیست تا سناریوی مستقل و تصمیم معتبر داشته باشد. `Dashboard` می‌تواند صفحهٔ مستقل یا Widget در Desk باشد؛ اما در این Pilot یک صفحهٔ تجمیعی واقعی با کارت‌ها کافی است، نه Editor عمومی SQL و ۳۰ Chart Type.
+
+### ۷.۵. امنیت Rendering
+
+- `GET /company/ui/contributions` فهرست را به Actor در همان لحظه فیلتر کند؛ UI مجوز نهایی نیست.
+- اگر Permission/Entitlement وسط کار سلب شد، Action API باید `403` بدهد حتی اگر Widget قبلاً Load شده است.
+- Display Name، Timestamp و Description را escape/sanitize کنیم؛ `v-html` یا HTML/JS از پیام مشتری ممنوع.
+- API پرمیشن `production.view_own` را به `view_others` ارتقا ندهد؛ Widget تاریخچه Query را با Role/Site/Resource Scope محدود اجرا کند.
+- اگر Query خطا داد، Widget «داده در دسترس نیست» با Retry معنادار نشان دهد، نه صفر یا دادهٔ نمونه. **Preview و Runtime واقعی برچسب متفاوت داشته باشند.**
+
+## ۸. فهرست دقیق فایل‌ها: اضافه، اصلاح، حفظ، ممنوع
+
+**مسیرهای حاضر، در SHA مبنا مشاهده شده‌اند. مسیرهای `NEW` در این جدول نام‌های پیشنهادی پروندهٔ تازه‌اند.** قبل از شروع Codex باید وضعیت HEAD واقعی بررسی و در PR ثبت شود؛ اگر فایل دیگری واقعاً مالک بهتری بود، فقط پس از گزارش سازگاری و اجازهٔ محدوده‌ای تغییر مسیر شود.
+
+| وضعیت | مسیر در مخزن کد | کار دقیق |
+|---|---|---|
+| **MODIFY** | `src/company/module-catalog.ts` و `server/platform/catalog.ts` | Descriptor شناخته‌شده و readiness Maintenance؛ **pilot_only تا پایان فاز**؛ Product module keys فعلی ثابت |
+| **MODIFY** | `server/platform/identity/permission-catalog.ts` و `server/platform/identity/access.ts` | افزودن کلیدهای Section ۶ و استفاده از demand/Scope موجود؛ تعریف bypass جدید ممنوع |
+| **MODIFY** | `server/platform/migrations.ts` | Tenant migration افزایشی طبق بخش ۴، ثبت writable/append-only؛ عدم تغییر شماره/Checksum گذشته |
+| **MODIFY** | `server/operations/http.ts` | فقط register routeهای تازه با Validation و Guard؛ routeهای Production/Master/Notes موجود بمانند |
+| **MODIFY** | `src/company/workspaces.ts` و `src/company/tenant-shell.ts` | eligibility جدید UI/Pages و فیلترها، بدون Grant مجوز از Workspace |
+| **MODIFY** | `src/company/desk-studio-model.ts` و `src/company/AssignedDesk.vue` | اتصال Widgetهای واقعی و نگاشت Legacy ID؛ حفظ Schema میز نسخه‌دار |
+| **MODIFY** | `src/company/DeskStudioPreview.vue` و `src/company/DeskExperiencePreview.vue` | Studio Preview باقی بماند؛ به کاربر واضح بگوید Mock است |
+| **MODIFY** | `src/App.vue` | تزریق Context/API معتبر به AssignedDesk، Inbox/Bell/Page؛ بدون بازنویسی Shell و Router |
+| **MODIFY ONLY IF NEEDED** | `src/company/EquipmentNotes.vue` و `server/operations/equipment-notes.ts` | دکمهٔ «ساخت درخواست رسمی» با sourceNoteId و Guard؛ Comment قبلی سالم بماند |
+| **NEW** | `server/platform/module-registry.ts` و `src/company/ui-contribution-contract.ts` | trusted descriptors، validator و TypeScript types بدون Dynamic Code |
+| **NEW** | `server/operations/module-capabilities.ts` | capability readiness + module integration، scoped response |
+| **NEW** | `server/operations/maintenance/{model,service,validation,policy,http}.ts` | Domain entity، State Machine، Guards، Commands و HTTP typed |
+| **NEW** | `server/operations/tasks/{model,service,http}.ts` | Task/Decision/Claim/Inbox، Membership و Scope |
+| **NEW** | `server/operations/notifications/{service,http}.ts` | notification read, events fanout, dedupe و unread |
+| **NEW** | `server/operations/events/{outbox,delivery}.ts` | durable outbox و consumer receipts؛ Worker سبک، no broker |
+| **NEW** | `src/company/{DeskRuntime,MaintenanceRequestForm,MaintenanceQueue,MaintenanceWorkOrder,TaskInbox,NotificationBell,EquipmentMaintenanceHistory,OperationsDashboard}.vue` | UI واقعی متکی به OperationalApi؛ همهٔ داده‌ها scoped و بدون Dummy در Runtime |
+| **NEW** | `tests/{module-registry,maintenance-domain,maintenance-policy,task-lifecycle,notification-contract,ui-contributions,core-module-pilot}.test.ts` | Contract/State/Scope/Retry/Schema/Legacy Regression |
+| **NEW** | `scripts/core-module-pilot-qa.mjs` | Demo Disposable با دو Tenant و Snapshot قابل بازتولید؛ هیچ دادهٔ مشتری واقعی |
+| **PRESERVE** | `server/operations/production/{service,work,validation}.ts`، `src/company/ProductionEditor.vue`، `ProductionReports.vue` | هیچ موتور تولید موازی یا تغییر معنای گزارش |
+| **PRESERVE** | `server/operations/data-parameters.ts`، `server/telemetry/*`، `src/SceneView.vue` | حفظ Source/Tag/Parameter و 3D؛ بدون فرمان PLC و OEE جعلی |
+| **PRESERVE** | `server/operations/master/*`، `src/company/definition-catalog.ts` | Master ID و Extensionهای موجود؛ بدون اضافه‌کردن حقوق یا صلاحیت به Person |
+| **DO NOT TOUCH** | اسناد تاریخی snapshot، `main`، `demo/phase2`، Secrets، دادهٔ واقعی Tenant و شاخهٔ read-only Stage04 بدون اجازهٔ جدید | تغییر خارج از Scope ممنوع |
+
+**دقتِ Migration:** هیچ دستور اجرای Drop یا پاک‌کردن `production_reports`، `equipment_notes`، `company_work_desks` مجاز نیست. پاک‌کردن یک جدول آزمایشی فقط در fixture Disposable و با opt-in صریح.
