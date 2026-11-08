@@ -4,6 +4,8 @@
 > **تاریخ بررسی منابع بیرونی:** ۲۰۲۶-۱۱-۰۸  
 > **دامنه:** معماری ماژول‌ها، بسته‌بندی و چرخهٔ عمر، فناوری Backend/Frontend، ارتباط بین‌ماژولی، داشبوردها و میزهای کار  
 > **روش:** مطالعهٔ مستندات رسمی سازندگان + تطبیق با اسناد معماری SFP24 و نمونهٔ کد مشخص‌شده در این سند؛ بدون نصب و آزمون عملی محصولات بیرونی
+>
+> **راهنمای بصری:** نمودارها با Mermaid نوشته شده‌اند تا GitHub آن‌ها را رندر کند و متنشان قابل ویرایش بماند. پیوندهای رسمی نیز به صفحات مستندات دارای تصویر و جزئیات همان نسخه می‌رسند.
 
 ## فهرست مطالب
 
@@ -18,7 +20,7 @@
 - [۹. نقش Developer Admin و Company Admin](#۹-نقش-developer-admin-و-company-admin)
 - [۱۰. خاموش‌کردن، ارتقا و بازنشستگی ماژول](#۱۰-خاموشکردن-ارتقا-و-بازنشستگی-ماژول)
 - [۱۱. تطبیق با وضعیت واقعی SFP24](#۱۱-تطبیق-با-وضعیت-واقعی-sfp24)
-- [۱۲. پیشنهاد مرحله‌بندی‌شده برای SFP24](#۱۲-پیشنهاد-مرحلهایشدە-برای-sfp24)
+- [۱۲. پیشنهاد مرحله‌بندی‌شده برای SFP24](#section-stage-plan)
 - [۱۳. پرسش‌هایی که هنوز تصمیم می‌خواهند](#۱۳-پرسشهایی-که-هنوز-تصمیم-میخواهند)
 - [۱۴. روش تحقیق و محدودیت شواهد](#۱۴-روش-تحقیق-و-محدودیت-شواهد)
 - [۱۵. منابع](#۱۵-منابع)
@@ -1016,9 +1018,12 @@ flowchart TB
 - [Pilot Components در 55ad14d](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/55ad14d/src/company/pilot-components.ts)
 - [Desk Sections در 55ad14d](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/55ad14d/src/company/desk-sections.ts)
 - [Desk Studio Model در 55ad14d](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/55ad14d/src/company/desk-studio-model.ts)
+- [Product Module Catalog در 55ad14d](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/55ad14d/src/company/module-catalog.ts)
 - [Package Manifest در 55ad14d](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/55ad14d/package.json)
 
 ---
+
+<a id="section-stage-plan"></a>
 
 ## ۱۲. پیشنهاد مرحله‌بندی‌شده برای SFP24
 
