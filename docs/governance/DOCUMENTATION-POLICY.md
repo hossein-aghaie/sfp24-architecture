@@ -60,6 +60,8 @@
 
 `pilot_only` وضعیت عرضه در کاتالوگ است. ماژول از مسیر عادی به شرکت‌ها واگذار نمی‌شود و اجرای آن به مجوز شرکت و شرایط کنترل‌شدهٔ پایلوت وابسته است. وضعیت عرضه را جدا از قابلیت‌های پیاده‌شده و آزمون‌های اجراشده گزارش کنید. [رفتار کاتالوگ و واگذاری در نسخهٔ پایلوت](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/627feed3f93411554be0ed0be623ec43ec1e106b/server/platform/accounts/service.ts#L62-L69) · [اعتبارسنجی واگذاری عادی](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/627feed3f93411554be0ed0be623ec43ec1e106b/server/platform/accounts/service.ts#L280-L293)
 
+برای طراحی یک ماژول، قابلیت `pilot_only` را در دسترس مشتری عادی فرض نکنید. سیاست عمومی ارتقا به `ready` و مجازبودن وابستگی اجباری یک ماژول آماده به ماژول پایلوت هنوز تعیین نشده‌اند. شرط‌های [بستهٔ اولیهٔ پایلوت](../implementation/core-module-pilot-v1/01-CONTRACTS-AND-DATA.fa.md) بخشی از پیشنهاد همان بسته‌اند.
+
 در ابتدای README هر ماژول یک خط **وضعیت** با دامنه و لینک شاهد بگذارید. وضعیت کار یا مرحلهٔ درخواست را طبق [گردش تغییر](CHANGE-WORKFLOW.md) ثبت کنید.
 
 ## کنترل پیش از تحویل
