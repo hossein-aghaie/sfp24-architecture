@@ -31,8 +31,16 @@
 Production و Maintenance فعلاً همراه هسته توسعه می‌یابند. قرار است قواعد مشترک ثبت، نصب، توقف، جداکردن و اتصال ماژول‌ها را با بررسی و آزمودن همین دو نمونه تدوین کنیم. آن قواعد باید قبل از واگذاری توسعهٔ مستقل بازبینی و تصویب شوند.
 
 - **جهت تأییدشده** ورود کد ماژول مورد اعتماد از مسیر Build و حفظ مرز هسته و ماژول است. [نقطهٔ کنترل معماری](../journal/2026-11-07/OPERATOR-UX-AND-MODULE-LIFECYCLE-CHECKPOINT.fa.md)
-- **الگوهای قابل بررسی برای قرارداد هسته** شامل معرفی بخش پروفایل، کارتابل، اعلان و داشبورد توسط ماژول است. برای طراحی از [پیش‌نویس اتصال رابط](../contracts/UI-CONTRIBUTIONS-DRAFT.md) شروع کنید و نیاز جدید را از مسیر درخواست تغییر مطرح کنید.
-- **اتصال‌های پیاده‌شدهٔ پایلوت** شامل نمایش سابقهٔ تجهیز، کارتابل و اعلان Maintenance و نمای مشترک داشبورد Production و Maintenance است. این مسیرها در میزبان فعلی وجود دارند. امکان اتصال مستقل ماژول دیگر به همین مسیرها باید جداگانه طراحی و آزموده شود. [شواهد نسخهٔ پایلوت](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/627feed3f93411554be0ed0be623ec43ec1e106b/docs/development/core-module-pilot-v1/PRODUCT-CHECKPOINT.fa.md)
+- **الگوهای قابل بررسی برای قرارداد هسته** شامل معرفی بخش پروفایل، کارتابل، اعلان و داشبورد توسط ماژول است. برای طراحی مفهومی از [پیش‌نویس اتصال رابط](../contracts/UI-CONTRIBUTIONS-DRAFT.md) استفاده کنید.
+- **اتصال‌های پیاده‌شدهٔ پایلوت** در میزبان فعلی قابل مشاهده‌اند. جدول زیر حدود شواهد همین نسخه را نشان می‌دهد. [شرح اتصال‌های فعلی میزبان](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/627feed3f93411554be0ed0be623ec43ec1e106b/docs/development/core-module-pilot-v1/PRODUCT-CHECKPOINT.fa.md)
+
+| مسیر پایلوت | شاهد ثبت‌شده و حدود آن |
+|---|---|
+| کارتابل و اعلان نگهداری | QA-48 گردش و تفکیک دو شرکت در Chrome را ثبت کرده است. QA-27 رسیدن اعلان بستن پرونده پس از تحویل Outbox را گزارش می‌کند. [گزارش QA](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/627feed3f93411554be0ed0be623ec43ec1e106b/docs/development/core-module-pilot-v1/QA.fa.md) |
+| داشبورد مشترک تولید و نگهداری | QA-39 شمارها، محدوده و زمان پاسخ را ثبت کرده است. [آزمون API در کد](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/627feed3f93411554be0ed0be623ec43ec1e106b/tests/core-module-pilot-acceptance.test.ts#L241-L253) هر دو بخش پاسخ مسیر مشترک را کنترل می‌کند. [گزارش QA](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/627feed3f93411554be0ed0be623ec43ec1e106b/docs/development/core-module-pilot-v1/QA.fa.md#L51) |
+| سابقهٔ تعمیر تجهیز | QA-40 خواندن API با شناسه، صفحه‌بندی و مجوز را گزارش می‌کند. سناریوی Chrome نمایش سابقه در بخش تعمیرات را بررسی می‌کند. QA-40 مشاهده در صحنهٔ سه‌بعدی را پوشش نمی‌دهد. [گزارش QA](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/627feed3f93411554be0ed0be623ec43ec1e106b/docs/development/core-module-pilot-v1/QA.fa.md#L52) · [سناریوی Chrome](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/627feed3f93411554be0ed0be623ec43ec1e106b/tests/core-module-pilot-runtime.test.ts#L544-L555) |
+
+**اگر قرارداد اجرایی مصوب، اتصال مورد نیاز را پوشش نمی‌دهد،** نویسندهٔ ماژول حتی در صورت وجود نمونه در پایلوت، یک [درخواست تغییر با مقصد هسته](../governance/CHANGE-WORKFLOW.md) ثبت می‌کند. مثلاً برای افزودن آیتم آموزش به کارتابل، نیاز، نقش و محدودهٔ دسترسی و معیار پذیرش را در درخواست می‌نویسد. مسئول هسته دربارهٔ استفاده از مسیر موجود یا تغییر قرارداد پاسخ می‌دهد. نمونهٔ پایلوت و پیش‌نویس برای طراحی مفیدند. پیش از تغییر میزبان یا اتصال کد ماژول، پاسخ و محدودهٔ کار تأیید می‌شود.
 
 ## نویسندهٔ یک ماژول از کجا شروع می‌کند؟
 

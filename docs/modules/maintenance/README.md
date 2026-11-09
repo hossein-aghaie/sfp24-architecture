@@ -2,7 +2,7 @@
 
 این صفحه مرجع حوزهٔ نگهداری و تعمیرات است. CMMS مخفف Computerized Maintenance Management System و به معنی سامانهٔ مدیریت نگهداری و تعمیرات است. [دامنهٔ محصول در فهرست ماژول‌ها](../CATALOG.fa.md) سرویس پیشگیرانه، قطعات یدکی و هزینه را هم در این حوزه جا می‌دهد.
 
-**وضعیت:** عرضه [محدود به پایلوت (`pilot_only`)](../../governance/DOCUMENTATION-POLICY.md#عرضه-محدود-پایلوت) است. گزارش QA در تاریخچهٔ `627feed` آزمون‌های اجراشده با شرکت‌ها و داده‌های ساختگی در محیط ایزوله را ثبت می‌کند. ثبت درخواست QA-37، رفع مستقیم QA-06، ایجاد دستورکار QA-19 و ثبت شواهد و تأیید تحویل QA-23 و QA-27 شواهد این گردش‌اند. سرویس دوره‌ای، قطعات یدکی و هزینه در دامنهٔ این شواهد قرار ندارند. قرارداد عمومی اتصال و چرخهٔ عمر هنوز نهایی نشده است. [گزارش QA پایلوت](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/627feed3f93411554be0ed0be623ec43ec1e106b/docs/development/core-module-pilot-v1/QA.fa.md)
+**وضعیت:** عرضه [محدود به پایلوت (`pilot_only`)](../../governance/DOCUMENTATION-POLICY.md#عرضه-محدود-پایلوت) است. گزارش QA در تاریخچهٔ `627feed` آزمون‌های اجراشده با شرکت‌ها و داده‌های ساختگی در محیط ایزوله را ثبت می‌کند. ثبت درخواست QA-37، رفع مستقیم QA-06، ایجاد دستورکار QA-19 و نمایش «در انتظار بازبینی تحویل» پس از ثبت شواهد در QA-23 و بستن پرونده و تحویل اعلان پس از تأیید دوم در QA-27 شواهد این گردش‌اند. سرویس دوره‌ای، قطعات یدکی و هزینه در دامنهٔ این شواهد قرار ندارند. قرارداد عمومی اتصال و چرخهٔ عمر هنوز نهایی نشده است. [گزارش QA پایلوت](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/627feed3f93411554be0ed0be623ec43ec1e106b/docs/development/core-module-pilot-v1/QA.fa.md)
 
 ## ورودی‌های پایلوت و پیشنهادهای بعدی
 
@@ -10,6 +10,8 @@
 |---|---|
 | تجهیز و شرح خرابی، با امکان ارجاع به یادداشت تجهیز یا گزارش تولید | ثبت درخواست با اقدام کاربر در پایلوت |
 | رخداد تجهیز، توقف گزارش‌شده از OEE یا برنامهٔ سرویس | ورودی پیشنهادی برای ساخت یا پیشنهاد درخواست در آینده |
+
+در آزمون API نسخهٔ `627feed`، ساخت درخواست از یادداشت تجهیز با شناسهٔ گزارش تولید در ورودی موفق است و تکرار فرمان همان نتیجه را می‌دهد (QA-11). این شاهد به درخواست API مربوط است. گردش جداگانهٔ دکمهٔ «ثبت خرابی از گزارش تولید» در UI در این شاهد بررسی نشده است. [آزمون API](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/627feed3f93411554be0ed0be623ec43ec1e106b/tests/core-module-pilot-acceptance.test.ts#L163-L194) · [گزارش QA](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/627feed3f93411554be0ed0be623ec43ec1e106b/docs/development/core-module-pilot-v1/QA.fa.md#L23)
 
 در کد `627feed`، درخواست از فرمان ثبت خرابی کاربر ساخته می‌شود. رخدادهای Maintenance پس از ثبت یا تغییر وضعیت برای پیگیری و اعلان تولید می‌شوند. برای ساخت خودکار درخواست از رخداد تجهیز یا OEE در این نسخه مسیر و شاهد پذیرش ثبت نشده است. برای طراحی آن اتصال باید منبع، نوع، زمان، دسترسی و رفتار نبود داده تعیین شود. [مسیر ثبت درخواست](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/627feed3f93411554be0ed0be623ec43ec1e106b/server/operations/maintenance/http.ts#L143-L159) · [رخداد پس از ثبت](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/627feed3f93411554be0ed0be623ec43ec1e106b/server/operations/maintenance/service.ts#L292-L323)
 

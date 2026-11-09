@@ -7,6 +7,7 @@
 - [نقطهٔ کنترل UX و چرخهٔ عمر ماژول‌ها](journal/2026-11-07/OPERATOR-UX-AND-MODULE-LIFECYCLE-CHECKPOINT.fa.md) یافته‌های اپراتور، جهت‌های تأییدشده و پرسش‌های باز را کنار هم نشان می‌دهد. سه بستهٔ ادامهٔ کار در آن پیشنهادی‌اند.
 - [پیشنهاد اجرایی اولیهٔ پایلوت](implementation/core-module-pilot-v1/README.md) طرح اولیهٔ قراردادها و آزمون‌ها را بر مبنای کد Stage 04 در `5c7ac61` ثبت می‌کند. این بسته پیشنهادی و تأییدنشده است.
 - [پروندهٔ فنی پایلوت در کامیت `627feed`](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/627feed3f93411554be0ed0be623ec43ec1e106b/docs/development/core-module-pilot-v1/README.md) راه‌اندازی و شواهد نسخهٔ بعدی شاخهٔ پایلوت را کنار کد نشان می‌دهد. این شاخه از `5c7ac61` منشعب شد و گزارش QA در تاریخچهٔ آن ثبت شده است. بازکردن لینک به دسترسی ریپوی خصوصی کد نیاز دارد.
+- [راهنمای اجرای پایلوت](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/627feed3f93411554be0ed0be623ec43ec1e106b/docs/development/core-module-pilot-v1/RUN.fa.md) دو محیط را جدا توضیح می‌دهد. Mihan و Demo Factory برای آزمایش انسانی داخل برنامهٔ محلی‌اند. گزارش QA به Fixtureهای جداگانه در محیط ایزوله ارجاع می‌دهد.
 - [راهنمای نویسندهٔ ماژول](modules/README.md) نقطهٔ شروع کار تخصصی و مسیر درخواست تغییر در هسته را نشان می‌دهد.
 
 ## ۱. ابتدا خود محصول را بشناسید
