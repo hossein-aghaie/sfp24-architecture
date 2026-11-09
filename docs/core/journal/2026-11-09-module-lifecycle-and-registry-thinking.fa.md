@@ -194,7 +194,7 @@ Port و Event نسخه‌دار می‌توانند گزینه‌های این �
 - [قرارداد پیشنهادی ماژول و Capability](../../contracts/MODULE-CONTRACT-DRAFT.md)
 - [قرارداد پیشنهادی UI Contributions](../../contracts/UI-CONTRIBUTIONS-DRAFT.md)
 - [پرسش‌های باز هسته](../OPEN-QUESTIONS.md)
-- [تحقیق توسعه‌پذیری ماژول‌ها و Workspaceها](../../research/MODULE-EXTENSIBILITY-AND-WORKSPACES.fa.md)
+- [تحقیق توسعه‌پذیری ماژول‌ها و Workspaceها](https://github.com/hossein-aghaie/sfp24-architecture/blob/f3f2df76297abed6906f96cd3ce4d4f92fdc9ec9/docs/research/MODULE-EXTENSIBILITY-AND-WORKSPACES.fa.md)
 - [رجیستری در کد پایلوت، Commit 55ad14d](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/55ad14d/server/platform/module-registry.ts)
 - [اتصال Capabilityهای پایلوت، Commit 55ad14d](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/55ad14d/server/operations/module-capabilities.ts)
 - [Entitlement شرکت، Commit 55ad14d](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/55ad14d/server/platform/accounts/service.ts)
