@@ -6,7 +6,7 @@
 
 ## بستهٔ اجرایی پیشنهادی ۵ نوامبر
 
-[۲۰۲۶-۱۱-۰۵ — هسته، معرفی ماژول‌ها، Production + Maintenance و UI واقعی](core-module-pilot-v1/README.md) — شامل قراردادهای دقیق، Schema/API/Permission/Route، وضعیت‌های خرابی و تأیید، فایل‌های هدف Codex، کارخانه‌های ساختگی و ۵۳ آزمون پذیرش؛ **Proposed**، نیازمند تأیید جداگانهٔ معماری و اجازهٔ اجرای هر بسته. این بسته سابقهٔ طراحی پایلوت است. برای شواهد نسخهٔ اجرا به [پروندهٔ فنی کنار کد](https://github.com/hossein-aghaie/pouyeshgar-workshop/tree/codex/core-module-pilot-v1/docs/development/core-module-pilot-v1) و برای تصمیم‌های باز به [نقطهٔ کنترل ادامهٔ پایلوت](../journal/2026-11-07/OPERATOR-UX-AND-MODULE-LIFECYCLE-CHECKPOINT.fa.md) رجوع کنید.
+[۲۰۲۶-۱۱-۰۵ — هسته، معرفی ماژول‌ها، Production + Maintenance و UI واقعی](core-module-pilot-v1/README.md) — شامل قراردادهای دقیق، Schema/API/Permission/Route، وضعیت‌های خرابی و تأیید، فایل‌های هدف Codex، کارخانه‌های ساختگی و ۵۳ آزمون پذیرش؛ **Proposed**، نیازمند تأیید جداگانهٔ معماری و اجازهٔ اجرای هر بسته. این بسته سابقهٔ طراحی پایلوت است. برای شواهد نسخهٔ اجرا به [پروندهٔ فنی کنار کد](https://github.com/hossein-aghaie/pouyeshgar-workshop/blob/627feed3f93411554be0ed0be623ec43ec1e106b/docs/development/core-module-pilot-v1/README.md) و برای تصمیم‌های باز به [نقطهٔ کنترل ادامهٔ پایلوت](../journal/2026-11-07/OPERATOR-UX-AND-MODULE-LIFECYCLE-CHECKPOINT.fa.md) رجوع کنید.
 
 ## محل ثبت کار
 
