@@ -17,5 +17,6 @@
 12. قبل از تحویل `python tools/check_docs.py` را اجرا کنید. snapshotهای manifest immutable هستند؛ لینک تاریخی را با resolver اصلاح کنید، نه بازنویسی snapshot.
 
 13. هر ماژول README و فهرست سوابق خودش را دارد. ایده، گفتگو، تحقیق، آزمایش، تصمیم، درخواست و کار اجرایی را طبق [سیاست ثبت](docs/governance/DOCUMENTATION-POLICY.md) در همان حوزه ثبت کنید. نیاز مشترک طبق [گردش تغییر](docs/governance/CHANGE-WORKFLOW.md) پیگیری شود؛ درخواست باز مجوز اجرا نیست. تعریف و قرارداد مشترک موازی نسازید.
+14. برای هر طراحی یا تغییر چندماژولی، [راهنمای وابستگی و یکپارچگی ماژول‌ها](docs/contracts/MODULE-INTEGRATION-AND-DEPENDENCY-GUIDE.fa.md) را بخوانید. Required Dependency، Optional Integration و Cross-Module Workflow را جدا کنید؛ از روی این راهنما API، Event Bus، Task Engine یا SDK پیاده‌سازی‌شده فرض نکنید.
 
 [روش اجرای کنترل مستندات](tools/README.md).
