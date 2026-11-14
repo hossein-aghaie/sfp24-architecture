@@ -4,10 +4,13 @@
 
 | تاریخ / شناسه | موضوع و لینک منبع | نوع | نتیجه / سؤال باز | تصمیم / درخواست / آزمون |
 |---|---|---|---|---|
+| ۲۰۲۶-۱۱-۱۰ / برنامه | [برنامهٔ اجرایی یکپارچهٔ پلتفرم؛ متن کامل درخواست و پاسخ](../journal/2026-11-10/MODULE-CONTRACTS-DISCOVERY-AND-INTEROPERABILITY-REVIEW.fa.md#platform-module-execution-plan-review) | متن اصلی گفتگو / Proposed | تفکیک زیرساخت و Maintenance کامل، سه بسته، Gate و Recovery، معیار پذیرش و تصمیم‌های باز | در انتظار بررسی مالک؛ ثبت سابقه مجوز اجرا نیست |
+| ۲۰۲۶-۱۱-۱۰ / ادامه | [بازبینی نهایی معماری ماژولار؛ متن کامل و فلوچارت](../journal/2026-11-10/MODULE-CONTRACTS-DISCOVERY-AND-INTEROPERABILITY-REVIEW.fa.md#final-preimplementation-review) | متن اصلی درخواست و پاسخ / Proposed | معرفی ماژول، Contract و Binding، مرزهای واقعی کد، Gate و Recovery و معیارهای پذیرش | فقط ثبت سابقه؛ پیشنهادهای تازه تأیید نشده و اجرا آغاز نشده است |
+| ۲۰۲۶-۱۱-۱۰ | [قرارداد، کشف و ارتباط ماژول‌ها؛ متن کامل گفتگو](../journal/2026-11-10/MODULE-CONTRACTS-DISCOVERY-AND-INTEROPERABILITY-REVIEW.fa.md) | متن اصلی درخواست و پاسخ / Proposed | نیازها و خروجی‌های ساختاریافته، Provider و Binding، مشارکت رابط و چرخهٔ عمر؛ تصمیم‌های طراحی هنوز تأیید نشده‌اند | سابقه برای ادامهٔ بررسی؛ بدون مجوز اجرا و بدون ادعای آزمون تازه |
+| ۲۰۲۶-۱۱-۰۹ | [فکر بلند: ثبت و چرخهٔ عمر ماژول در SFP24](journal/2026-11-09-module-lifecycle-and-registry-thinking.fa.md) | Journal هسته / بازسازی تحلیلی از گفت‌وگو | تفکیک Registry، عرضه، Entitlement، Provisioning، Enable/Stop، Unregister و Retire؛ بررسی نقش Developer Admin و اجرای مؤثر Stop. | همهٔ پیشنهادهای تازه Open/Proposed هستند. پس از پایان مأموریت UI/UX، پرامپت اولیه فقط برای بررسی Codex تهیه می‌شود؛ هنوز ADR، WP یا مجوز کدنویسی صادر نشده است. |
+| ۲۰۲۶-۱۱-۰۷ | [بازبینی میز اپراتور و چرخهٔ عمر ماژول‌ها](../journal/2026-11-07/OPERATOR-UX-AND-MODULE-LIFECYCLE-CHECKPOINT.fa.md) | Journal مشترک / خلاصهٔ تحلیلی | مرز Build، ثبت، عرضه، حق شرکت، آمادگی، مجوز کاربر و میز باید مستقل بماند؛ برنامهٔ سه‌بسته‌ای هنوز پیشنهادی است. | پرسش‌های باز دربارهٔ State Transition، اختیارها، توقف و سوابق؛ هنوز ADR یا مجوز اجرا نیست. |
 
-هنوز مدرک تازه‌ای در این فهرست ثبت نشده است. [سؤال‌های باز قبلی](OPEN-QUESTIONS.md)، [سوابق مشترک](../journal/README.md) و [منابع تاریخی](../sources/CATALOG.md) حفظ شده‌اند؛ این فهرست جای آن‌ها نیست.
-
-ایدهٔ اختصاصی هسته در `journal/`، تحقیق در `research/`، آزمایش در `experiments/` و درخواست صادرشده از هسته در `requests/` زیر همین پوشه ثبت می‌شود. تصمیمی که چند ماژول را متأثر می‌کند در [تصمیم‌های مشترک](../decisions/README.md) است. برای نیازهای ورودی، [فهرست درخواست‌های مشترک](../governance/REQUESTS.md) را مرور کنید. [قواعد ثبت](../governance/DOCUMENTATION-POLICY.md).
+ایدهٔ اختصاصی هسته در `journal/`, تحقیق در `research/`, آزمایش در `experiments/` و درخواست صادرشده از هسته در `requests/` زیر همین پوشه ثبت می‌شود. تصمیمی که چند ماژول را متأثر می‌کند در [تصمیم‌های مشترک](../decisions/README.md) است. برای نیازهای ورودی، [فهرست درخواست‌های مشترک](../governance/REQUESTS.md) را مرور کنید. [قواعد ثبت](../governance/DOCUMENTATION-POLICY.md).
 
 ## سابقهٔ طراحی هاب
 
